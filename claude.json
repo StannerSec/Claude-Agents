@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "synthetic-log-generator": {
-      "command": "/home/stanner/wazuh-rac/mcp_servers/venv/bin/python",
-      "args": ["/home/stanner/wazuh-rac/mcp_servers/synthetic_log_generator.py"],
-      "disabled": false
-    }
-  }
-}
