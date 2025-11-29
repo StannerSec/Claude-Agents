@@ -719,3 +719,13 @@
 2025-11-29T14:18:23.312Z [DEBUG] Applied original permissions to temp file
 2025-11-29T14:18:23.312Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.779871.1764425903309 to /home/stanner/.claude.json
 2025-11-29T14:18:23.312Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-29T14:18:38.472Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
