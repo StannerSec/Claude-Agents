@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Research Wazuh RaC blog post and DaC repository structure",
+    "status": "completed",
+    "activeForm": "Researching Wazuh RaC blog post and DaC repository structure"
+  },
+  {
+    "content": "Design local-first deployment workflow",
+    "status": "completed",
+    "activeForm": "Designing local-first deployment workflow"
+  },
+  {
+    "content": "Set up directory structure and configuration files",
+    "status": "completed",
+    "activeForm": "Setting up directory structure and configuration files"
+  },
+  {
+    "content": "Create deployment scripts for local execution",
+    "status": "completed",
+    "activeForm": "Creating deployment scripts for local execution"
+  },
+  {
+    "content": "Configure Git workflow for post-deployment push",
+    "status": "completed",
+    "activeForm": "Configuring Git workflow for post-deployment push"
+  },
+  {
+    "content": "Configure SSH authentication and sudo permissions",
+    "status": "completed",
+    "activeForm": "Configuring SSH authentication and sudo permissions"
+  },
+  {
+    "content": "Test the complete workflow",
+    "status": "in_progress",
+    "activeForm": "Testing the complete workflow"
+  }
+]

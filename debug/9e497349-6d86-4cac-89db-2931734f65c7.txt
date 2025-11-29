@@ -1,0 +1,149 @@
+2025-11-27T00:37:56.792Z [DEBUG] Watching for changes in setting files /home/stanner/.claude/settings.json, /home/stanner/Documents/Code/mcp_servers_custom/.claude/settings.local.json...
+2025-11-27T00:37:56.807Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-27T00:37:56.807Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-27T00:37:56.807Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-27T00:37:56.807Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-27T00:37:56.807Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-27T00:37:56.812Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(python3:*)"]
+2025-11-27T00:37:56.813Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-27T00:37:56.813Z [DEBUG] Total LSP servers loaded: 0
+2025-11-27T00:37:56.814Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-27T00:37:56.814Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-27T00:37:56.814Z [DEBUG] LSP server manager initialized successfully
+2025-11-27T00:37:56.814Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-27T00:37:56.822Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/stanner/.claude/skills, project=/home/stanner/Documents/Code/mcp_servers_custom/.claude/skills
+2025-11-27T00:37:56.822Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-27T00:37:56.823Z [DEBUG] installed_plugins.json doesn't exist yet at /home/stanner/.claude/plugins/installed_plugins.json, returning empty object
+2025-11-27T00:37:56.831Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-11-27T00:37:56.831Z [DEBUG] Looking for shell config file: /home/stanner/.bashrc
+2025-11-27T00:37:56.831Z [DEBUG] Snapshots directory: /home/stanner/.claude/shell-snapshots
+2025-11-27T00:37:56.831Z [DEBUG] Creating snapshot at: /home/stanner/.claude/shell-snapshots/snapshot-bash-1764203876831-ws1e34.sh
+2025-11-27T00:37:56.831Z [DEBUG] Shell binary exists: true
+2025-11-27T00:37:56.831Z [DEBUG] Execution timeout: 10000ms
+2025-11-27T00:37:56.832Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/9e497349-6d86-4cac-89db-2931734f65c7-agent-9e497349-6d86-4cac-89db-2931734f65c7.json.tmp.2386001.1764203876832
+2025-11-27T00:37:56.833Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-27T00:37:56.833Z [DEBUG] Renaming /home/stanner/.claude/todos/9e497349-6d86-4cac-89db-2931734f65c7-agent-9e497349-6d86-4cac-89db-2931734f65c7.json.tmp.2386001.1764203876832 to /home/stanner/.claude/todos/9e497349-6d86-4cac-89db-2931734f65c7-agent-9e497349-6d86-4cac-89db-2931734f65c7.json
+2025-11-27T00:37:56.833Z [DEBUG] File /home/stanner/.claude/todos/9e497349-6d86-4cac-89db-2931734f65c7-agent-9e497349-6d86-4cac-89db-2931734f65c7.json written atomically
+2025-11-27T00:37:56.835Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-27T00:37:56.835Z [DEBUG] Total plugin skills loaded: 0
+2025-11-27T00:37:56.835Z [DEBUG] Total plugin commands loaded: 0
+2025-11-27T00:37:56.835Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-27T00:37:56.836Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-27T00:37:56.836Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-11-27T00:37:56.839Z [DEBUG] Total plugin agents loaded: 0
+2025-11-27T00:37:56.856Z [DEBUG] Acquired lock on running version: /home/stanner/.local/share/claude/versions/2.0.55
+2025-11-27T00:37:56.879Z [DEBUG] Git remote URL: https://github.com/StannerSec/MCP.git
+2025-11-27T00:37:56.879Z [DEBUG] Parsed repository: StannerSec/MCP from https://github.com/StannerSec/MCP.git
+2025-11-27T00:37:56.879Z [DEBUG] Parsed repository: StannerSec/MCP from URL: https://github.com/StannerSec/MCP.git
+2025-11-27T00:37:56.880Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203876880
+2025-11-27T00:37:56.880Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:56.881Z [DEBUG] Temp file written successfully, size: 47953 bytes
+2025-11-27T00:37:56.881Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:56.881Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203876880 to /home/stanner/.claude.json
+2025-11-27T00:37:56.882Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:56.882Z [DEBUG] Added /home/stanner/Documents/Code/mcp_servers_custom to tracked paths for repo stannersec/mcp
+2025-11-27T00:37:56.882Z [DEBUG] Shell snapshot created successfully (1771 bytes)
+2025-11-27T00:37:57.110Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/stanner/.local/share/claude/versions/2.0.55)
+2025-11-27T00:37:57.181Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-11-27T00:37:57.643Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203877643
+2025-11-27T00:37:57.643Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:57.646Z [DEBUG] Temp file written successfully, size: 47952 bytes
+2025-11-27T00:37:57.646Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:57.646Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203877643 to /home/stanner/.claude.json
+2025-11-27T00:37:57.646Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:58.284Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203878284
+2025-11-27T00:37:58.284Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:58.287Z [DEBUG] Temp file written successfully, size: 47952 bytes
+2025-11-27T00:37:58.287Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:58.287Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203878284 to /home/stanner/.claude.json
+2025-11-27T00:37:58.287Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:58.290Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-11-27T00:37:58.290Z [DEBUG] Found 0 hook matchers in settings
+2025-11-27T00:37:58.290Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-11-27T00:37:58.307Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203878307
+2025-11-27T00:37:58.307Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:58.308Z [DEBUG] Temp file written successfully, size: 47847 bytes
+2025-11-27T00:37:58.308Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:58.308Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203878307 to /home/stanner/.claude.json
+2025-11-27T00:37:58.308Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:58.311Z [DEBUG] performStartupChecks called
+2025-11-27T00:37:58.311Z [DEBUG] Starting background plugin installations
+2025-11-27T00:37:58.311Z [DEBUG] performBackgroundPluginInstallations called
+2025-11-27T00:37:58.315Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T00:37:58.317Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-27T00:37:58.317Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-27T00:37:58.319Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-11-27T00:37:58.321Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-11-27T00:37:58.326Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-11-27T00:37:58.326Z [DEBUG] Found 0 hook matchers in settings
+2025-11-27T00:37:58.326Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-11-27T00:37:58.327Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-11-27T00:37:58.327Z [DEBUG] Found 0 hook matchers in settings
+2025-11-27T00:37:58.327Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-11-27T00:37:58.550Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T00:37:59.669Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203879669
+2025-11-27T00:37:59.669Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:59.673Z [DEBUG] Temp file written successfully, size: 47847 bytes
+2025-11-27T00:37:59.673Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:59.673Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203879669 to /home/stanner/.claude.json
+2025-11-27T00:37:59.673Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:59.674Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203879674
+2025-11-27T00:37:59.674Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:59.675Z [DEBUG] Temp file written successfully, size: 47847 bytes
+2025-11-27T00:37:59.675Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:59.675Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203879674 to /home/stanner/.claude.json
+2025-11-27T00:37:59.675Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:59.676Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203879676
+2025-11-27T00:37:59.676Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:59.677Z [DEBUG] Temp file written successfully, size: 47952 bytes
+2025-11-27T00:37:59.677Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:59.677Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203879676 to /home/stanner/.claude.json
+2025-11-27T00:37:59.677Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:37:59.680Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2386001.1764203879680
+2025-11-27T00:37:59.680Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T00:37:59.681Z [DEBUG] Temp file written successfully, size: 47952 bytes
+2025-11-27T00:37:59.681Z [DEBUG] Applied original permissions to temp file
+2025-11-27T00:37:59.681Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2386001.1764203879680 to /home/stanner/.claude.json
+2025-11-27T00:37:59.681Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T00:38:00.238Z [DEBUG] Stream started - received first chunk
+2025-11-27T00:38:00.334Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T00:38:00.339Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T00:38:00.342Z [DEBUG] FileHistory: Added snapshot for 7795930b-1cb0-4213-a0cc-0f8a438bc3c2, tracking 0 files
+2025-11-27T00:38:00.344Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-27T00:38:00.344Z [DEBUG] Block 0: <command-name>/mcp</command-name>
+            <command-message>mcp</command-message>
+            <co...
+2025-11-27T00:38:00.344Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+2025-11-27T00:38:00.344Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-27T00:38:00.488Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T00:38:00.501Z [DEBUG] Stream started - received first chunk
+2025-11-27T00:38:02.520Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-11-27T00:38:02.520Z [DEBUG] Found 0 hook matchers in settings
+2025-11-27T00:38:02.520Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-27T00:38:05.552Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T00:38:07.491Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T00:38:08.302Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-11-27T00:38:08.302Z [DEBUG] Found 0 hook matchers in settings
+2025-11-27T00:38:08.302Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-27T00:38:17.650Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)

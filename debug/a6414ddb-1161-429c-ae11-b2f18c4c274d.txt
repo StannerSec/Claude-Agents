@@ -1,0 +1,985 @@
+2025-11-27T05:34:26.763Z [DEBUG] Watching for changes in setting files /home/stanner/.claude/settings.json, /home/stanner/.claude/settings.json, /home/stanner/.claude/settings.local.json...
+2025-11-27T05:34:26.778Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-27T05:34:26.778Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-27T05:34:26.778Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-27T05:34:26.778Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-27T05:34:26.778Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-27T05:34:26.783Z [DEBUG] Applying permission update: Adding 29 allow rule(s) to destination 'localSettings': ["Bash(VBoxManage showvminfo:*)","Bash(VBoxManage:*)","Bash(wget:*)","Bash(lsmod:*)","mcp__todoist__find-tasks","Bash(claude mcp add:*)","Bash(~/Documents/Code/mcp_servers_custom/alienvault-mcp-server/alienvault_server.py)","Bash(cat:*)","mcp__obsidian__obsidian_simple_search","mcp__todoist__find-tasks-by-date","mcp__todoist__get-overview","mcp__obsidian__obsidian_get_periodic_note","mcp__proton-email__read_recent_emails","mcp__todoist__user-info","mcp__todoist__find-activity","mcp__obsidian__obsidian_list_files_in_vault","WebSearch","mcp__obsidian__obsidian_get_recent_periodic_notes","mcp__obsidian__obsidian_get_file_contents","WebFetch(domain:github.com)","Bash(python3:*)","mcp__malwarebazaar__get_recent","mcp__malwarebazaar__get_info","mcp__alienvault__get_recent_pulses","mcp__alienvault__get_subscribed_pulses","mcp__alienvault__get_indicator_details","mcp__alienvault__search_pulses","Bash(ALIENVAULT_API_KEY=1a15a0c0d41a5d4fb32d68590592e575cd77ca3bedd84921457172eca5248616 python3:*)","mcp__alienvault__get_pulse_details"]
+2025-11-27T05:34:26.783Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-27T05:34:26.783Z [DEBUG] Total LSP servers loaded: 0
+2025-11-27T05:34:26.785Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-27T05:34:26.785Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-27T05:34:26.785Z [DEBUG] LSP server manager initialized successfully
+2025-11-27T05:34:26.785Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-27T05:34:26.792Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/stanner/.claude/skills, project=/home/stanner/.claude/skills
+2025-11-27T05:34:26.792Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-27T05:34:26.794Z [DEBUG] installed_plugins.json doesn't exist yet at /home/stanner/.claude/plugins/installed_plugins.json, returning empty object
+2025-11-27T05:34:26.799Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-11-27T05:34:26.799Z [DEBUG] Looking for shell config file: /home/stanner/.bashrc
+2025-11-27T05:34:26.799Z [DEBUG] Snapshots directory: /home/stanner/.claude/shell-snapshots
+2025-11-27T05:34:26.799Z [DEBUG] Creating snapshot at: /home/stanner/.claude/shell-snapshots/snapshot-bash-1764221666799-wzosb8.sh
+2025-11-27T05:34:26.799Z [DEBUG] Shell binary exists: true
+2025-11-27T05:34:26.799Z [DEBUG] Execution timeout: 10000ms
+2025-11-27T05:34:26.800Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/a6414ddb-1161-429c-ae11-b2f18c4c274d-agent-a6414ddb-1161-429c-ae11-b2f18c4c274d.json.tmp.2601805.1764221666800
+2025-11-27T05:34:26.801Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-27T05:34:26.801Z [DEBUG] Renaming /home/stanner/.claude/todos/a6414ddb-1161-429c-ae11-b2f18c4c274d-agent-a6414ddb-1161-429c-ae11-b2f18c4c274d.json.tmp.2601805.1764221666800 to /home/stanner/.claude/todos/a6414ddb-1161-429c-ae11-b2f18c4c274d-agent-a6414ddb-1161-429c-ae11-b2f18c4c274d.json
+2025-11-27T05:34:26.801Z [DEBUG] File /home/stanner/.claude/todos/a6414ddb-1161-429c-ae11-b2f18c4c274d-agent-a6414ddb-1161-429c-ae11-b2f18c4c274d.json written atomically
+2025-11-27T05:34:26.803Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221666803
+2025-11-27T05:34:26.803Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:26.804Z [DEBUG] Temp file written successfully, size: 8386 bytes
+2025-11-27T05:34:26.804Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:26.804Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221666803 to /home/stanner/.claude.json
+2025-11-27T05:34:26.804Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:26.804Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-27T05:34:26.804Z [DEBUG] Total plugin skills loaded: 0
+2025-11-27T05:34:26.804Z [DEBUG] Total plugin commands loaded: 0
+2025-11-27T05:34:26.804Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-27T05:34:26.805Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-27T05:34:26.805Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-11-27T05:34:26.821Z [DEBUG] Total plugin agents loaded: 0
+2025-11-27T05:34:26.824Z [DEBUG] Acquired lock on running version: /home/stanner/.local/share/claude/versions/2.0.55
+2025-11-27T05:34:26.827Z [DEBUG] Git remote URL: null
+2025-11-27T05:34:26.827Z [DEBUG] No git remote URL found
+2025-11-27T05:34:26.827Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-11-27T05:34:26.828Z [DEBUG] Shell snapshot created successfully (2085 bytes)
+2025-11-27T05:34:26.980Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221666980
+2025-11-27T05:34:26.980Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:26.982Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:26.983Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:26.983Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221666980 to /home/stanner/.claude.json
+2025-11-27T05:34:26.983Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:27.098Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-11-27T05:34:29.194Z [DEBUG] MCP server "todoist": Initializing HTTP transport to https://ai.todoist.net/mcp
+2025-11-27T05:34:29.194Z [DEBUG] MCP server "todoist": Node version: v24.3.0, Platform: linux
+2025-11-27T05:34:29.194Z [DEBUG] MCP server "todoist": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-11-27T05:34:29.196Z [DEBUG] MCP server "proton-email": Starting connection with timeout of 30000ms
+2025-11-27T05:34:29.198Z [DEBUG] MCP server "obsidian": Starting connection with timeout of 30000ms
+2025-11-27T05:34:29.200Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221669200
+2025-11-27T05:34:29.200Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:29.204Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:29.204Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:29.204Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221669200 to /home/stanner/.claude.json
+2025-11-27T05:34:29.204Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:29.206Z [DEBUG] Skipping SessionStart:startup hook execution - workspace trust not accepted
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": Proxy options: default
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": HTTP transport options: {"url":"https://ai.todoist.net/mcp","headers":{"User-Agent":"claude-code/2.0.55"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": HTTP transport created successfully
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": Client created, setting up request handler
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": Starting connection with timeout of 30000ms
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": Testing basic HTTP connectivity to https://ai.todoist.net/mcp
+2025-11-27T05:34:29.207Z [DEBUG] MCP server "todoist": Parsed URL: host=ai.todoist.net, port=default, protocol=https:
+2025-11-27T05:34:29.208Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T05:34:29.208Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T05:34:29.208Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T05:34:29.208Z [DEBUG] MCP server "todoist": Expires in: 315339885s
+2025-11-27T05:34:29.221Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221669221
+2025-11-27T05:34:29.222Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:29.223Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T05:34:29.223Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:29.223Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221669221 to /home/stanner/.claude.json
+2025-11-27T05:34:29.223Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:29.225Z [DEBUG] performStartupChecks called
+2025-11-27T05:34:29.226Z [DEBUG] Trust not accepted for current directory - skipping plugin installations
+2025-11-27T05:34:29.230Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T05:34:29.267Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-11-27T05:34:29.275Z [DEBUG] Skipping SubagentStart:Explore hook execution - workspace trust not accepted
+2025-11-27T05:34:29.276Z [DEBUG] Skipping SubagentStart:Plan hook execution - workspace trust not accepted
+2025-11-27T05:34:29.480Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-26 23:34:29,480 - proton-email-server - INFO - Starting Proton Bridge Email MCP server...
+2025-11-27T05:34:29.485Z [DEBUG] MCP server "proton-email": Successfully connected to stdio server in 291ms
+2025-11-27T05:34:29.485Z [DEBUG] MCP server "proton-email": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"proton-email","version":"1.22.0"}}
+2025-11-27T05:34:29.486Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-26 23:34:29,486 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-27T05:34:29.486Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-26 23:34:29,486 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-11-27T05:34:29.486Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-26 23:34:29,486 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-27T05:34:29.513Z [DEBUG] MCP server "obsidian": Successfully connected to stdio server in 316ms
+2025-11-27T05:34:29.513Z [DEBUG] MCP server "obsidian": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"mcp-obsidian","version":"1.22.0"}}
+2025-11-27T05:34:29.513Z [ERROR] MCP server "obsidian" Server stderr: INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+2025-11-27T05:34:29.524Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T05:34:29.524Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T05:34:29.524Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T05:34:29.524Z [DEBUG] MCP server "todoist": Expires in: 315339885s
+2025-11-27T05:34:29.527Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T05:34:29.577Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T05:34:29.577Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T05:34:29.577Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T05:34:29.577Z [DEBUG] MCP server "todoist": Expires in: 315339885s
+2025-11-27T05:34:29.577Z [DEBUG] MCP server "todoist": Successfully connected to http server in 384ms
+2025-11-27T05:34:29.577Z [DEBUG] MCP server "todoist": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"todoist-mcp-server","version":"0.1.0"}}
+2025-11-27T05:34:29.578Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T05:34:29.578Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T05:34:29.578Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T05:34:29.578Z [DEBUG] MCP server "todoist": Expires in: 315339885s
+2025-11-27T05:34:29.650Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221669650
+2025-11-27T05:34:29.650Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:29.652Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T05:34:29.652Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:29.652Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221669650 to /home/stanner/.claude.json
+2025-11-27T05:34:29.652Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:29.653Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221669653
+2025-11-27T05:34:29.653Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:29.655Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T05:34:29.655Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:29.655Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221669653 to /home/stanner/.claude.json
+2025-11-27T05:34:29.655Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:29.656Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221669656
+2025-11-27T05:34:29.656Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:29.657Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:29.657Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:29.657Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221669656 to /home/stanner/.claude.json
+2025-11-27T05:34:29.657Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:29.858Z [DEBUG] MCP server "malwarebazaar": Starting connection with timeout of 30000ms
+2025-11-27T05:34:29.859Z [DEBUG] MCP server "alienvault": Starting connection with timeout of 30000ms
+2025-11-27T05:34:29.861Z [DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+2025-11-27T05:34:29.867Z [DEBUG] MCP server "ide": Successfully connected to ws-ide server in 7ms
+2025-11-27T05:34:29.867Z [DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code VSCode MCP","version":"2.0.55"}}
+2025-11-27T05:34:30.079Z [DEBUG] MCP server "malwarebazaar": Successfully connected to stdio server in 221ms
+2025-11-27T05:34:30.079Z [DEBUG] MCP server "malwarebazaar": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"MalwareBazaar MCP","version":"1.6.0"}}
+2025-11-27T05:34:30.082Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:34:30] INFO     Processing request of type            server.py:534
+                             ListToolsRequest
+2025-11-27T05:34:30.082Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             ListPromptsRequest
+2025-11-27T05:34:30.083Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             ListResourcesRequest
+2025-11-27T05:34:30.121Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:30,121 - alienvault-server - INFO - Starting AlienVault OTX MCP server...
+2025-11-27T05:34:30.121Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:30,121 - alienvault-server - INFO - API key configured - ready to fetch threat intelligence
+2025-11-27T05:34:30.125Z [DEBUG] MCP server "alienvault": Successfully connected to stdio server in 266ms
+2025-11-27T05:34:30.125Z [DEBUG] MCP server "alienvault": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"alienvault","version":"1.22.0"}}
+2025-11-27T05:34:30.126Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:30,126 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-27T05:34:30.126Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:30,126 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-11-27T05:34:30.127Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:30,126 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-27T05:34:30.510Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:34:30.695Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221670695
+2025-11-27T05:34:30.695Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:30.698Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:30.698Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:30.698Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221670695 to /home/stanner/.claude.json
+2025-11-27T05:34:30.698Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:30.706Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:34:31.576Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T05:34:31.577Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T05:34:31.578Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T05:34:31.578Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T05:34:31.578Z [DEBUG] MCP server "todoist": Expires in: 315339883s
+2025-11-27T05:34:31.987Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-27T05:34:33.221Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-27T05:34:33.382Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T05:34:33.384Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+2025-11-27T05:34:33.384Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-27T05:34:33.395Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221673395
+2025-11-27T05:34:33.395Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:33.398Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:33.398Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:33.398Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221673395 to /home/stanner/.claude.json
+2025-11-27T05:34:33.398Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:33.400Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221673400
+2025-11-27T05:34:33.400Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:33.401Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:33.401Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:33.401Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221673400 to /home/stanner/.claude.json
+2025-11-27T05:34:33.401Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:33.513Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T05:34:36.529Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:34:40.516Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:34:45.951Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:34:45.951Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:34:45.954Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:34:45.954Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:34:45.968Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T05:34:45.969Z [DEBUG] FileHistory: Added snapshot for a8071f6a-0669-44d5-9d1b-a04e7db03fec, tracking 0 files
+2025-11-27T05:34:45.981Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-27T05:34:45.985Z [DEBUG] Total plugin output styles loaded: 0
+2025-11-27T05:34:45.987Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 6ms
+2025-11-27T05:34:45.993Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-27T05:34:45.993Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-27T05:34:46.598Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:34:47.102Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:34:47.297Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:34:48.133Z [DEBUG] executePreToolHooks called for tool: mcp__alienvault__get_recent_pulses
+2025-11-27T05:34:48.134Z [DEBUG] Skipping PreToolUse:mcp__alienvault__get_recent_pulses hook execution - workspace trust not accepted
+2025-11-27T05:34:48.139Z [DEBUG] MCP server "alienvault": Calling MCP tool: get_recent_pulses
+2025-11-27T05:34:48.143Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:48,140 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-26 23:34:48,140 - alienvault-server - INFO - Fetching pulses from last 7 days
+2025-11-27T05:34:51.605Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:34:51,605 - httpx - INFO - HTTP Request: GET https://otx.alienvault.com/api/v1/pulses/subscribed?modified_since=2025-11-20&limit=50 "HTTP/1.1 200 OK"
+2025-11-27T05:34:51.794Z [DEBUG] MCP server "alienvault": Tool 'get_recent_pulses' completed successfully in 3s
+2025-11-27T05:34:51.798Z [DEBUG] Skipping PostToolUse:mcp__alienvault__get_recent_pulses hook execution - workspace trust not accepted
+2025-11-27T05:34:51.816Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:34:51.816Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:34:51.816Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:34:51.820Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:34:51.820Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:34:51.826Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 10ms
+2025-11-27T05:34:53.421Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:34:58.233Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T05:34:58.242Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221698242
+2025-11-27T05:34:58.242Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:58.245Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:58.245Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:58.245Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221698242 to /home/stanner/.claude.json
+2025-11-27T05:34:58.245Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:34:58.247Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.2601805.1764221698247
+2025-11-27T05:34:58.247Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:34:58.248Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T05:34:58.248Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:34:58.248Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.2601805.1764221698247 to /home/stanner/.claude.json
+2025-11-27T05:34:58.248Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T05:35:03.131Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:35:29.265Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:35:29.265Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:35:29.265Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:35:29.268Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:35:29.268Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:35:29.273Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-27T05:35:29.276Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T05:35:29.277Z [DEBUG] FileHistory: Making snapshot for message 48453ce4-5045-406b-aded-f25775cbfd91
+2025-11-27T05:35:29.277Z [DEBUG] FileHistory: Added snapshot for 48453ce4-5045-406b-aded-f25775cbfd91, tracking 0 files
+2025-11-27T05:35:29.284Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-27T05:35:29.288Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-27T05:35:29.936Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:35:30.525Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:35:31.538Z [DEBUG] executePreToolHooks called for tool: mcp__alienvault__get_pulse_details
+2025-11-27T05:35:31.539Z [DEBUG] Skipping PreToolUse:mcp__alienvault__get_pulse_details hook execution - workspace trust not accepted
+2025-11-27T05:35:31.543Z [DEBUG] MCP server "alienvault": Calling MCP tool: get_pulse_details
+2025-11-27T05:35:31.545Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:35:31,544 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-26 23:35:31,544 - alienvault-server - INFO - Fetching pulse details for ID: 69265f23824f822dc5f7c08a
+2025-11-27T05:35:31.976Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:35:31,976 - httpx - INFO - HTTP Request: GET https://otx.alienvault.com/api/v1/pulses/69265f23824f822dc5f7c08a "HTTP/1.1 200 OK"
+2025-11-27T05:35:32.005Z [DEBUG] MCP server "alienvault": Tool 'get_pulse_details' completed successfully in 462ms
+2025-11-27T05:35:32.008Z [DEBUG] Skipping PostToolUse:mcp__alienvault__get_pulse_details hook execution - workspace trust not accepted
+2025-11-27T05:35:32.020Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_recent
+2025-11-27T05:35:32.021Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_recent hook execution - workspace trust not accepted
+2025-11-27T05:35:32.027Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_recent
+2025-11-27T05:35:32.031Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:35:32] INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:35:32.708Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:35:32.736Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "9d2114d6b3020c832e3bc454b5bec276eaab1f17b4939f34459c54716311a602",
+            "sha3_384_hash": "2200278e1f52460a3e5fff33b31dd605872ed4c1c629c81b418bafacf5db5db7d6cddc0335e7b00fbc737e776682c72c",
+            "sha1_hash": "fb5037aaece7059342f731f8a8eac7f585181ea4",
+            "md5_hash": "291866581cda16ab902c3bd2061a62a0",
+            "first_seen": "2025-11-27 04:59:31",
+            "last_seen": null,
+            "file_name": "x86_64",
+            "file_size": 79424,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "origin_country": "DE",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T12C732813B981C9FCC48AC170476FB23AE923F17D022DB2EB7BD4EB126949D685E1D149",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "1536:\/zzPDV4pg
+2025-11-27T05:35:32.737Z [DEBUG] MCP server "malwarebazaar": Tool 'get_recent' completed successfully in 710ms
+2025-11-27T05:35:32.740Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_recent hook execution - workspace trust not accepted
+2025-11-27T05:35:32.753Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:35:32.753Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:35:32.753Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:35:32.755Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:35:32.755Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:35:32.759Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+2025-11-27T05:35:34.421Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:35:36.711Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_info
+2025-11-27T05:35:36.711Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:36.716Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_info
+2025-11-27T05:35:36.718Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:35:36] INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:35:37.560Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:35:37] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:35:37.562Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "9d2114d6b3020c832e3bc454b5bec276eaab1f17b4939f34459c54716311a602",
+            "sha3_384_hash": "2200278e1f52460a3e5fff33b31dd605872ed4c1c629c81b418bafacf5db5db7d6cddc0335e7b00fbc737e776682c72c",
+            "sha1_hash": "fb5037aaece7059342f731f8a8eac7f585181ea4",
+            "md5_hash": "291866581cda16ab902c3bd2061a62a0",
+            "first_seen": "2025-11-27 04:59:31",
+            "last_seen": null,
+            "file_name": "x86_64",
+            "file_size": 79424,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "origin_country": "DE",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T12C732813B981C9FCC48AC170476FB23AE923F17D022DB2EB7BD4EB126949D685E1D149",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "1536:\/zzPDV4pg
+2025-11-27T05:35:37.563Z [DEBUG] MCP server "malwarebazaar": Tool 'get_info' completed successfully in 847ms
+2025-11-27T05:35:37.566Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:37.577Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_info
+2025-11-27T05:35:37.577Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:37.582Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_info
+2025-11-27T05:35:37.586Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:35:38.441Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:35:38] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:35:38.468Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "1d8cf78db810074e5aaa9c9257547ad3e22b1d473fcba704016847dd42616ff6",
+            "sha3_384_hash": "4bd5756f83293b76f33825cbc3fa9f6173d8fe35de0024163bb5d841e57b340bf3096d80d4955860b0900d9176d58ce1",
+            "sha1_hash": "8ea156c343bb0c49aad8ca0f2ca3d19c3fbbafdd",
+            "md5_hash": "df4d79e6089fd8b5169fdbd902066650",
+            "first_seen": "2025-11-27 04:48:30",
+            "last_seen": null,
+            "file_name": "arm7",
+            "file_size": 84720,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "origin_country": "DE",
+            "anonymous": 0,
+            "signature": null,
+            "imphash": null,
+            "tlsh": "T1AD83F78AFD819B15C5D922BEFE1E018D335317A8E3EF7212DD115B14678A92B0E77A02",
+            "telfhash": "t1cfe0c29bc90809ddb6d083483bae62419edd762c370564d7941eab05c483dd6719a500",
+2025-11-27T05:35:38.468Z [DEBUG] MCP server "malwarebazaar": Tool 'get_info' completed successfully in 886ms
+2025-11-27T05:35:38.472Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:38.485Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_info
+2025-11-27T05:35:38.485Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:38.491Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_info
+2025-11-27T05:35:38.494Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:35:39.391Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:35:39] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:35:39.417Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "937e181035e5fc5fd64ae6fa4e22acc681f70d512e23deb77b262f40e180769a",
+            "sha3_384_hash": "28b7e1e90ed495f50f7b7d62274fcd371215dbd90e48504da3fb60de6db3daabf6bdf9bf5500bc23f0b4bf88661181d7",
+            "sha1_hash": "84bb1c7343608b3c79efbad4a79842af526c39d7",
+            "md5_hash": "a5d8377e8d867e71a7ea5c6589ae88ab",
+            "first_seen": "2025-11-27 04:42:29",
+            "last_seen": null,
+            "file_name": "arm",
+            "file_size": 62332,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "origin_country": "DE",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T1F0531986BC91DA17C6D462BBFA1E41CD332623A8D2DF7203DD116F157B8A82F0E67641",
+            "telfhash": "t15241b0e98a544fec3be1a38802cd5114cab835af6b15953b891e6b6f42425c6702bc27",
+2025-11-27T05:35:39.418Z [DEBUG] MCP server "malwarebazaar": Tool 'get_info' completed successfully in 927ms
+2025-11-27T05:35:39.422Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:39.435Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_info
+2025-11-27T05:35:39.435Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:39.444Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_info
+2025-11-27T05:35:39.450Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:35:40.290Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:35:40] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:35:40.317Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "24e2114a216ad71c08227628c41849c8a1c3dca88ec7be5398fd4c9770d83264",
+            "sha3_384_hash": "d5f5ede5792a82ac754cabce985a3e68c69bbaf191275954e9b9b0354bea2e782ebde44dc21486f92d9288ce361facb2",
+            "sha1_hash": "26091e6afdc672b156859f8ab4ddbb5183f33ac5",
+            "md5_hash": "1c000eaa37276d9f69c0223c554b5d53",
+            "first_seen": "2025-11-27 04:40:55",
+            "last_seen": null,
+            "file_name": "spc",
+            "file_size": 66440,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "origin_country": "DE",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T18F533A2179396E17C4C5B87F22F74725B1F2270A36A8CA2E7E721E4EFF1065025076B5",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "1536:REPPSaobolJ5T
+2025-11-27T05:35:40.318Z [DEBUG] MCP server "malwarebazaar": Tool 'get_info' completed successfully in 874ms
+2025-11-27T05:35:40.322Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_info hook execution - workspace trust not accepted
+2025-11-27T05:35:40.338Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:35:40.339Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:35:40.339Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:35:40.342Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:35:40.342Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:35:40.346Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-27T05:35:42.095Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:35:45.192Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:35:49.003Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T05:36:04.002Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:36:37.030Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:36:37.030Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:36:37.030Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:36:37.033Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:36:37.033Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:36:37.038Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-27T05:36:37.041Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T05:36:37.042Z [DEBUG] FileHistory: Making snapshot for message 0c02c017-6120-4301-a370-eee488c7d01d
+2025-11-27T05:36:37.042Z [DEBUG] FileHistory: Added snapshot for 0c02c017-6120-4301-a370-eee488c7d01d, tracking 0 files
+2025-11-27T05:36:37.048Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-27T05:36:37.052Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-27T05:36:37.733Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:36:38.429Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:36:40.838Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:40.839Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:40.863Z [DEBUG] executePermissionRequestHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:40.863Z [DEBUG] Skipping PermissionRequest:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:44.115Z [DEBUG] Persisting permission update: addRules to source 'localSettings'
+2025-11-27T05:36:44.115Z [DEBUG] Persisting 1 allow rule(s) to localSettings
+2025-11-27T05:36:44.116Z [DEBUG] Writing to temp file: /home/stanner/.claude/settings.local.json.tmp.2601805.1764221804116
+2025-11-27T05:36:44.116Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T05:36:44.153Z [DEBUG] Temp file written successfully, size: 1360 bytes
+2025-11-27T05:36:44.153Z [DEBUG] Applied original permissions to temp file
+2025-11-27T05:36:44.153Z [DEBUG] Renaming /home/stanner/.claude/settings.local.json.tmp.2601805.1764221804116 to /home/stanner/.claude/settings.local.json
+2025-11-27T05:36:44.153Z [DEBUG] File /home/stanner/.claude/settings.local.json written atomically
+2025-11-27T05:36:44.159Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["mcp__malwarebazaar__get_taginfo"]
+2025-11-27T05:36:44.163Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T05:36:44.166Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:36:44.168Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:36:44] INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:36:44.301Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T05:36:44.852Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:36:44.852Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "no_results"
+}
+2025-11-27T05:36:44.853Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 687ms
+2025-11-27T05:36:44.856Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:44.870Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:44.870Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:44.877Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:36:44.882Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:36:45.553Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:36:45] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:36:45.554Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "no_results"
+}
+2025-11-27T05:36:45.555Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 678ms
+2025-11-27T05:36:45.558Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:45.569Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:45.569Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:45.574Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:36:45.578Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:36:46.214Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:36:46] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:36:46.215Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "no_results"
+}
+2025-11-27T05:36:46.215Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 641ms
+2025-11-27T05:36:46.218Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:46.231Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:46.231Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:46.237Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:36:46.240Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:36:46.895Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:36:46.895Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "no_results"
+}
+2025-11-27T05:36:46.895Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 658ms
+2025-11-27T05:36:46.899Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:46.913Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:46.913Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:46.920Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:36:46.923Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:36:47.598Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:36:47] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:36:47.598Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "no_results"
+}
+2025-11-27T05:36:47.598Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 678ms
+2025-11-27T05:36:47.602Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:47.615Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:36:47.615Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:36:47.615Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:36:47.618Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:36:47.618Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:36:47.622Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+2025-11-27T05:36:49.594Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:36:51.302Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:36:51.449Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:36:51.449Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:36:51.453Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:36:51.455Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:36:51] INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:36:53.061Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:37:16.674Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:37:16] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:37:16.890Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "9d2114d6b3020c832e3bc454b5bec276eaab1f17b4939f34459c54716311a602",
+            "sha3_384_hash": "2200278e1f52460a3e5fff33b31dd605872ed4c1c629c81b418bafacf5db5db7d6cddc0335e7b00fbc737e776682c72c",
+            "sha1_hash": "fb5037aaece7059342f731f8a8eac7f585181ea4",
+            "md5_hash": "291866581cda16ab902c3bd2061a62a0",
+            "first_seen": "2025-11-27 04:59:31",
+            "last_seen": null,
+            "file_name": "x86_64",
+            "file_size": 79424,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T12C732813B981C9FCC48AC170476FB23AE923F17D022DB2EB7BD4EB126949D685E1D149",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "1536:\/zzPDV4pghDnyvesfc9aMyXtKYnvG\/TrYfGbECSR3003
+2025-11-27T05:37:16.892Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 25s
+2025-11-27T05:37:16.896Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:37:16.912Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:37:16.912Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:37:16.919Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:37:16.923Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:37:19.814Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:37:19] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:37:20.027Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "9991c1ed9ae1517a8031f6b061093cc445d4b640876431e3d195ef9db420a5a8",
+            "sha3_384_hash": "c6ea93a4898fa926d87ca4027fd57595453f6e28eadf1505e0d1357a2649b780dd9b4f1a63b773a7db16ff7ff722644b",
+            "sha1_hash": "1f8af5a6eb9dbb8cdbca86fb5b0e299fe95a72db",
+            "md5_hash": "2902e54ee8f6c280c978b18d3fe56354",
+            "first_seen": "2025-08-13 22:35:36",
+            "last_seen": null,
+            "file_name": "9991c1ed9ae1517a8031f6b061093cc445d4b640876431e3d195ef9db420a5a8.zip",
+            "file_size": 174352,
+            "file_type_mime": "application\/zip",
+            "file_type": "zip",
+            "reporter": "AntiSkidding",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T128040173D76F8E0E4AB4B1B905D46AC9BDE32DC1D0446FB5512DF886CE09260A5CB3B2",
+            "telfhash": null,
+            "gimphash": null,
+            "ssd
+2025-11-27T05:37:20.028Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 3s
+2025-11-27T05:37:20.032Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:37:20.047Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:37:20.047Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:37:20.047Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:37:20.051Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:37:20.051Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:37:20.057Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 10ms
+2025-11-27T05:37:21.262Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:37:27.696Z [DEBUG] Language not supported while highlighting code, falling back to markdown:
+2025-11-27T05:37:27.724Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T05:37:32.020Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:38:31.578Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T05:38:31.712Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T05:38:38.714Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:39:26.075Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:39:46.203Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T05:39:46.204Z [DEBUG] FileHistory: Making snapshot for message c73d565c-1b27-4b9f-b9ec-577ddc014354
+2025-11-27T05:39:46.204Z [DEBUG] FileHistory: Added snapshot for c73d565c-1b27-4b9f-b9ec-577ddc014354, tracking 0 files
+2025-11-27T05:39:46.206Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-27T05:39:46.206Z [DEBUG] Block 0: <command-name>/agents</command-name>
+            <command-message>agents</command-message>
+         ...
+2025-11-27T05:39:46.206Z [DEBUG] UserCommandMessage rendering: "agents" (args: "none")
+2025-11-27T05:39:46.206Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-27T05:39:46.339Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T05:39:50.667Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:39:53.343Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:39:59.655Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:39:59.655Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:39:59.655Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:39:59.658Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:39:59.658Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:39:59.663Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-27T05:39:59.665Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T05:39:59.666Z [DEBUG] FileHistory: Making snapshot for message 2e30ea11-4708-4622-b012-52dd6251666b
+2025-11-27T05:39:59.666Z [DEBUG] FileHistory: Added snapshot for 2e30ea11-4708-4622-b012-52dd6251666b, tracking 0 files
+2025-11-27T05:39:59.671Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-27T05:39:59.675Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-27T05:40:00.442Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:40:01.734Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:40:04.472Z [DEBUG] executePreToolHooks called for tool: Task
+2025-11-27T05:40:04.473Z [DEBUG] Skipping PreToolUse:Task hook execution - workspace trust not accepted
+2025-11-27T05:40:04.485Z [DEBUG] Skipping SubagentStart:threat-intel-researcher hook execution - workspace trust not accepted
+2025-11-27T05:40:14.219Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:40:15.654Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:40:18.421Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_recent
+2025-11-27T05:40:18.421Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_recent hook execution - workspace trust not accepted
+2025-11-27T05:40:18.425Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_recent
+2025-11-27T05:40:18.429Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:40:18] INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:40:19.115Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:40:19] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:40:19.141Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "9d2114d6b3020c832e3bc454b5bec276eaab1f17b4939f34459c54716311a602",
+            "sha3_384_hash": "2200278e1f52460a3e5fff33b31dd605872ed4c1c629c81b418bafacf5db5db7d6cddc0335e7b00fbc737e776682c72c",
+            "sha1_hash": "fb5037aaece7059342f731f8a8eac7f585181ea4",
+            "md5_hash": "291866581cda16ab902c3bd2061a62a0",
+            "first_seen": "2025-11-27 04:59:31",
+            "last_seen": null,
+            "file_name": "x86_64",
+            "file_size": 79424,
+            "file_type_mime": "application\/x-executable",
+            "file_type": "elf",
+            "reporter": "abuse_ch",
+            "origin_country": "DE",
+            "anonymous": 0,
+            "signature": "Mirai",
+            "imphash": null,
+            "tlsh": "T12C732813B981C9FCC48AC170476FB23AE923F17D022DB2EB7BD4EB126949D685E1D149",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "1536:\/zzPDV4pg
+2025-11-27T05:40:19.142Z [DEBUG] MCP server "malwarebazaar": Tool 'get_recent' completed successfully in 717ms
+2025-11-27T05:40:19.145Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_recent hook execution - workspace trust not accepted
+2025-11-27T05:40:19.148Z [DEBUG] executePreToolHooks called for tool: mcp__alienvault__get_recent_pulses
+2025-11-27T05:40:19.148Z [DEBUG] Skipping PreToolUse:mcp__alienvault__get_recent_pulses hook execution - workspace trust not accepted
+2025-11-27T05:40:19.158Z [DEBUG] MCP server "alienvault": Calling MCP tool: get_recent_pulses
+2025-11-27T05:40:19.160Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:40:19,159 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-26 23:40:19,159 - alienvault-server - INFO - Fetching pulses from last 30 days
+2025-11-27T05:40:21.498Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:40:21,498 - httpx - INFO - HTTP Request: GET https://otx.alienvault.com/api/v1/pulses/subscribed?modified_since=2025-10-28&limit=50 "HTTP/1.1 200 OK"
+2025-11-27T05:40:21.706Z [DEBUG] MCP server "alienvault": Tool 'get_recent_pulses' completed successfully in 2s
+2025-11-27T05:40:21.711Z [DEBUG] Skipping PostToolUse:mcp__alienvault__get_recent_pulses hook execution - workspace trust not accepted
+2025-11-27T05:40:21.716Z [DEBUG] executePreToolHooks called for tool: mcp__alienvault__search_pulses
+2025-11-27T05:40:21.716Z [DEBUG] Skipping PreToolUse:mcp__alienvault__search_pulses hook execution - workspace trust not accepted
+2025-11-27T05:40:21.724Z [DEBUG] MCP server "alienvault": Calling MCP tool: search_pulses
+2025-11-27T05:40:21.726Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:40:21,725 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-26 23:40:21,725 - alienvault-server - INFO - Searching pulses with query: ransomware 2025
+2025-11-27T05:40:33.532Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:40:51.723Z [DEBUG] MCP server "alienvault": Tool 'search_pulses' still running (29s elapsed)
+2025-11-27T05:40:51.887Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:40:51,887 - alienvault-server - ERROR - Error searching pulses:
+2025-11-27T05:40:51.888Z [DEBUG] MCP server "alienvault": Tool 'search_pulses' completed successfully in 30s
+2025-11-27T05:40:51.892Z [DEBUG] Skipping PostToolUse:mcp__alienvault__search_pulses hook execution - workspace trust not accepted
+2025-11-27T05:40:51.898Z [DEBUG] executePreToolHooks called for tool: mcp__alienvault__search_pulses
+2025-11-27T05:40:51.898Z [DEBUG] Skipping PreToolUse:mcp__alienvault__search_pulses hook execution - workspace trust not accepted
+2025-11-27T05:40:51.909Z [DEBUG] MCP server "alienvault": Calling MCP tool: search_pulses
+2025-11-27T05:40:51.913Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:40:51,910 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-26 23:40:51,910 - alienvault-server - INFO - Searching pulses with query: APT 2025
+2025-11-27T05:41:07.006Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:41:21.910Z [DEBUG] MCP server "alienvault": Tool 'search_pulses' still running (30s elapsed)
+2025-11-27T05:41:22.072Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:41:22,072 - alienvault-server - ERROR - Error searching pulses:
+2025-11-27T05:41:22.073Z [DEBUG] MCP server "alienvault": Tool 'search_pulses' completed successfully in 30s
+2025-11-27T05:41:22.078Z [DEBUG] Skipping PostToolUse:mcp__alienvault__search_pulses hook execution - workspace trust not accepted
+2025-11-27T05:41:24.133Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:26.868Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:26.868Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:26.868Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:26.868Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:26.868Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:26.869Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:26.869Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:26.869Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:27.644Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:27.746Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:27.748Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:27.776Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:35.256Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:35.925Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:36.460Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:37.079Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:41:38.085Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:40.801Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:43.519Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:43.519Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:43.519Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:43.519Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:43.519Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:43.519Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:43.519Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:41:43.520Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:44.285Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:44.304Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:44.358Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:44.427Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:51.375Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:52.276Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:52.663Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:53.197Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:41:54.070Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:41:56.155Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:41:59.644Z [DEBUG] executePreToolHooks called for tool: mcp__malwarebazaar__get_taginfo
+2025-11-27T05:41:59.644Z [DEBUG] Skipping PreToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:41:59.648Z [DEBUG] MCP server "malwarebazaar": Calling MCP tool: get_taginfo
+2025-11-27T05:41:59.650Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:41:59] INFO     Processing request of type            server.py:534
+                             CallToolRequest
+2025-11-27T05:42:01.723Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/26/25 23:42:01] INFO     HTTP Request: POST                  _client.py:1740
+                             https://mb-api.abuse.ch/api/v1/                    
+                             "HTTP/1.1 200 OK"
+2025-11-27T05:42:01.844Z [ERROR] MCP server "malwarebazaar" Server stderr: >>> RAW RESPONSE: {
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "0249b425db285f5c25f3b9e7d5d286985988db0d08402afcc98732f80dd26c5b",
+            "sha3_384_hash": "11de7909dc7f6d936da38d1343b4c6e2cb340f4b99935f58d1967d8b25db97e234ac9ec3404961d1316fcf5b5939ea3a",
+            "sha1_hash": "5c688048ee2102cb15d872427541241103715b7e",
+            "md5_hash": "cff52f5e85cf66f45c56793baf7e9fa9",
+            "first_seen": "2025-11-20 21:41:42",
+            "last_seen": null,
+            "file_name": "Updater.exe",
+            "file_size": 118272,
+            "file_type_mime": "application\/x-dosexec",
+            "file_type": "exe",
+            "reporter": "anonymous",
+            "anonymous": 1,
+            "signature": null,
+            "imphash": "2c5f2513605e48f2d8ea5440a870cb9e",
+            "tlsh": "T1C4C39E45F3E102F7E9F2053100B6622F9B36A2389724E9DBC75C3D925943AD1A63D3E9",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "3072:G7DhdC6kzWypvaQ
+2025-11-27T05:42:01.845Z [DEBUG] MCP server "malwarebazaar": Tool 'get_taginfo' completed successfully in 2s
+2025-11-27T05:42:01.849Z [DEBUG] Skipping PostToolUse:mcp__malwarebazaar__get_taginfo hook execution - workspace trust not accepted
+2025-11-27T05:42:01.854Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:42:01.855Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:01.855Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:42:01.855Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:02.646Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:42:02.894Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:42:09.073Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:42:11.088Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:11.463Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:14.727Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:42:17.709Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:42:17.709Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:17.709Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T05:42:17.710Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:18.540Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:42:18.684Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:42:26.200Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:42:26.483Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:26.991Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T05:42:26.994Z [DEBUG] executePreToolHooks called for tool: mcp__alienvault__search_pulses
+2025-11-27T05:42:26.995Z [DEBUG] Skipping PreToolUse:mcp__alienvault__search_pulses hook execution - workspace trust not accepted
+2025-11-27T05:42:27.001Z [DEBUG] MCP server "alienvault": Calling MCP tool: search_pulses
+2025-11-27T05:42:27.002Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:42:27,002 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-11-26 23:42:27,002 - alienvault-server - INFO - Searching pulses with query: supply chain
+2025-11-27T05:42:41.482Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:42:46.944Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-26 23:42:46,943 - httpx - INFO - HTTP Request: GET https://otx.alienvault.com/api/v1/search/pulses?q=supply+chain&limit=20 "HTTP/1.1 200 OK"
+2025-11-27T05:42:46.945Z [DEBUG] MCP server "alienvault": Tool 'search_pulses' completed successfully in 19s
+2025-11-27T05:42:46.950Z [DEBUG] Skipping PostToolUse:mcp__alienvault__search_pulses hook execution - workspace trust not accepted
+2025-11-27T05:42:48.867Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:43:02.070Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T05:45:55.660Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-27T05:45:55.664Z [DEBUG] Skipping PostToolUse:Task hook execution - workspace trust not accepted
+2025-11-27T05:45:55.677Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-27T05:45:55.677Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T05:45:55.677Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T05:45:55.681Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T05:45:55.681Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T05:45:55.685Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-27T05:45:56.872Z [DEBUG] Stream started - received first chunk
+2025-11-27T05:46:06.693Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T05:46:10.788Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)

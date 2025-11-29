@@ -1,0 +1,1454 @@
+2025-11-28T04:29:30.720Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T04:29:30.720Z [DEBUG] Getting matching hook commands for SessionEnd with query: clear
+2025-11-28T04:29:30.720Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T04:29:30.720Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2025-11-28T04:29:30.721Z [DEBUG] Cleared all session hooks for session 43264e3b-6de7-4baf-9297-093fc5d98a25
+2025-11-28T04:29:30.727Z [DEBUG] Getting matching hook commands for SessionStart with query: clear
+2025-11-28T04:29:30.727Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T04:29:30.727Z [DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+2025-11-28T04:29:30.730Z [DEBUG] FileHistory: Added snapshot for 2a167398-ac98-49ae-a2d1-57d2fc5c0429, tracking 0 files
+2025-11-28T04:29:30.732Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-28T04:29:30.732Z [DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+2025-11-28T04:29:30.732Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+2025-11-28T04:29:30.732Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-28T04:29:30.849Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T04:29:37.850Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T04:59:30.967Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T04:59:37.971Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T05:29:30.926Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T05:29:37.926Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T05:59:30.923Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T05:59:37.924Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T06:29:30.972Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T06:29:37.975Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T06:59:30.926Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T06:59:37.927Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T07:29:30.937Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T07:29:37.940Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T07:59:30.965Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T07:59:37.967Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T08:29:31.006Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T08:29:38.007Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T08:59:30.959Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T08:59:37.960Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T09:29:30.964Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T09:29:37.965Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T09:59:30.933Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T09:59:37.935Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T10:29:30.955Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T10:29:37.956Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T10:59:30.933Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T10:59:37.934Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T11:29:30.922Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T11:29:37.924Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T11:59:30.963Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T11:59:37.964Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T12:29:30.924Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T12:29:37.925Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T12:59:31.001Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T12:59:38.002Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T13:29:30.933Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T13:29:37.934Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T13:59:30.958Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T13:59:37.958Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T14:29:30.972Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T14:29:37.974Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T14:59:30.975Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T14:59:37.976Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T15:29:30.970Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T15:29:37.971Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T15:59:30.972Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T15:59:37.975Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:29:30.954Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T16:29:37.954Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:48:01.726Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:48:01.728Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:48:01.728Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:48:01.731Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:48:01.731Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:48:01.735Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 9ms
+2025-11-28T16:48:01.740Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-28T16:48:01.740Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:48:01.740Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T16:48:01.741Z [DEBUG] FileHistory: Making snapshot for message 213e7573-c1c2-49a4-b2ed-f8d4695f6212
+2025-11-28T16:48:01.741Z [DEBUG] FileHistory: Added snapshot for 213e7573-c1c2-49a4-b2ed-f8d4695f6212, tracking 0 files
+2025-11-28T16:48:01.746Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T16:48:01.754Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 8ms
+2025-11-28T16:48:02.703Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3545163.1764348482703
+2025-11-28T16:48:02.703Z [DEBUG] Preserving file permissions: 100600
+2025-11-28T16:48:02.706Z [DEBUG] Temp file written successfully, size: 50570 bytes
+2025-11-28T16:48:02.706Z [DEBUG] Applied original permissions to temp file
+2025-11-28T16:48:02.706Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3545163.1764348482703 to /home/stanner/.claude.json
+2025-11-28T16:48:02.706Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-28T16:48:03.227Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:48:04.331Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:48:08.172Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-28T16:48:08.172Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:48:08.172Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T16:48:17.250Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:49:03.170Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:49:03.170Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:49:03.170Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:49:03.173Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:49:03.173Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:49:03.178Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T16:49:03.184Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-28T16:49:03.184Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:03.184Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T16:49:03.185Z [DEBUG] FileHistory: Making snapshot for message 2ea0bcdc-e310-4966-bace-445ee4648303
+2025-11-28T16:49:03.185Z [DEBUG] FileHistory: Added snapshot for 2ea0bcdc-e310-4966-bace-445ee4648303, tracking 0 files
+2025-11-28T16:49:03.191Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T16:49:03.195Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-28T16:49:03.794Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:04.457Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:06.449Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T16:49:06.451Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T16:49:06.454Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T16:49:06.454Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:06.454Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T16:49:06.454Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T16:49:06.454Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:06.454Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T16:49:06.465Z [DEBUG] tree-sitter: WASM files not found
+2025-11-28T16:49:06.481Z [DEBUG] No session environment scripts found
+2025-11-28T16:49:06.498Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T16:49:06.498Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:06.498Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T16:49:06.522Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T16:49:06.522Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:06.522Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T16:49:06.534Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:49:06.535Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:49:06.535Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:49:06.538Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:49:06.538Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:49:06.542Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T16:49:07.201Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:07.635Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:07.713Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:08.747Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T16:49:08.751Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-28T16:49:08.753Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T16:49:08.753Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:08.753Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T16:49:08.753Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-28T16:49:08.755Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-28T16:49:08.755Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:08.755Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:08.755Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-28T16:49:08.755Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:08.755Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:08.791Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-28T16:49:08.791Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:08.791Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:08.791Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-28T16:49:08.791Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:08.791Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:08.817Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T16:49:08.817Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:08.817Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T16:49:08.849Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:49:08.850Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:49:08.850Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:49:08.852Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:49:08.852Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:49:08.860Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 11ms
+2025-11-28T16:49:09.521Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:10.454Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:11.465Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-28T16:49:11.467Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-28T16:49:11.468Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-28T16:49:11.468Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:11.468Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:11.468Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-28T16:49:11.468Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:11.468Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:11.486Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-28T16:49:11.486Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:11.486Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:11.486Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-28T16:49:11.486Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:11.486Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T16:49:11.500Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:49:11.500Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:49:11.500Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:49:11.503Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:49:11.503Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:49:11.506Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+2025-11-28T16:49:13.644Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:49:19.068Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:49:37.732Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T16:49:37.734Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T16:49:37.734Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:37.734Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T16:49:37.739Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T16:49:37.745Z [DEBUG] MCP server "ide": Calling MCP tool: openDiff
+2025-11-28T16:49:37.747Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T16:49:37.749Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T16:49:37.749Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:37.749Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T16:49:43.746Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T16:49:43.746Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:49:43.746Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T16:49:52.848Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:50:07.746Z [DEBUG] MCP server "ide": Tool 'openDiff' still running (30s elapsed)
+2025-11-28T16:50:37.747Z [DEBUG] MCP server "ide": Tool 'openDiff' still running (60s elapsed)
+2025-11-28T16:51:05.630Z [DEBUG] MCP server "ide": Calling MCP tool: close_tab
+2025-11-28T16:51:05.631Z [DEBUG] MCP server "ide": Calling MCP tool: close_tab
+2025-11-28T16:51:05.728Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T16:51:05.882Z [DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 252ms
+2025-11-28T16:51:05.882Z [DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 251ms
+2025-11-28T16:51:05.883Z [DEBUG] MCP server "ide": Tool 'openDiff' completed successfully in 1m 28s
+2025-11-28T16:51:06.163Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T16:51:13.165Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:51:59.013Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:51:59.014Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:51:59.014Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:51:59.018Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:51:59.018Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:51:59.023Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 10ms
+2025-11-28T16:51:59.029Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-28T16:51:59.029Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:51:59.029Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T16:51:59.030Z [DEBUG] FileHistory: Making snapshot for message 661be837-7510-4abb-9597-2fce293a63c5
+2025-11-28T16:51:59.030Z [DEBUG] FileHistory: Added snapshot for 661be837-7510-4abb-9597-2fce293a63c5, tracking 0 files
+2025-11-28T16:51:59.036Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T16:51:59.040Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-28T16:52:00.275Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:52:00.411Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:52:06.233Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2025-11-28T16:52:06.234Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2025-11-28T16:52:06.234Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:52:06.234Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T16:52:06.246Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2025-11-28T16:52:06.249Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2025-11-28T16:52:06.249Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:52:06.249Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T16:52:12.243Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T16:52:12.243Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:52:12.243Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T16:52:15.926Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:59:26.570Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T16:59:26.578Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2025-11-28T16:59:26.578Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:26.578Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T16:59:26.592Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:59:26.592Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:59:26.592Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:59:26.595Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:59:26.595Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:59:26.600Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T16:59:26.800Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T16:59:27.928Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:59:28.577Z [DEBUG] executePreToolHooks called for tool: ListMcpResourcesTool
+2025-11-28T16:59:28.579Z [DEBUG] Getting matching hook commands for PreToolUse with query: ListMcpResourcesTool
+2025-11-28T16:59:28.579Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:28.579Z [DEBUG] Matched 0 unique hooks for query "ListMcpResourcesTool" (0 before deduplication)
+2025-11-28T16:59:28.584Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-28 10:59:28,583 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-28T16:59:28.588Z [DEBUG] Getting matching hook commands for PostToolUse with query: ListMcpResourcesTool
+2025-11-28T16:59:28.588Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:28.588Z [DEBUG] Matched 0 unique hooks for query "ListMcpResourcesTool" (0 before deduplication)
+2025-11-28T16:59:28.596Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:59:28.596Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:59:28.596Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:59:28.598Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:59:28.598Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:59:28.602Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+2025-11-28T16:59:29.807Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:59:30.450Z [DEBUG] executePreToolHooks called for tool: ListMcpResourcesTool
+2025-11-28T16:59:30.452Z [DEBUG] executePreToolHooks called for tool: ListMcpResourcesTool
+2025-11-28T16:59:30.454Z [DEBUG] Getting matching hook commands for PreToolUse with query: ListMcpResourcesTool
+2025-11-28T16:59:30.454Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:30.454Z [DEBUG] Matched 0 unique hooks for query "ListMcpResourcesTool" (0 before deduplication)
+2025-11-28T16:59:30.454Z [DEBUG] Getting matching hook commands for PreToolUse with query: ListMcpResourcesTool
+2025-11-28T16:59:30.454Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:30.454Z [DEBUG] Matched 0 unique hooks for query "ListMcpResourcesTool" (0 before deduplication)
+2025-11-28T16:59:30.463Z [ERROR] Error: Error: Server "malwarebazaar" not found. Available servers: todoist, proton-email, obsidian, ide
+    at call (/$bunfs/root/claude:1546:1468)
+    at call (/$bunfs/root/claude:1546:1904)
+    at p$9 (/$bunfs/root/claude:2226:16728)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:59:30.463Z [ERROR] Error: Error: Server "alienvault" not found. Available servers: todoist, proton-email, obsidian, ide
+    at call (/$bunfs/root/claude:1546:1468)
+    at call (/$bunfs/root/claude:1546:1904)
+    at p$9 (/$bunfs/root/claude:2226:16728)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:59:30.487Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:59:30.488Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:59:30.488Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:59:30.491Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:59:30.491Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:59:30.495Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T16:59:31.894Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:59:33.802Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:59:34.517Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-28T16:59:34.519Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-28T16:59:34.519Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:34.519Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-28T16:59:34.524Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json.tmp.3545163.1764349174524
+2025-11-28T16:59:34.527Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-28T16:59:34.527Z [DEBUG] Renaming /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json.tmp.3545163.1764349174524 to /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json
+2025-11-28T16:59:34.527Z [DEBUG] File /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json written atomically
+2025-11-28T16:59:34.527Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json.tmp.3545163.1764349174527
+2025-11-28T16:59:34.528Z [DEBUG] Temp file written successfully, size: 885 bytes
+2025-11-28T16:59:34.528Z [DEBUG] Renaming /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json.tmp.3545163.1764349174527 to /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json
+2025-11-28T16:59:34.528Z [DEBUG] File /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json written atomically
+2025-11-28T16:59:34.534Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-28T16:59:34.534Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:34.534Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-28T16:59:34.546Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T16:59:34.546Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T16:59:34.546Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T16:59:34.550Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T16:59:34.550Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T16:59:34.554Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T16:59:35.677Z [DEBUG] Stream started - received first chunk
+2025-11-28T16:59:41.688Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T16:59:50.605Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T16:59:50.607Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T16:59:50.607Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:50.607Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T16:59:50.612Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T16:59:50.685Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T16:59:50.715Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T16:59:50.715Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:50.715Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T16:59:56.658Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T16:59:56.658Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T16:59:56.658Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:00:05.601Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:01:02.364Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:01:02.367Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:01:02.368Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:01:02.368Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/scripts/rule_tester.py
+2025-11-28T17:01:02.522Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:01:02.649Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/scripts/rule_tester.py.tmp.3545163.1764349262649
+2025-11-28T17:01:02.690Z [DEBUG] Temp file written successfully, size: 9046 bytes
+2025-11-28T17:01:02.690Z [DEBUG] Renaming /home/stanner/wazuh-rac/scripts/rule_tester.py.tmp.3545163.1764349262649 to /home/stanner/wazuh-rac/scripts/rule_tester.py
+2025-11-28T17:01:02.690Z [DEBUG] File /home/stanner/wazuh-rac/scripts/rule_tester.py written atomically
+2025-11-28T17:01:02.695Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:01:02.695Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:01:02.695Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:01:02.713Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:01:02.713Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:01:02.713Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:01:02.717Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:01:02.717Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:01:02.721Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:01:04.072Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:01:09.525Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:01:17.870Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:01:28.285Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:01:28.288Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:01:28.288Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:01:28.288Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:01:28.297Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:01:28.381Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:01:28.430Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:01:28.430Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:01:28.430Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:01:34.347Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:01:34.347Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:01:34.347Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:01:43.281Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:02:02.011Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:02:02.314Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:02:09.317Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:02:40.709Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:02:40.710Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:02:40.710Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:02:40.713Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:02:40.713Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:02:40.717Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:02:40.723Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-28T17:02:40.723Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:02:40.723Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T17:02:40.723Z [DEBUG] FileHistory: Making snapshot for message 01871188-00d8-4b11-9784-c112d271a0c2
+2025-11-28T17:02:40.726Z [DEBUG] FileHistory: Added snapshot for 01871188-00d8-4b11-9784-c112d271a0c2, tracking 1 files
+2025-11-28T17:02:41.666Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:02:42.230Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:02:47.110Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:02:47.110Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:02:47.110Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:02:47.114Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:02:47.114Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:02:47.118Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:02:48.382Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:02:49.999Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2025-11-28T17:02:50.001Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2025-11-28T17:02:50.001Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:02:50.001Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T17:02:50.017Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2025-11-28T17:02:50.020Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2025-11-28T17:02:50.021Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:02:50.021Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T17:02:56.014Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:02:56.014Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:02:56.014Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:02:56.944Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:03:17.111Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:03:17.117Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2025-11-28T17:03:17.117Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:03:17.117Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T17:03:17.131Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:03:17.132Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:03:17.132Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:03:17.135Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:03:17.135Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:03:17.139Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:03:17.244Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:03:18.789Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:03:24.247Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:03:32.230Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:03:53.105Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:03:53.107Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:03:53.107Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:03:53.107Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:03:53.112Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:03:53.327Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:03:53.405Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:03:53.405Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:03:53.405Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:04:05.244Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:04:05.244Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:04:05.244Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:04:08.212Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:04:51.272Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:04:51.771Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:04:58.774Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:05:17.247Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:05:17.247Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:05:17.247Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:05:17.251Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:05:17.251Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:05:17.255Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:05:17.262Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-28T17:05:17.262Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:17.262Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T17:05:17.263Z [DEBUG] FileHistory: Making snapshot for message 7c1cf0ea-6846-4cd0-9b3b-586c882224b2
+2025-11-28T17:05:17.263Z [DEBUG] FileHistory: Added snapshot for 7c1cf0ea-6846-4cd0-9b3b-586c882224b2, tracking 1 files
+2025-11-28T17:05:17.949Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:05:18.636Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:05:22.179Z [DEBUG] executePreToolHooks called for tool: AskUserQuestion
+2025-11-28T17:05:22.182Z [DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+2025-11-28T17:05:22.182Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:22.182Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T17:05:22.197Z [DEBUG] executePermissionRequestHooks called for tool: AskUserQuestion
+2025-11-28T17:05:22.201Z [DEBUG] Getting matching hook commands for PermissionRequest with query: AskUserQuestion
+2025-11-28T17:05:22.201Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:22.201Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T17:05:30.668Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:05:30.675Z [DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+2025-11-28T17:05:30.675Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:30.675Z [DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+2025-11-28T17:05:30.688Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:05:30.688Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:05:30.688Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:05:30.691Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:05:30.691Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:05:30.694Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:05:30.801Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:05:32.241Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:05:33.193Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:05:33.323Z [DEBUG] executePreToolHooks called for tool: ListMcpResourcesTool
+2025-11-28T17:05:33.325Z [DEBUG] Getting matching hook commands for PreToolUse with query: ListMcpResourcesTool
+2025-11-28T17:05:33.325Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:33.325Z [DEBUG] Matched 0 unique hooks for query "ListMcpResourcesTool" (0 before deduplication)
+2025-11-28T17:05:33.336Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-28 11:05:33,332 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-28T17:05:33.340Z [DEBUG] Getting matching hook commands for PostToolUse with query: ListMcpResourcesTool
+2025-11-28T17:05:33.340Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:33.340Z [DEBUG] Matched 0 unique hooks for query "ListMcpResourcesTool" (0 before deduplication)
+2025-11-28T17:05:33.350Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:05:33.351Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:05:33.351Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:05:33.354Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:05:33.354Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:05:33.358Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:05:35.412Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:05:36.485Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T17:05:36.487Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T17:05:36.487Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:36.487Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:05:36.511Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T17:05:36.511Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:05:36.511Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:05:36.521Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:05:36.521Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:05:36.521Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:05:36.525Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:05:36.525Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:05:36.527Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:05:37.099Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:05:37.805Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:05:38.305Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:05:48.323Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:06:03.008Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:06:03.011Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:06:03.011Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:03.011Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:06:03.017Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:06:03.179Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:06:03.244Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:06:03.244Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:03.245Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:06:15.124Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:06:15.124Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:15.124Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:06:15.756Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:06:15.758Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:15.759Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:15.760Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/mcp_servers/synthetic_log_generator.py
+2025-11-28T17:06:15.760Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/mcp_servers/synthetic_log_generator.py.tmp.3545163.1764349575760
+2025-11-28T17:06:15.763Z [DEBUG] Temp file written successfully, size: 15809 bytes
+2025-11-28T17:06:15.763Z [DEBUG] Renaming /home/stanner/wazuh-rac/mcp_servers/synthetic_log_generator.py.tmp.3545163.1764349575760 to /home/stanner/wazuh-rac/mcp_servers/synthetic_log_generator.py
+2025-11-28T17:06:15.763Z [DEBUG] File /home/stanner/wazuh-rac/mcp_servers/synthetic_log_generator.py written atomically
+2025-11-28T17:06:15.768Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:06:15.768Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:15.768Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:06:15.786Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:15.786Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:06:15.786Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:06:15.790Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:06:15.790Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:06:15.795Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:15.892Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:06:17.344Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:18.116Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:06:18.960Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T17:06:18.962Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T17:06:18.962Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:18.962Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:06:19.656Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:19.733Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "mkdir:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-28T17:06:19.742Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T17:06:19.744Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2025-11-28T17:06:19.744Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:19.744Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:06:22.902Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:06:25.548Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:06:25.567Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T17:06:25.567Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:25.567Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:06:25.596Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:25.596Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:06:25.596Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:06:25.602Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:06:25.602Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:06:25.608Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:25.690Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:06:26.670Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:26.958Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:27.767Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T17:06:27.770Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T17:06:27.770Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:27.770Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:06:27.792Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T17:06:27.792Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:27.792Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:06:27.802Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:27.802Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:06:27.802Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:06:27.805Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:06:27.805Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:06:27.808Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:28.352Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:29.387Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:32.692Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:06:33.955Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:06:47.014Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:06:47.016Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:06:47.016Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:47.016Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:06:47.022Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:06:47.126Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:06:47.171Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:06:47.171Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:47.171Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:06:49.297Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:06:49.300Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:49.302Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:49.303Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/docs/SYNTHETIC_LOG_GENERATOR.md
+2025-11-28T17:06:49.303Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/docs/SYNTHETIC_LOG_GENERATOR.md.tmp.3545163.1764349609303
+2025-11-28T17:06:49.306Z [DEBUG] Temp file written successfully, size: 6681 bytes
+2025-11-28T17:06:49.306Z [DEBUG] Renaming /home/stanner/wazuh-rac/docs/SYNTHETIC_LOG_GENERATOR.md.tmp.3545163.1764349609303 to /home/stanner/wazuh-rac/docs/SYNTHETIC_LOG_GENERATOR.md
+2025-11-28T17:06:49.306Z [DEBUG] File /home/stanner/wazuh-rac/docs/SYNTHETIC_LOG_GENERATOR.md written atomically
+2025-11-28T17:06:49.312Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:06:49.312Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:49.312Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:06:49.331Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:49.331Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:06:49.331Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:06:49.335Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:06:49.335Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:06:49.339Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:49.441Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:06:51.100Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:53.124Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-28T17:06:53.125Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-28T17:06:53.125Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:53.125Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-28T17:06:53.130Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json.tmp.3545163.1764349613130
+2025-11-28T17:06:53.130Z [DEBUG] Preserving file permissions: 100600
+2025-11-28T17:06:53.134Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-28T17:06:53.134Z [DEBUG] Applied original permissions to temp file
+2025-11-28T17:06:53.134Z [DEBUG] Renaming /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json.tmp.3545163.1764349613130 to /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json
+2025-11-28T17:06:53.134Z [DEBUG] File /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json written atomically
+2025-11-28T17:06:53.134Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json.tmp.3545163.1764349613134
+2025-11-28T17:06:53.134Z [DEBUG] Preserving file permissions: 100600
+2025-11-28T17:06:53.135Z [DEBUG] Temp file written successfully, size: 848 bytes
+2025-11-28T17:06:53.135Z [DEBUG] Applied original permissions to temp file
+2025-11-28T17:06:53.135Z [DEBUG] Renaming /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json.tmp.3545163.1764349613134 to /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json
+2025-11-28T17:06:53.135Z [DEBUG] File /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json written atomically
+2025-11-28T17:06:53.139Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-28T17:06:53.139Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:06:53.139Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-28T17:06:53.149Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:06:53.149Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:06:53.149Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:06:53.152Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:06:53.152Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:06:53.155Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:06:54.415Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:06:56.443Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:07:02.127Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:07:11.367Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:07:11.370Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:07:11.370Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:07:11.370Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:07:11.375Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:07:11.466Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:07:11.512Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:07:11.512Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:07:11.512Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:07:14.969Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:07:14.972Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:07:14.973Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:07:14.973Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/docs/MCP_SETUP.md
+2025-11-28T17:07:14.974Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/docs/MCP_SETUP.md.tmp.3545163.1764349634974
+2025-11-28T17:07:14.976Z [DEBUG] Temp file written successfully, size: 7109 bytes
+2025-11-28T17:07:14.976Z [DEBUG] Renaming /home/stanner/wazuh-rac/docs/MCP_SETUP.md.tmp.3545163.1764349634974 to /home/stanner/wazuh-rac/docs/MCP_SETUP.md
+2025-11-28T17:07:14.976Z [DEBUG] File /home/stanner/wazuh-rac/docs/MCP_SETUP.md written atomically
+2025-11-28T17:07:14.982Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:07:14.982Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:07:14.982Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:07:14.999Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:07:14.999Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:07:14.999Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:07:15.003Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:07:15.003Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:07:15.007Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:07:15.110Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:07:16.377Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:07:22.110Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:07:26.358Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:07:37.210Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:07:37.213Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:07:37.213Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:07:37.213Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:07:37.219Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:07:37.345Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:07:37.395Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:07:37.395Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:07:37.395Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:07:43.296Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:07:43.296Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:07:43.296Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:07:52.323Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:08:34.615Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:08:34.617Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:08:34.618Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:08:34.619Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/docs/ARCHITECTURE.md
+2025-11-28T17:08:34.619Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/docs/ARCHITECTURE.md.tmp.3545163.1764349714619
+2025-11-28T17:08:34.622Z [DEBUG] Temp file written successfully, size: 8543 bytes
+2025-11-28T17:08:34.622Z [DEBUG] Renaming /home/stanner/wazuh-rac/docs/ARCHITECTURE.md.tmp.3545163.1764349714619 to /home/stanner/wazuh-rac/docs/ARCHITECTURE.md
+2025-11-28T17:08:34.622Z [DEBUG] File /home/stanner/wazuh-rac/docs/ARCHITECTURE.md written atomically
+2025-11-28T17:08:34.627Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:08:34.627Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:08:34.627Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:08:34.649Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:08:34.649Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:08:34.649Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:08:34.653Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:08:34.653Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:08:34.657Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:08:34.751Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:08:36.144Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:08:41.752Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:08:49.760Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:08:51.670Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:08:51.673Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:08:51.673Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:08:51.673Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:08:51.680Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:08:51.790Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:08:51.842Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:08:51.842Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:08:51.842Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:08:57.743Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:08:57.743Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:08:57.743Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:09:04.347Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:09:04.349Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:04.350Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:04.351Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/docs/QUICK_START.md
+2025-11-28T17:09:04.351Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/docs/QUICK_START.md.tmp.3545163.1764349744351
+2025-11-28T17:09:04.352Z [DEBUG] Temp file written successfully, size: 6268 bytes
+2025-11-28T17:09:04.352Z [DEBUG] Renaming /home/stanner/wazuh-rac/docs/QUICK_START.md.tmp.3545163.1764349744351 to /home/stanner/wazuh-rac/docs/QUICK_START.md
+2025-11-28T17:09:04.352Z [DEBUG] File /home/stanner/wazuh-rac/docs/QUICK_START.md written atomically
+2025-11-28T17:09:04.358Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:09:04.358Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:04.358Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:09:04.375Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:04.375Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:09:04.375Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:09:04.379Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:09:04.379Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:09:04.383Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:04.481Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:09:06.433Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:06.663Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:09:07.357Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T17:09:07.360Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T17:09:07.360Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:07.360Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:09:08.108Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:08.142Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "tree:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-28T17:09:08.154Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T17:09:08.156Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2025-11-28T17:09:08.156Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:08.156Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:09:10.679Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:09:10.705Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:10.705Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:09:10.705Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:09:10.709Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:09:10.709Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:09:10.712Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:10.809Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:09:11.482Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:09:12.639Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:13.017Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T17:09:13.019Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T17:09:13.019Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:13.019Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:09:13.051Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T17:09:13.051Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:13.051Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:09:13.062Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:13.062Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:09:13.062Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:09:13.065Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:09:13.065Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:09:13.067Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:13.854Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:14.902Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:17.812Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:09:22.511Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:09:38.632Z [DEBUG] executePreToolHooks called for tool: Write
+2025-11-28T17:09:38.634Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-11-28T17:09:38.634Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:38.634Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:09:38.640Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:09:38.765Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2025-11-28T17:09:38.826Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2025-11-28T17:09:38.826Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:38.826Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:09:41.810Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:09:41.813Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:41.814Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:41.815Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/docs/IMPLEMENTATION_SUMMARY.md
+2025-11-28T17:09:41.815Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/docs/IMPLEMENTATION_SUMMARY.md.tmp.3545163.1764349781815
+2025-11-28T17:09:41.818Z [DEBUG] Temp file written successfully, size: 9295 bytes
+2025-11-28T17:09:41.818Z [DEBUG] Renaming /home/stanner/wazuh-rac/docs/IMPLEMENTATION_SUMMARY.md.tmp.3545163.1764349781815 to /home/stanner/wazuh-rac/docs/IMPLEMENTATION_SUMMARY.md
+2025-11-28T17:09:41.818Z [DEBUG] File /home/stanner/wazuh-rac/docs/IMPLEMENTATION_SUMMARY.md written atomically
+2025-11-28T17:09:41.826Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-11-28T17:09:41.826Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:41.826Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2025-11-28T17:09:41.850Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:41.850Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:09:41.850Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:09:41.854Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:09:41.854Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:09:41.858Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:41.946Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:09:44.102Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:44.720Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-28T17:09:44.722Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-11-28T17:09:44.722Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:44.722Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T17:09:44.732Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-11-28T17:09:44.732Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:09:44.732Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2025-11-28T17:09:44.743Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:09:44.743Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:09:44.743Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:09:44.747Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:09:44.747Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:09:44.751Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:09:46.932Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:09:48.949Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:09:53.771Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:10:00.306Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-28T17:10:00.309Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-11-28T17:10:00.309Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:00.309Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-28T17:10:00.317Z [DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-28T17:10:00.458Z [DEBUG] executePermissionRequestHooks called for tool: Edit
+2025-11-28T17:10:00.520Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Edit
+2025-11-28T17:10:00.520Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:00.520Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-28T17:10:05.280Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:10:05.282Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:10:05.283Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:10:05.287Z [DEBUG] FileHistory: Tracked file modification for /home/stanner/wazuh-rac/README.md
+2025-11-28T17:10:05.288Z [DEBUG] Writing to temp file: /home/stanner/wazuh-rac/README.md.tmp.3545163.1764349805288
+2025-11-28T17:10:05.288Z [DEBUG] Preserving file permissions: 100664
+2025-11-28T17:10:05.289Z [DEBUG] Temp file written successfully, size: 4555 bytes
+2025-11-28T17:10:05.289Z [DEBUG] Applied original permissions to temp file
+2025-11-28T17:10:05.289Z [DEBUG] Renaming /home/stanner/wazuh-rac/README.md.tmp.3545163.1764349805288 to /home/stanner/wazuh-rac/README.md
+2025-11-28T17:10:05.289Z [DEBUG] File /home/stanner/wazuh-rac/README.md written atomically
+2025-11-28T17:10:05.295Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-11-28T17:10:05.295Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:05.295Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2025-11-28T17:10:05.434Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:10:05.434Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:10:05.434Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:10:05.440Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:10:05.440Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:10:05.445Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:10:05.525Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:10:06.933Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:10:08.255Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-11-28T17:10:08.257Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-11-28T17:10:08.257Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:08.257Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-28T17:10:08.262Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json.tmp.3545163.1764349808262
+2025-11-28T17:10:08.262Z [DEBUG] Preserving file permissions: 100600
+2025-11-28T17:10:08.265Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-28T17:10:08.265Z [DEBUG] Applied original permissions to temp file
+2025-11-28T17:10:08.265Z [DEBUG] Renaming /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json.tmp.3545163.1764349808262 to /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json
+2025-11-28T17:10:08.265Z [DEBUG] File /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-43264e3b-6de7-4baf-9297-093fc5d98a25.json written atomically
+2025-11-28T17:10:08.265Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json.tmp.3545163.1764349808265
+2025-11-28T17:10:08.266Z [DEBUG] Preserving file permissions: 100600
+2025-11-28T17:10:08.267Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-28T17:10:08.267Z [DEBUG] Applied original permissions to temp file
+2025-11-28T17:10:08.267Z [DEBUG] Renaming /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json.tmp.3545163.1764349808265 to /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json
+2025-11-28T17:10:08.267Z [DEBUG] File /home/stanner/.claude/todos/dd761a8c-5460-459c-b5b2-5cd1a7c74bbd-agent-dd761a8c-5460-459c-b5b2-5cd1a7c74bbd.json written atomically
+2025-11-28T17:10:08.271Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-11-28T17:10:08.271Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:08.271Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2025-11-28T17:10:08.280Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:10:08.280Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:10:08.280Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:10:08.283Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:10:08.283Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:10:08.285Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:10:10.320Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:10:12.527Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:10:15.301Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:10:23.875Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T17:10:23.877Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-11-28T17:10:23.877Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:23.877Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:10:23.975Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T17:10:24.033Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2025-11-28T17:10:24.033Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:24.033Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:10:29.940Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2025-11-28T17:10:29.940Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:29.940Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2025-11-28T17:10:39.192Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:10:46.357Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T17:10:46.385Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-11-28T17:10:46.385Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:46.385Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-11-28T17:10:46.401Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T17:10:46.401Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T17:10:46.401Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T17:10:46.405Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T17:10:46.405Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T17:10:46.409Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' failed after 0s: Not connected
+2025-11-28T17:10:46.503Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T17:10:47.580Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:10:48.341Z [DEBUG] Stream started - received first chunk
+2025-11-28T17:10:52.987Z [DEBUG] Language not supported while highlighting code, falling back to markdown:
+2025-11-28T17:10:53.041Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-28T17:10:53.041Z [DEBUG] Found 0 hook matchers in settings
+2025-11-28T17:10:53.041Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-28T17:10:53.043Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3545163.1764349853043
+2025-11-28T17:10:53.043Z [DEBUG] Preserving file permissions: 100600
+2025-11-28T17:10:53.046Z [DEBUG] Temp file written successfully, size: 50968 bytes
+2025-11-28T17:10:53.046Z [DEBUG] Applied original permissions to temp file
+2025-11-28T17:10:53.046Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3545163.1764349853043 to /home/stanner/.claude.json
+2025-11-28T17:10:53.046Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-28T17:10:53.507Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T17:11:01.385Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)

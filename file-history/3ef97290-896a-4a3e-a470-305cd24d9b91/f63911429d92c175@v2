@@ -1,0 +1,366 @@
+# CDSA Blue Team Agent - Quick Reference Card
+
+## Installation (5 minutes)
+
+```bash
+# 1. Set API key
+export ANTHROPIC_API_KEY="your-key"
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run quick start
+bash quick_start.sh
+
+# 4. Start agent
+python3 blue_team_agent.py
+```
+
+## Getting Started
+
+```
+[Investigation] > help
+Shows all available tools and techniques
+
+[Investigation] > Analyze this security event log for suspicious activity
+Ask any question about Windows forensics
+```
+
+## Available Tools Reference
+
+| Tool | Purpose | Input | Example Output |
+|------|---------|-------|---|
+| **EvtxECmd** | Event log parsing | .evtx file | CSV timeline of events |
+| **RECmd** | Registry analysis | Registry hive | CSV of registry entries |
+| **MFTECmd** | Filesystem timeline | $MFT file | CSV of file activity |
+| **PECmd** | Program execution | .pf files | JSON of prefetch data |
+| **JLECmd** | Recent files | Jump List files | CSV of accessed files |
+| **LECmd** | Shortcut analysis | .lnk files | JSON of shortcut data |
+| **SBECmd** | Folder access | Registry hive | CSV of folder access |
+| **Yara** | Malware scanning | File/directory | Signature matches |
+| **Chainsaw** | Threat hunting | .evtx file | Detected threats |
+
+## Common Investigations
+
+### Lateral Movement
+```
+1. Analyze Security.evtx for:
+   - Event ID 4624 (logon)
+   - Event ID 4625 (failed logon)
+   - Event ID 4768/4769 (Kerberos)
+
+2. Check registry for:
+   - Recent network connections
+   - RDP/WinRM configuration
+   - Lateral movement tools
+
+3. Review Prefetch for:
+   - Remote access tools (PsExec)
+   - Remote execution tools
+   - Command-line tools
+```
+
+### Data Exfiltration
+```
+1. Jump Lists
+   - What files were recently accessed?
+
+2. ShellBags
+   - What folders were navigated?
+
+3. $MFT Timeline
+   - When were files accessed?
+
+4. Event Logs
+   - When did user log in/out?
+   - What systems accessed?
+```
+
+### Malware Analysis
+```
+1. Scan with Yara
+   - yara -r rules.yar suspect_file
+
+2. Check Prefetch
+   - How many times executed?
+   - When did it run?
+
+3. Registry Analysis
+   - Persistence mechanisms
+   - Execution artifacts
+
+4. Event Log Review
+   - Process creation events
+   - Network connections
+```
+
+### Ransomware Response
+```
+1. Timeline establishment
+   - When did encryption start?
+   - Event log analysis
+
+2. Program execution
+   - What encrypted files?
+   - Prefetch analysis
+
+3. Filesystem impact
+   - $MFT timeline
+   - File modification patterns
+
+4. Persistence check
+   - Prevent reinfection
+   - Registry analysis
+```
+
+## File Paths to Analyze
+
+### Windows Event Logs
+```
+C:\Windows\System32\winevt\Logs\
+├─ Security.evtx (authentication, process execution)
+├─ System.evtx (driver loads, services)
+└─ Application.evtx (software events)
+```
+
+### Registry Hives
+```
+C:\Windows\System32\config\
+├─ SYSTEM (hardware, services, network)
+├─ SOFTWARE (installed apps)
+├─ SAM (user accounts)
+└─ SECURITY (audit policy)
+
+C:\Users\[username]\AppData\Local\
+└─ Temp\ (NTUSER.DAT cache)
+```
+
+### User Activity
+```
+C:\Windows\Prefetch\
+└─ *.pf files (program execution)
+
+C:\Users\[username]\AppData\Roaming\Microsoft\Windows\
+├─ Recent\ (jump lists)
+├─ Desktop\ (shortcuts)
+└─ Recent\AutomaticDestinations\ (recent files)
+```
+
+### Filesystem
+```
+$MFT ($BOOT)
+Zone.Identifier (file origin)
+Alternate Data Streams
+```
+
+## Event Log Quick Reference
+
+### Authentication (Security.evtx)
+- **4624**: Successful logon
+- **4625**: Failed logon
+- **4720**: User account created
+- **4722**: User account enabled
+- **4732**: Member added to security group
+- **4768**: Kerberos TGT requested
+- **4769**: Kerberos service ticket requested
+
+### Process Execution (Security.evtx)
+- **4688**: Process created (with command line audit)
+- **4689**: Process terminated
+- **4690**: Privilege escalation attempted
+
+### System (System.evtx)
+- **1**: System boot
+- **20**: Service installed
+- **100**: Driver loaded
+- **7045**: Service created
+
+## Quick Analysis Checklist
+
+```
+□ Event log analysis
+  □ Authentication anomalies?
+  □ Process execution anomalies?
+  □ Privilege escalation attempts?
+
+□ Registry analysis
+  □ Persistence mechanisms?
+  □ Recently executed programs?
+  □ Network connections?
+
+□ Filesystem analysis
+  □ File modification timeline?
+  □ Suspicious file locations?
+  □ Data staging locations?
+
+□ User activity
+  □ Recently accessed files?
+  □ Folder navigation patterns?
+  □ Program execution?
+
+□ Malware indicators
+  □ Known malware signatures?
+  □ Suspicious code patterns?
+  □ Lateral movement tools?
+
+□ Timeline correlation
+  □ Consistent across artifacts?
+  □ Chronological order?
+  □ All events accounted for?
+
+□ Documentation
+  □ Investigation scope?
+  □ Tools and methods used?
+  □ Findings documented?
+  □ Evidence preserved?
+```
+
+## CLI Examples
+
+```bash
+# Interactive mode
+python3 blue_team_agent.py
+
+# Single query
+python3 blue_team_agent.py "Analyze /path/to/Security.evtx"
+
+# Load artifacts
+python3 blue_team_agent.py "Help me investigate these files: ..."
+
+# Practice scenario
+python3 blue_team_agent.py "Give me a CDSA practice scenario"
+```
+
+## MCP Configuration Quick Check
+
+```bash
+# Verify setup
+echo $ANTHROPIC_API_KEY        # Should have value
+echo $ERIC_TOOLS_PATH          # Should be /opt/ERIC
+ls -la /opt/ERIC/ | head       # Should list ERIC tools
+
+# Test Python
+python3 --version             # Should be 3.10+
+python3 -c "import mcp"       # Should succeed
+
+# Test tools
+yara --version                # Should show version
+chainsaw --version            # Should show version
+```
+
+## Investigation Tips
+
+1. **Start broad, narrow down**: Begin with event log overview, then focus
+2. **Correlate artifacts**: Don't look at one artifact in isolation
+3. **Build timeline**: Cross-reference timestamps across sources
+4. **Document everything**: Tools, methods, findings, timestamps
+5. **Check persistence**: Last thing - ensure no backdoors remain
+6. **Preserve evidence**: Use read-only, document hash values
+
+## CDSA Exam Preparation
+
+```
+Week 1: Learn tools
+- Understand each tool's output
+- Know what each tool reveals
+- Practice with sample data
+
+Week 2: Incident scenarios
+- Work through provided scenarios
+- Build timelines
+- Correlate findings
+
+Week 3: Practice investigations
+- Analyze forensic artifacts
+- Document findings professionally
+- Get agent feedback
+
+Week 4: Review & simulate
+- Take exam-style practice tests
+- Review difficult concepts
+- Simulate time-constrained exam
+```
+
+## Emergency Response Checklist
+
+```
+Ransomware Attack
+□ Isolate affected system
+□ Don't reboot
+□ Collect forensic artifacts
+□ Analyze timeline
+□ Identify malware family
+□ Check for persistence
+□ Assess other system impact
+
+Data Breach
+□ Identify accessed files
+□ Timeline of access
+□ Identify user responsible
+□ Check for data staging
+□ Review network logs
+□ Check for lateral movement
+□ Assess data exfiltration
+
+Malware Infection
+□ Isolate system
+□ Collect artifacts
+□ Identify malware family
+□ Find execution point
+□ Check for persistence
+□ Scan for lateral movement
+□ Review compromised accounts
+```
+
+## Useful Commands
+
+```bash
+# Make files executable
+chmod +x *.py
+chmod +x *.sh
+
+# Test artifact accessibility
+find /forensics -type f -name "*.evtx" | head
+
+# Check disk space for analysis
+du -sh /tmp/eric_analysis/
+
+# Monitor tool execution
+watch -n 1 'ls -la /tmp/eric_analysis/'
+
+# Review logs
+tail -f /tmp/eric_analysis/mcp_server.log
+
+# Save investigation results
+python3 blue_team_agent.py > investigation_$(date +%s).log
+
+# Batch process artifacts
+for artifact in /path/to/*.evtx; do
+  echo "Analyzing: $artifact"
+  python3 blue_team_agent.py "Analyze $artifact"
+done
+```
+
+## Key Concepts to Master
+
+- **Event log analysis**: Know important event IDs
+- **Timeline reconstruction**: Correlate multiple sources
+- **Registry forensics**: Identify persistence mechanisms
+- **User activity**: Track file access and execution
+- **Malware identification**: Know common malware behaviors
+- **Chain of custody**: Document and preserve evidence
+- **Incident response**: Follow established methodology
+
+## More Information
+
+- **Setup**: See SETUP_GUIDE.md
+- **Scenarios**: See CDSA_TEST_SCENARIOS.md
+- **Full Docs**: See README.md
+- **Tools Help**: Type `help` in agent
+- **ERIC Docs**: https://ericzimmerman.github.io/
+
+---
+
+Print this page and keep it handy during investigations!
+
+**Last Updated**: 2024

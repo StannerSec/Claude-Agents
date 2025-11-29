@@ -1,0 +1,394 @@
+2025-11-25T03:57:52.304Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-25T03:57:52.304Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-25T03:57:52.304Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-25T03:57:52.304Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-25T03:57:52.304Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-25T03:57:52.318Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-25T03:57:52.320Z [DEBUG] Total LSP servers loaded: 0
+2025-11-25T03:57:52.321Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-25T03:57:52.321Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-25T03:57:52.321Z [DEBUG] LSP server manager initialized successfully
+2025-11-25T03:57:52.321Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-25T03:57:52.329Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/stanner/.claude/skills, project=/home/stanner/Documents/.claude/skills
+2025-11-25T03:57:52.329Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-25T03:57:52.335Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-11-25T03:57:52.335Z [DEBUG] Looking for shell config file: /home/stanner/.bashrc
+2025-11-25T03:57:52.335Z [DEBUG] Snapshots directory: /home/stanner/.claude/shell-snapshots
+2025-11-25T03:57:52.335Z [DEBUG] Creating snapshot at: /home/stanner/.claude/shell-snapshots/snapshot-bash-1764043072335-z4kt8e.sh
+2025-11-25T03:57:52.335Z [DEBUG] Shell binary exists: true
+2025-11-25T03:57:52.335Z [DEBUG] Execution timeout: 10000ms
+2025-11-25T03:57:52.336Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/187b99d1-c9b6-4d75-b385-3a33f71e84a7-agent-187b99d1-c9b6-4d75-b385-3a33f71e84a7.json.tmp.547374.1764043072336
+2025-11-25T03:57:52.337Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-25T03:57:52.337Z [DEBUG] Renaming /home/stanner/.claude/todos/187b99d1-c9b6-4d75-b385-3a33f71e84a7-agent-187b99d1-c9b6-4d75-b385-3a33f71e84a7.json.tmp.547374.1764043072336 to /home/stanner/.claude/todos/187b99d1-c9b6-4d75-b385-3a33f71e84a7-agent-187b99d1-c9b6-4d75-b385-3a33f71e84a7.json
+2025-11-25T03:57:52.337Z [DEBUG] File /home/stanner/.claude/todos/187b99d1-c9b6-4d75-b385-3a33f71e84a7-agent-187b99d1-c9b6-4d75-b385-3a33f71e84a7.json written atomically
+2025-11-25T03:57:52.339Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-25T03:57:52.339Z [DEBUG] Total plugin skills loaded: 0
+2025-11-25T03:57:52.339Z [DEBUG] Total plugin commands loaded: 0
+2025-11-25T03:57:52.339Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-25T03:57:52.339Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-25T03:57:52.340Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-11-25T03:57:52.340Z [DEBUG] Total plugin agents loaded: 0
+2025-11-25T03:57:52.351Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.53 (expected in multi-process scenarios)
+    at mCD (/$bunfs/root/claude:2653:1622)
+    at UWA (/$bunfs/root/claude:2653:1300)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T03:57:52.368Z [DEBUG] Git remote URL: null
+2025-11-25T03:57:52.368Z [DEBUG] No git remote URL found
+2025-11-25T03:57:52.368Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-11-25T03:57:52.369Z [DEBUG] Shell snapshot created successfully (1771 bytes)
+2025-11-25T03:57:52.619Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/home/stanner/.local/share/claude/versions/2.0.53)
+2025-11-25T03:57:54.641Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-11-25T03:57:54.648Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043074648
+2025-11-25T03:57:54.648Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:57:54.650Z [DEBUG] Temp file written successfully, size: 44001 bytes
+2025-11-25T03:57:54.650Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:57:54.650Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043074648 to /home/stanner/.claude.json
+2025-11-25T03:57:54.650Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:57:54.653Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-11-25T03:57:54.653Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:57:54.653Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-11-25T03:57:54.676Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043074676
+2025-11-25T03:57:54.676Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:57:54.677Z [DEBUG] Temp file written successfully, size: 43896 bytes
+2025-11-25T03:57:54.677Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:57:54.677Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043074676 to /home/stanner/.claude.json
+2025-11-25T03:57:54.677Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:57:54.679Z [DEBUG] performStartupChecks called
+2025-11-25T03:57:54.680Z [DEBUG] Starting background plugin installations
+2025-11-25T03:57:54.680Z [DEBUG] performBackgroundPluginInstallations called
+2025-11-25T03:57:54.685Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T03:57:54.686Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-25T03:57:54.687Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-25T03:57:54.689Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2025-11-25T03:57:54.691Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-11-25T03:57:54.693Z [DEBUG] Summarizing all 18 messages (~4598 tokens)
+2025-11-25T03:57:54.699Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-11-25T03:57:54.699Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:57:54.699Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-11-25T03:57:54.700Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-11-25T03:57:54.700Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:57:54.700Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-11-25T03:57:54.856Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043074856
+2025-11-25T03:57:54.856Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:57:54.858Z [DEBUG] Temp file written successfully, size: 43896 bytes
+2025-11-25T03:57:54.858Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:57:54.858Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043074856 to /home/stanner/.claude.json
+2025-11-25T03:57:54.858Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:57:54.859Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043074859
+2025-11-25T03:57:54.859Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:57:54.861Z [DEBUG] Temp file written successfully, size: 43896 bytes
+2025-11-25T03:57:54.861Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:57:54.861Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043074859 to /home/stanner/.claude.json
+2025-11-25T03:57:54.861Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:57:54.861Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043074861
+2025-11-25T03:57:54.861Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:57:54.863Z [DEBUG] Temp file written successfully, size: 44001 bytes
+2025-11-25T03:57:54.863Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:57:54.863Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043074861 to /home/stanner/.claude.json
+2025-11-25T03:57:54.863Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:57:55.459Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043075459
+2025-11-25T03:57:55.459Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:57:55.461Z [DEBUG] Temp file written successfully, size: 44001 bytes
+2025-11-25T03:57:55.461Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:57:55.461Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043075459 to /home/stanner/.claude.json
+2025-11-25T03:57:55.461Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:57:56.239Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T03:57:56.448Z [DEBUG] Stream started - received first chunk
+2025-11-25T03:57:56.839Z [DEBUG] Stream started - received first chunk
+2025-11-25T03:57:57.132Z [DEBUG] Stream started - received first chunk
+2025-11-25T03:57:58.632Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-11-25T03:57:58.632Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:57:58.632Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T03:58:02.473Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-11-25T03:58:02.473Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:58:02.473Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T03:58:02.647Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043082647
+2025-11-25T03:58:02.647Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:58:02.650Z [DEBUG] Temp file written successfully, size: 44001 bytes
+2025-11-25T03:58:02.650Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:58:02.650Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043082647 to /home/stanner/.claude.json
+2025-11-25T03:58:02.650Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:58:03.239Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.53 (expected in multi-process scenarios)
+    at mCD (/$bunfs/root/claude:2653:1622)
+    at FWA (/$bunfs/root/claude:2651:12703)
+    at async uL8 (/$bunfs/root/claude:2651:13905)
+    at async Zb (/$bunfs/root/claude:2653:236)
+    at async <anonymous> (/$bunfs/root/claude:2653:12469)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T03:58:11.684Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T03:58:16.341Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T03:58:16.341Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T03:58:16.346Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T03:58:16.346Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T03:58:16.363Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-25T03:58:16.363Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:58:16.363Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T03:58:16.364Z [DEBUG] FileHistory: Added snapshot for 9028158f-3f01-4317-a864-d25a8ce5d7e3, tracking 0 files
+2025-11-25T03:58:16.374Z [DEBUG] Total plugin output styles loaded: 0
+2025-11-25T03:58:17.518Z [DEBUG] Stream started - received first chunk
+2025-11-25T03:58:19.879Z [DEBUG] Stream started - received first chunk
+2025-11-25T03:58:32.908Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-25T03:58:32.908Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:58:32.908Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T03:58:32.913Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043112913
+2025-11-25T03:58:32.913Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:58:32.915Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T03:58:32.915Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:58:32.915Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043112913 to /home/stanner/.claude.json
+2025-11-25T03:58:32.915Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:58:32.916Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043112916
+2025-11-25T03:58:32.916Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T03:58:32.918Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T03:58:32.918Z [DEBUG] Applied original permissions to temp file
+2025-11-25T03:58:32.918Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043112916 to /home/stanner/.claude.json
+2025-11-25T03:58:32.918Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T03:58:32.935Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T03:59:32.912Z [DEBUG] Getting matching hook commands for Notification with query: idle_prompt
+2025-11-25T03:59:32.912Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T03:59:32.912Z [DEBUG] Matched 0 unique hooks for query "idle_prompt" (0 before deduplication)
+2025-11-25T04:00:29.701Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T04:00:29.701Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T04:00:29.704Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T04:00:29.704Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T04:00:29.713Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-25T04:00:29.713Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:00:29.713Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:00:29.714Z [DEBUG] FileHistory: Making snapshot for message 48166e18-f53e-4396-8761-6669b111f47f
+2025-11-25T04:00:29.714Z [DEBUG] FileHistory: Added snapshot for 48166e18-f53e-4396-8761-6669b111f47f, tracking 0 files
+2025-11-25T04:00:30.687Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:00:32.865Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:00:36.532Z [DEBUG] executePreToolHooks called for tool: WebFetch
+2025-11-25T04:00:36.536Z [DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+2025-11-25T04:00:36.536Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:00:36.536Z [DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+2025-11-25T04:00:36.557Z [DEBUG] executePermissionRequestHooks called for tool: WebFetch
+2025-11-25T04:00:36.560Z [DEBUG] Getting matching hook commands for PermissionRequest with query: WebFetch
+2025-11-25T04:00:36.560Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:00:36.560Z [DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+2025-11-25T04:00:39.513Z [DEBUG] Persisting permission update: addRules to source 'localSettings'
+2025-11-25T04:00:39.513Z [DEBUG] Persisting 1 allow rule(s) to localSettings
+2025-11-25T04:00:39.514Z [DEBUG] Writing to temp file: /home/stanner/Documents/.claude/settings.local.json.tmp.547374.1764043239514
+2025-11-25T04:00:39.515Z [DEBUG] Temp file written successfully, size: 120 bytes
+2025-11-25T04:00:39.515Z [DEBUG] Renaming /home/stanner/Documents/.claude/settings.local.json.tmp.547374.1764043239514 to /home/stanner/Documents/.claude/settings.local.json
+2025-11-25T04:00:39.515Z [DEBUG] File /home/stanner/Documents/.claude/settings.local.json written atomically
+2025-11-25T04:00:39.520Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:rebuyengine.com)"]
+2025-11-25T04:00:39.523Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T04:00:40.187Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T04:00:41.373Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:00:41.388Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T04:00:41.388Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T04:00:41.392Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T04:00:41.392Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T04:00:44.744Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:00:45.977Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:00:47.188Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.53 (expected in multi-process scenarios)
+    at mCD (/$bunfs/root/claude:2653:1622)
+    at FWA (/$bunfs/root/claude:2651:12703)
+    at async uL8 (/$bunfs/root/claude:2651:13905)
+    at async Zb (/$bunfs/root/claude:2653:236)
+    at async <anonymous> (/$bunfs/root/claude:2653:12469)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:00:47.684Z [DEBUG] executePreToolHooks called for tool: WebFetch
+2025-11-25T04:00:47.687Z [DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+2025-11-25T04:00:47.687Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:00:47.687Z [DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+2025-11-25T04:00:48.010Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:00:48.023Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T04:00:48.023Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T04:00:48.026Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T04:00:48.026Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T04:00:53.894Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:01:01.850Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-25T04:01:01.850Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:01:01.850Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:01:01.853Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043261853
+2025-11-25T04:01:01.853Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:01:01.855Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:01:01.855Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:01:01.855Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043261853 to /home/stanner/.claude.json
+2025-11-25T04:01:01.855Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:01:01.856Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043261856
+2025-11-25T04:01:01.856Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:01:01.858Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:01:01.858Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:01:01.858Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043261856 to /home/stanner/.claude.json
+2025-11-25T04:01:01.858Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:01:02.680Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:02:16.073Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T04:02:16.073Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T04:02:16.076Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T04:02:16.076Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T04:02:16.085Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-25T04:02:16.085Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:02:16.085Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:02:16.086Z [DEBUG] FileHistory: Making snapshot for message abd0ecb2-eb8c-4362-aa2c-68b9c6c5cf36
+2025-11-25T04:02:16.086Z [DEBUG] FileHistory: Added snapshot for abd0ecb2-eb8c-4362-aa2c-68b9c6c5cf36, tracking 0 files
+2025-11-25T04:02:16.879Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:02:18.615Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:02:30.440Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-25T04:02:30.440Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:02:30.440Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:02:30.443Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043350443
+2025-11-25T04:02:30.443Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:02:30.447Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:02:30.447Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:02:30.447Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043350443 to /home/stanner/.claude.json
+2025-11-25T04:02:30.447Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:02:30.450Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043350450
+2025-11-25T04:02:30.450Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:02:30.452Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:02:30.452Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:02:30.452Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043350450 to /home/stanner/.claude.json
+2025-11-25T04:02:30.452Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:02:32.169Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:03:08.187Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T04:03:08.187Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T04:03:08.190Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T04:03:08.190Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T04:03:08.200Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-25T04:03:08.200Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:03:08.200Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:03:08.200Z [DEBUG] FileHistory: Making snapshot for message 20723ab6-a45c-41a8-8e4c-a54679380b24
+2025-11-25T04:03:08.200Z [DEBUG] FileHistory: Added snapshot for 20723ab6-a45c-41a8-8e4c-a54679380b24, tracking 0 files
+2025-11-25T04:03:09.109Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:03:13.437Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:03:24.319Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:03:25.829Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-25T04:03:25.829Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:03:25.829Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:03:25.832Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043405832
+2025-11-25T04:03:25.832Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:03:25.834Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:03:25.834Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:03:25.834Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043405832 to /home/stanner/.claude.json
+2025-11-25T04:03:25.834Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:03:25.835Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043405835
+2025-11-25T04:03:25.835Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:03:25.839Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:03:25.839Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:03:25.839Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043405835 to /home/stanner/.claude.json
+2025-11-25T04:03:25.839Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:03:40.826Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:12:18.444Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T04:12:18.444Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T04:12:18.454Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T04:12:18.454Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T04:12:18.474Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-11-25T04:12:18.474Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:12:18.474Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:12:18.474Z [DEBUG] FileHistory: Making snapshot for message bf185318-b578-410d-832e-9f4f3f096417
+2025-11-25T04:12:18.474Z [DEBUG] FileHistory: Added snapshot for bf185318-b578-410d-832e-9f4f3f096417, tracking 0 files
+2025-11-25T04:12:20.564Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:12:23.321Z [DEBUG] Stream started - received first chunk
+2025-11-25T04:12:36.436Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T04:12:36.936Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-11-25T04:12:36.936Z [DEBUG] Found 0 hook matchers in settings
+2025-11-25T04:12:36.936Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-11-25T04:12:36.939Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043956939
+2025-11-25T04:12:36.939Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:12:36.942Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:12:36.942Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:12:36.942Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043956939 to /home/stanner/.claude.json
+2025-11-25T04:12:36.942Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:12:36.943Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.547374.1764043956943
+2025-11-25T04:12:36.943Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T04:12:36.944Z [DEBUG] Temp file written successfully, size: 44002 bytes
+2025-11-25T04:12:36.945Z [DEBUG] Applied original permissions to temp file
+2025-11-25T04:12:36.945Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.547374.1764043956943 to /home/stanner/.claude.json
+2025-11-25T04:12:36.945Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T04:12:51.932Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)

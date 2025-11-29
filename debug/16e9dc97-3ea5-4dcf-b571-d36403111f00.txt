@@ -1,0 +1,303 @@
+2025-11-28T18:17:13.153Z [DEBUG] Skipping SessionEnd:clear hook execution - workspace trust not accepted
+2025-11-28T18:17:13.153Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:17:13.154Z [DEBUG] Cleared all session hooks for session fc393359-1ef1-4186-ac32-c5166ea4de12
+2025-11-28T18:17:13.160Z [DEBUG] Skipping SessionStart:clear hook execution - workspace trust not accepted
+2025-11-28T18:17:13.163Z [DEBUG] FileHistory: Added snapshot for 95f24d89-ec70-44d0-94c8-e51a074c4413, tracking 0 files
+2025-11-28T18:17:13.165Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-28T18:17:13.165Z [DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+2025-11-28T18:17:13.165Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+2025-11-28T18:17:13.166Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-28T18:17:13.438Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:17:13.438Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:17:13.438Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:17:31.775Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:17:31.776Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:17:31.776Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:17:31.791Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:17:31.791Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:17:31.807Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 32ms
+2025-11-28T18:17:31.810Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-28T18:17:31.810Z [DEBUG] FileHistory: Making snapshot for message 8622a014-964b-4cd1-8584-1bb3104feac5
+2025-11-28T18:17:31.810Z [DEBUG] FileHistory: Added snapshot for 8622a014-964b-4cd1-8584-1bb3104feac5, tracking 0 files
+2025-11-28T18:17:31.822Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T18:17:31.826Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-28T18:17:32.714Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:17:33.641Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:17:35.290Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-28T18:17:48.037Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T18:18:03.556Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:18:03.557Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:18:03.557Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:18:03.559Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:18:03.559Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:18:03.563Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 7ms
+2025-11-28T18:18:03.565Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-28T18:18:03.566Z [DEBUG] FileHistory: Making snapshot for message 7767e95e-9c6e-454f-8a44-e0ee57eb451d
+2025-11-28T18:18:03.566Z [DEBUG] FileHistory: Added snapshot for 7767e95e-9c6e-454f-8a44-e0ee57eb451d, tracking 0 files
+2025-11-28T18:18:03.571Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T18:18:03.576Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 5ms
+2025-11-28T18:18:04.131Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:18:04.600Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:18:05.252Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-28T18:18:19.398Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T18:20:00.375Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:20:00.376Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:20:00.376Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:20:00.618Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:20:00.618Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:20:00.875Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 500ms
+2025-11-28T18:20:00.879Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-28T18:20:00.880Z [DEBUG] FileHistory: Making snapshot for message 90e4f9dd-a3d5-43f0-b3c0-22f1e9e6fa06
+2025-11-28T18:20:00.880Z [DEBUG] FileHistory: Added snapshot for 90e4f9dd-a3d5-43f0-b3c0-22f1e9e6fa06, tracking 0 files
+2025-11-28T18:20:00.997Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T18:20:01.005Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 9ms
+2025-11-28T18:20:01.816Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:02.209Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:03.709Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:20:03.709Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:20:04.316Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:04.433Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "ssh:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-28T18:20:04.443Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:20:04.443Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:20:06.696Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:20:06.826Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:20:06.826Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:20:06.826Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:20:07.014Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:20:07.015Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:20:07.986Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:08.189Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "ssh:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-28T18:20:08.200Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:20:08.200Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:20:09.756Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:20:09.886Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:20:09.887Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:20:09.887Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:20:10.107Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:20:10.108Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:20:10.108Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:20:10.111Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:20:10.111Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:20:10.116Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 9ms
+2025-11-28T18:20:11.962Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:14.750Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-28T18:20:17.206Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T18:20:32.977Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:20:32.978Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:20:32.978Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:20:32.981Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:20:32.981Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:20:32.985Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T18:20:32.989Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-28T18:20:32.989Z [DEBUG] FileHistory: Making snapshot for message 201c1e2a-316f-4662-a654-02a1500c540e
+2025-11-28T18:20:32.989Z [DEBUG] FileHistory: Added snapshot for 201c1e2a-316f-4662-a654-02a1500c540e, tracking 0 files
+2025-11-28T18:20:32.995Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T18:20:32.999Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 4ms
+2025-11-28T18:20:34.126Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:34.280Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:20:36.394Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-28T18:20:49.503Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T18:21:09.716Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:21:09.717Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:21:09.717Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:21:09.729Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:21:09.729Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:21:09.743Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 27ms
+2025-11-28T18:21:09.746Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-28T18:21:09.746Z [DEBUG] FileHistory: Making snapshot for message dc5b0297-8204-4e30-a66e-abea1725a4df
+2025-11-28T18:21:09.747Z [DEBUG] FileHistory: Added snapshot for dc5b0297-8204-4e30-a66e-abea1725a4df, tracking 0 files
+2025-11-28T18:21:09.757Z [DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+2025-11-28T18:21:09.760Z [DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 3ms
+2025-11-28T18:21:10.327Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:10.883Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:12.956Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:12.956Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:12.967Z [DEBUG] Permission suggestions for Bash: []
+2025-11-28T18:21:12.977Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:21:12.978Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:14.634Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:21:14.677Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:14.677Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:14.779Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:21:14.781Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:21:14.781Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:21:15.881Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:16.032Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:16.157Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "xmllint:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-28T18:21:16.172Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:21:16.172Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:17.573Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:21:17.611Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:17.623Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:17.624Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:17.639Z [DEBUG] Permission suggestions for Bash: []
+2025-11-28T18:21:17.655Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:21:17.655Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:17.723Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:21:17.724Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:21:17.724Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:21:18.193Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:19.403Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:21:19.427Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:21:19.428Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:21:19.428Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:21:19.432Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:21:19.432Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:21:19.435Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 8ms
+2025-11-28T18:21:19.541Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:21:19.541Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:21:19.541Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:21:21.340Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:23.053Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:23.053Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:23.053Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:23.054Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:23.093Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:21:23.093Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:23.105Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:23.759Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:25.657Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-28T18:21:26.438Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:21:26.453Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:26.468Z [DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+2025-11-28T18:21:26.469Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-28T18:21:26.469Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-28T18:21:26.473Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-28T18:21:26.473Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-28T18:21:26.477Z [DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 9ms
+2025-11-28T18:21:26.566Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:21:26.566Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:21:26.566Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:21:27.054Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:27.727Z [DEBUG] Stream started - received first chunk
+2025-11-28T18:21:29.075Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:29.075Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:29.075Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-28T18:21:29.075Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:29.090Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//var/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2025-11-28T18:21:29.104Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:21:29.104Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:29.112Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//var/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2025-11-28T18:21:29.125Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-28T18:21:29.125Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-28T18:21:34.092Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-28T18:21:34.222Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-28T18:21:34.223Z [DEBUG] Version 2.0.55 already installed, updating symlink
+2025-11-28T18:21:34.223Z [DEBUG] Successfully updated to version 2.0.55
+2025-11-28T18:21:41.454Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "alienvault": {
+      "type": "stdio",
+      "command": "/home/stanner/Documents/Code/mcp_servers_custom/alienvault-mcp-server/venv/bin/python",
+      "args": [
+        "/home/stanner/Documents/Code/mcp_servers_custom/alienvault-mcp-server/alienvault_server.py"
+      ],
+      "env": {
+        "ALIENVAULT_API_KEY": "75733b0f90e08e68a98d234ea2349a77f22f8ed12ba57f74de92b0b39b3c5e9d"
+      }
+    }
+  }
+}

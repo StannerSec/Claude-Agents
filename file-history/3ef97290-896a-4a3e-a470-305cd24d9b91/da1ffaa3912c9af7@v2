@@ -1,0 +1,639 @@
+# CDSA Blue Team Agent - Complete Setup Guide
+
+## Overview
+
+This guide walks you through setting up a complete blue team agent with MCP (Model Context Protocol) integration for Windows incident response and forensics analysis.
+
+The agent provides access to:
+- **ERIC Tools**: Windows forensics (RECmd, EvtxECmd, MFTECmd, PECmd, JLECmd, LECmd, SBECmd)
+- **Yara**: Malware scanning
+- **Chainsaw**: Windows event log threat hunting with Sigma rules
+
+## Prerequisites
+
+### System Requirements
+- Linux or macOS (for Claude Code development)
+- Python 3.10+
+- ERIC Tools installed and configured
+- Yara installed
+- Chainsaw installed
+
+### Software Installation
+
+#### 1. ERIC Tools Installation
+
+```bash
+# Create ERIC tools directory
+sudo mkdir -p /opt/ERIC
+cd /opt/ERIC
+
+# Download ERIC Tools (from https://ericzimmerman.github.io/#!index.md)
+# Example: Download and extract to /opt/ERIC
+# Tools needed:
+# - EvtxECmd.exe (or EvtxECmd via .NET)
+# - RECmd.exe
+# - MFTECmd.exe
+# - PECmd.exe
+# - JLECmd.exe
+# - LECmd.exe
+# - SBECmd.exe
+
+# Make executable if on Linux with .NET Core
+chmod +x /opt/ERIC/*.exe
+
+# Test installation
+/opt/ERIC/EvtxECmd.exe --help
+```
+
+#### 2. Install Yara
+
+```bash
+# Ubuntu/Debian
+sudo apt-get install yara
+
+# macOS
+brew install yara
+
+# Verify installation
+yara --version
+```
+
+#### 3. Install Chainsaw
+
+```bash
+# Download from https://github.com/WithSecureLabs/chainsaw
+# Or via package manager
+cargo install chainsaw
+
+# Verify installation
+chainsaw --version
+```
+
+#### 4. Install Python Dependencies
+
+```bash
+# Install MCP SDK
+pip install mcp
+
+# Or from the agent directory:
+cd /home/stanner
+pip install -r requirements.txt
+```
+
+#### 5. Install Claude Code
+
+```bash
+# Install Claude Code CLI
+npm install -g @anthropic-ai/claude-code
+
+# Or follow: https://claude.com/docs/claude-code
+```
+
+## Configuration
+
+### 1. Set Environment Variables
+
+```bash
+# Add to ~/.bashrc or ~/.zshrc
+export ANTHROPIC_API_KEY="your-api-key-here"
+export ERIC_TOOLS_PATH="/opt/ERIC"
+export WORKING_DIR="/tmp/eric_analysis"
+
+# Reload shell
+source ~/.bashrc
+```
+
+### 2. Configure MCP Server
+
+The MCP server configuration is in `claude_code_mcp_config.json`. Update paths:
+
+```json
+{
+  "mcpServers": {
+    "eric-tools": {
+      "command": "python3",
+      "args": ["/path/to/eric_tools_mcp_server.py"],
+      "env": {
+        "ERIC_TOOLS_PATH": "/opt/ERIC",
+        "WORKING_DIR": "/tmp/eric_analysis"
+      }
+    }
+  }
+}
+```
+
+### 3. Register MCP Server with Claude Code
+
+```bash
+# Copy configuration to Claude Code config
+cp claude_code_mcp_config.json ~/.claude_code/mcp.json
+
+# Or manually add to Claude Code settings
+```
+
+## Running the Agent
+
+### Method 1: Interactive CLI (Recommended for CDSA Study)
+
+```bash
+# Make executable
+chmod +x blue_team_agent.py
+
+# Run agent
+python3 blue_team_agent.py
+
+# You'll see:
+# ================================================================================
+# CDSA BLUE TEAM INCIDENT RESPONSE AGENT
+# ================================================================================
+#
+# Available Commands:
+#   'analyze'    - Start forensic artifact analysis
+#   'hunt'       - Run threat hunting on event logs
+#   'timeline'   - Reconstruct timeline from artifacts
+#   'scan'       - Scan for malware with Yara
+#   'help'       - Show available tools and techniques
+#   'exit'       - Exit the agent
+```
+
+### Method 2: With Claude Code (Advanced)
+
+```bash
+# In Claude Code editor
+# 1. Open the blue_team_agent.py file
+# 2. Use /run command to execute
+
+# Or directly with Claude Code:
+claude-code blue_team_agent.py
+```
+
+### Method 3: Command Line Non-Interactive
+
+```bash
+# Single query
+python3 blue_team_agent.py "Analyze these security event logs for suspicious authentication"
+
+# Script mode
+python3 blue_team_agent.py "I found malware on a Windows system. Help me investigate the artifacts."
+```
+
+## Usage Examples
+
+### Example 1: Event Log Analysis
+
+```
+[Investigation] > I found a suspicious event in the Security event log. Can you analyze it?
+
+[Agent Response]
+I'd be happy to help analyze the Security event log for suspicious activity. I need a few details:
+
+1. What is the path to the Security.evtx file?
+2. What time range should I focus on?
+3. Are there specific event IDs you're concerned about?
+
+Once you provide the file path, I can run EvtxECmd to extract and analyze the events...
+```
+
+### Example 2: Incident Investigation
+
+```
+[Investigation] > We detected lateral movement on our network. Can you help investigate?
+
+[Agent]
+Absolutely. Let's build a comprehensive timeline. I'll need access to several artifacts:
+
+1. Security event log (C:\Windows\System32\winevt\Logs\Security.evtx)
+2. System event log (System.evtx)
+3. Registry hives (SYSTEM, SOFTWARE, NTUSER.DAT)
+4. Prefetch files (C:\Windows\Prefetch\)
+
+This will help us identify:
+- Logon events and network connections
+- Lateral movement tools (PSExec, WinRM)
+- Persistence mechanisms
+- Affected user accounts
+```
+
+### Example 3: Malware Scanning
+
+```
+[Investigation] > Scan this directory for malware
+
+[Agent]
+I'll scan the directory with Yara. But first, which Yara rules should I use?
+
+Options:
+- YARA-RULES community rules
+- Custom rules for specific malware families
+- Generic suspicious behavior rules
+
+Also, provide the directory path to scan.
+```
+
+### Example 4: Threat Hunting
+
+```
+[Investigation] > hunt
+
+[Agent]
+Let's run a threat hunting operation on your event logs. I'll use Chainsaw with Sigma rules.
+
+What event log would you like me to hunt on?
+- Security.evtx (authentication, privilege escalation)
+- System.evtx (driver loads, service installs)
+- Application.evtx (software execution)
+
+And do you have Sigma rules you'd like to use, or should I use the default rules?
+```
+
+## Tool-by-Tool Reference
+
+### 1. analyze_event_log (EvtxECmd)
+
+**Purpose**: Parse Windows event logs for incident detection
+
+**Common Use Cases**:
+- Detect lateral movement (Event IDs: 4624, 4625, 4768, 4769)
+- Identify privilege escalation (4672, 4673)
+- Track process execution (4688 with command line audit)
+- Monitor account creation/modification (4720, 4722)
+
+**Example Analysis**:
+```
+Agent: "I'll analyze the Security event log for suspicious logons"
+Agent runs: analyze_event_log("/path/to/Security.evtx")
+Agent analyzes: Event types, timestamps, user accounts, source IPs
+Agent identifies: Multiple failed logon attempts, suspicious time patterns
+```
+
+### 2. analyze_registry (RECmd)
+
+**Purpose**: Registry forensics for persistence and configuration
+
+**Common Use Cases**:
+- Find persistence mechanisms (Run keys, Scheduled Tasks)
+- Identify installed software and versions
+- Review network configurations
+- Track user activities
+- Detect program persistence
+
+**Hives to analyze**:
+- `SYSTEM`: Hardware, services, network config
+- `SOFTWARE`: Installed applications, settings
+- `NTUSER.DAT`: User-specific settings, MRU lists
+- `SAM`: User accounts and password hashes
+- `SECURITY`: System security and audit policy
+
+### 3. analyze_mft (MFTECmd)
+
+**Purpose**: NTFS filesystem timeline reconstruction
+
+**Common Use Cases**:
+- Timeline of file creation/modification/access
+- Identify suspicious file activity
+- Track data exfiltration (file copy patterns)
+- Detect timestomping (modified timestamps)
+- Reconstruct deleted files
+
+**Output Analysis**:
+- File paths, sizes, timestamps
+- Slack space indicators
+- Directory structure
+
+### 4. analyze_prefetch (PECmd)
+
+**Purpose**: Program execution analysis
+
+**Common Use Cases**:
+- When programs executed (timestamps)
+- How many times programs ran
+- Which files were accessed
+- Detect lateral movement tools (PsExec, WinRM)
+- Identify malware execution
+
+**Key Timestamps**:
+- Last execution time
+- Creation time
+- All run counts
+
+### 5. analyze_jump_lists (JLECmd)
+
+**Purpose**: Recent file and program access
+
+**Common Use Cases**:
+- Identify recently accessed files
+- Track user activity
+- Detect data exfiltration (which files accessed)
+- Timeline reconstruction
+
+### 6. analyze_lnk (LECmd)
+
+**Purpose**: Windows shortcut analysis
+
+**Common Use Cases**:
+- Track user-created shortcuts
+- Identify accessed network paths
+- Detect malicious shortcut abuse
+- Timeline from shortcut creation
+
+### 7. analyze_shellbags (SBECmd)
+
+**Purpose**: Folder navigation history
+
+**Common Use Cases**:
+- Which folders accessed and when
+- User behavior patterns
+- Identify accessed sensitive directories
+- Timeline reconstruction
+
+### 8. scan_with_yara (Yara)
+
+**Purpose**: Malware signature scanning
+
+**Common Use Cases**:
+- Identify known malware
+- Detect suspicious code patterns
+- Scan suspicious files
+- Batch file scanning
+
+**Requirements**:
+- Yara rule file (.yar)
+- Target file or directory
+
+### 9. threat_hunt_events (Chainsaw)
+
+**Purpose**: Threat hunting with Sigma rules
+
+**Common Use Cases**:
+- Automated threat detection
+- Known attack pattern detection
+- Behavioral analysis
+- Mass event log analysis
+
+## Investigation Workflows
+
+### Workflow 1: Windows Incident Response
+
+```
+1. INITIAL RESPONSE
+   - Isolate affected system
+   - Collect forensic artifacts
+   - Establish timeline bounds
+
+2. EVENT LOG ANALYSIS
+   - Analyze Security.evtx
+   - Check for authentication anomalies
+   - Identify process execution
+
+3. REGISTRY FORENSICS
+   - Check for persistence (Run keys, Startup)
+   - Review installed software
+   - Check network connections
+
+4. FILESYSTEM TIMELINE
+   - Analyze $MFT for file activity
+   - Identify suspicious file modifications
+   - Track data movement
+
+5. PROGRAM EXECUTION
+   - Review Prefetch files
+   - Identify malware execution
+   - Track lateral movement tools
+
+6. MALWARE ANALYSIS
+   - Scan with Yara
+   - Identify malware families
+   - Check for persistence
+
+7. THREAT HUNTING
+   - Run Chainsaw for automated detection
+   - Correlate with other findings
+   - Identify additional IOCs
+
+8. REMEDIATION
+   - Document findings
+   - Recommend containment
+   - Plan recovery
+```
+
+### Workflow 2: Insider Threat Investigation
+
+```
+1. USER ACTIVITY ANALYSIS
+   - Jump Lists (recently accessed files)
+   - ShellBags (folder navigation)
+   - LNK files (shortcuts)
+
+2. FILE ACCESS TIMELINE
+   - MFT analysis for target files
+   - Identify modification patterns
+   - Track to sensitive directories
+
+3. PROGRAM USAGE
+   - Prefetch for suspicious tools
+   - Review network-related programs
+   - Check for data exfiltration tools
+
+4. EVENT LOG CORRELATION
+   - Logon/logoff patterns
+   - File access events
+   - Network connections
+
+5. PERSISTENCE CHECK
+   - Verify no persistence was established
+   - Check system configuration changes
+   - Review scheduled tasks
+```
+
+## CDSA Exam Preparation
+
+### Using the Agent for Study
+
+The agent supports various study modes:
+
+**1. Concept Explanation**
+```
+[Investigation] > "Explain persistence mechanisms in Windows"
+
+Agent will explain:
+- Run key persistence
+- Service installation
+- Scheduled tasks
+- WMI Event Subscriptions
+- Startup folders
+```
+
+**2. Tool Knowledge**
+```
+[Investigation] > "What information can EvtxECmd extract from event logs?"
+
+Agent will explain:
+- Event log structure
+- Event IDs and meanings
+- Timeline reconstruction
+- IOC identification
+```
+
+**3. Scenario Analysis**
+```
+[Investigation] > "I have these artifacts from a breach. What does each tell us?"
+
+Agent will guide analysis of:
+- Event logs
+- Registry hives
+- Filesystem artifacts
+- Timeline reconstruction
+```
+
+**4. Practice Investigations**
+```
+[Investigation] > "Give me a realistic Windows incident scenario to investigate"
+
+Agent will provide:
+- Incident description
+- Artifacts to analyze
+- Guidance through investigation
+- Model solution and explanation
+```
+
+## Troubleshooting
+
+### Issue: MCP Server Won't Start
+
+```bash
+# Check Python path
+which python3
+
+# Verify MCP SDK installed
+pip list | grep mcp
+
+# Test MCP server directly
+python3 /home/stanner/eric_tools_mcp_server.py
+```
+
+### Issue: Tool Execution Fails
+
+```bash
+# Verify ERIC tools installed
+ls -la /opt/ERIC/
+
+# Test tool directly
+/opt/ERIC/EvtxECmd.exe --help
+
+# Check ERIC_TOOLS_PATH environment variable
+echo $ERIC_TOOLS_PATH
+
+# Update if needed
+export ERIC_TOOLS_PATH="/correct/path/to/ERIC"
+```
+
+### Issue: File Not Found
+
+```bash
+# Verify artifact path is correct
+ls -la "/path/to/artifact.evtx"
+
+# Use absolute paths
+python3 blue_team_agent.py
+# Then provide absolute paths in prompts
+```
+
+### Issue: Permission Denied
+
+```bash
+# Make files executable
+chmod +x eric_tools_mcp_server.py
+chmod +x blue_team_agent.py
+
+# Check file permissions
+ls -la blue_team_agent.py
+
+# Check directory permissions
+ls -la /tmp/eric_analysis/
+```
+
+## Advanced Configuration
+
+### Adding Custom Yara Rules
+
+```bash
+# Create rules directory
+mkdir -p /opt/yara_rules
+
+# Add your rules
+cp your_rules.yar /opt/yara_rules/
+
+# Update agent to use custom rules
+```
+
+### Extending with More Tools
+
+The MCP server can be extended with additional tools:
+
+1. Open `eric_tools_mcp_server.py`
+2. Add new tool executor method
+3. Add tool definition to `list_tools()`
+4. Add tool handler to `call_tool()`
+5. Restart MCP server
+
+Example: Adding KAPE support
+
+```python
+def run_kape(self, targets_path: str, options: dict = None) -> dict:
+    # Implementation
+    pass
+```
+
+### Integration with SIEM
+
+You can extend the agent to integrate with:
+- Splunk (via Splunk MCP server)
+- Elastic Stack (via custom connector)
+- Wazuh (via Wazuh MCP server)
+
+Update `claude_code_mcp_config.json` to add servers.
+
+## Next Steps
+
+1. **Install Prerequisites**: Follow software installation section
+2. **Configure Environment**: Set up paths and environment variables
+3. **Test Tools**: Verify each tool works independently
+4. **Start Agent**: Run `python3 blue_team_agent.py`
+5. **Practice**: Work through example investigations
+6. **Study**: Use agent for CDSA exam preparation
+7. **Extend**: Add custom tools and rules as needed
+
+## Resources
+
+### ERIC Tools Documentation
+- https://ericzimmerman.github.io/
+
+### Windows Forensics
+- https://www.sans.org/white-papers/
+- https://www.dfir.training/
+
+### CDSA Exam Prep
+- https://www.certification.comptia.org/
+
+### Threat Hunting
+- https://github.com/SigmaHQ/sigma (Sigma rules)
+- https://github.com/WithSecureLabs/chainsaw
+
+### MCP Documentation
+- https://modelcontextprotocol.io/
+
+## Support
+
+For issues or improvements:
+1. Check the Troubleshooting section
+2. Verify all prerequisites are installed
+3. Check environment variables
+4. Review tool paths and permissions
+5. Test tools independently
+
+## License and Attribution
+
+- ERIC Tools: https://ericzimmerman.github.io/
+- Chainsaw: https://github.com/WithSecureLabs/chainsaw
+- Yara: https://virustotal.github.io/yara/
+- Claude: Anthropic
