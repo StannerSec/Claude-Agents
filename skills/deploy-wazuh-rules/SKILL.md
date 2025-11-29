@@ -1,0 +1,1 @@
+YOu can deploy detection rules to my Wazuh instance using the following command /your-directory/deploy_rule_via_api.sh /your/rule/file.xml

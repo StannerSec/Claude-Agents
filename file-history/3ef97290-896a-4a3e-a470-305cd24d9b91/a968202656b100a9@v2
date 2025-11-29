@@ -1,0 +1,547 @@
+# CDSA Blue Team Agent - Test Scenarios
+
+This document contains realistic incident response scenarios for testing and studying with the blue team agent.
+
+## Scenario 1: Ransomware Investigation
+
+### Incident Summary
+A Windows file server was encrypted overnight. Backups were also affected. IT needs to determine:
+- When the attack started
+- What programs executed
+- What persistence mechanisms were installed
+- Whether the attacker accessed other systems
+
+### Available Artifacts
+```
+/forensics/scenario1/
+├── Security.evtx (Security event log)
+├── System.evtx (System event log)
+├── Application.evtx (Application events)
+├── SYSTEM (Registry hive)
+├── SOFTWARE (Registry hive)
+├── NTUSER.DAT (User registry)
+├── $MFT (NTFS Master File Table)
+└── Prefetch/ (Prefetch files)
+```
+
+### Investigation Questions
+1. When did the encryption activity start?
+2. Which programs executed that might have encrypted files?
+3. Were there any logon events from unusual sources?
+4. Did the attacker establish persistence?
+5. Which file folders were affected?
+6. Was this lateral movement from another system?
+
+### Agent Instructions
+```
+[Investigation] > I'm investigating a ransomware attack from last night.
+Can you help me analyze these Windows artifacts to determine:
+- Timeline of attack
+- Malware execution pattern
+- Persistence mechanisms
+- Whether lateral movement occurred
+
+Artifacts available:
+- /forensics/scenario1/Security.evtx
+- /forensics/scenario1/System.evtx
+- /forensics/scenario1/SYSTEM registry
+- /forensics/scenario1/NTUSER.DAT
+- /forensics/scenario1/$MFT
+
+What should I look for first?
+```
+
+### Investigation Steps
+
+**Step 1: Event Log Analysis**
+```
+[Investigation] > Analyze the Security event log for suspicious activity
+
+Agent should:
+- Look for unusual logon events (4624, 4625)
+- Identify process execution events (4688)
+- Check for privilege escalation attempts (4672)
+- Identify timeline of suspicious activity
+```
+
+**Step 2: Program Execution Analysis**
+```
+[Investigation] > What programs executed around the time of encryption?
+
+Agent should:
+- Analyze Prefetch files
+- Identify execution timestamps
+- Look for suspicious or unusual programs
+- Match with event log timeline
+```
+
+**Step 3: Registry Forensics**
+```
+[Investigation] > Check for persistence mechanisms and unusual registry changes
+
+Agent should:
+- Analyze Run and RunOnce keys
+- Check Startup folders
+- Review installed software
+- Look for service modifications
+```
+
+**Step 4: Filesystem Timeline**
+```
+[Investigation] > Analyze the MFT for file encryption patterns
+
+Agent should:
+- Build timeline of file modifications
+- Identify encryption start point
+- Track file access patterns
+- Correlate with program execution timeline
+```
+
+**Step 5: Lateral Movement Analysis**
+```
+[Investigation] > Were other systems accessed from this machine?
+
+Agent should:
+- Check network connection registry keys
+- Review logon events for lateral movement
+- Identify potential pivot points
+- Recommend containment steps
+```
+
+---
+
+## Scenario 2: Insider Threat Investigation
+
+### Incident Summary
+Suspected data exfiltration by user "jsmith" in Finance department. Large volumes of sensitive files were accessed last week. Investigation needs to determine:
+- Which files were accessed
+- When and how they were accessed
+- What programs were used
+- Whether files were copied/moved to external locations
+
+### Available Artifacts
+```
+/forensics/scenario2/
+├── Security.evtx (includes file access audit events)
+├── System.evtx
+├── NTUSER.DAT for jsmith user account
+├── Recent/ folder data
+├── Jump Lists (AutomaticDestinations)
+├── $MFT (filesystem timeline)
+└── Shortcut files (LNK files)
+```
+
+### Investigation Questions
+1. Which files did jsmith access last week?
+2. When were sensitive finance files accessed?
+3. Were files copied to USB or network location?
+4. What tools were used for file access?
+5. Were files accessed outside normal working hours?
+6. Are there any indicators of file staging or compression?
+
+### Agent Instructions
+```
+[Investigation] > We're investigating potential data exfiltration by an employee.
+The suspect accessed finance files last week. Help me reconstruct:
+- Files accessed and timeline
+- Access methods and tools used
+- Evidence of data staging/compression
+- Potential exfiltration points
+
+Artifacts: /forensics/scenario2/
+Suspect user: jsmith
+Timeframe: Last 7 days
+```
+
+### Investigation Steps
+
+**Step 1: User Activity Timeline**
+```
+[Investigation] > Build a timeline of jsmith's activities last week
+
+Agent should:
+- Analyze Jump Lists for recent files
+- Review LNK files for accessed paths
+- Check ShellBags for folder access
+- Identify sensitive files accessed
+```
+
+**Step 2: File Access Audit**
+```
+[Investigation] > Show me all Finance folder access by this user
+
+Agent should:
+- Analyze event log file access events (4663)
+- Build comprehensive file access timeline
+- Correlate with user logon events
+- Identify unusual access patterns
+```
+
+**Step 3: Program Usage**
+```
+[Investigation] > What programs did jsmith use to access these files?
+
+Agent should:
+- Analyze Prefetch for program execution
+- Identify file compression/archiving tools
+- Check for data exfiltration tools
+- Timeline of suspicious program usage
+```
+
+**Step 4: Copy/Movement Detection**
+```
+[Investigation] > Were files copied or moved to external locations?
+
+Agent should:
+- Analyze filesystem timeline ($MFT)
+- Look for file copy operations
+- Check registry for USB/network paths
+- Identify staging directories
+```
+
+**Step 5: Evidence Summary**
+```
+[Investigation] > Summarize the evidence for this investigation
+
+Agent should:
+- Timeline of suspicious activities
+- List accessed sensitive files
+- Evidence of exfiltration methods
+- Recommendations for containment
+- Prepare for chain of custody
+```
+
+---
+
+## Scenario 3: Web Server Compromise
+
+### Incident Summary
+A web server was compromised and used to host malware. The attack chain:
+- Initial web shell upload
+- Persistence installation
+- Secondary payload download
+- Use as pivot point for lateral movement
+
+Investigation needs to determine all of the above.
+
+### Available Artifacts
+```
+/forensics/scenario3/
+├── Security.evtx
+├── System.evtx
+├── Application.evtx (IIS logs via sysmon)
+├── SYSTEM registry
+├── SOFTWARE registry
+├── Prefetch files
+└── Malware samples (suspicious files)
+```
+
+### Investigation Questions
+1. When was the web shell uploaded?
+2. What files were modified/created by attacker?
+3. What persistence mechanisms were installed?
+4. What secondary payloads were downloaded?
+5. Was the system used for lateral movement?
+6. What malware families are involved?
+
+### Agent Instructions
+```
+[Investigation] > A web server was compromised. Help me investigate:
+- Initial compromise timeline
+- Web shell location and execution
+- Persistence mechanisms
+- Secondary payloads
+- Lateral movement indicators
+
+Scan suspicious files with Yara for malware identification.
+```
+
+### Investigation Steps
+
+**Step 1: Initial Access Analysis**
+```
+[Investigation] > When was the web shell first uploaded?
+
+Agent should:
+- Analyze IIS event logs (Application.evtx)
+- Check file modification timestamps ($MFT)
+- Identify uploaded files
+- Establish initial compromise timeline
+```
+
+**Step 2: Web Shell Execution**
+```
+[Investigation] > How was the web shell executed?
+
+Agent should:
+- Analyze process execution events (Prefetch)
+- Check for ASP.NET/IIS process execution
+- Identify command-line parameters
+- Determine access method
+```
+
+**Step 3: Persistence Installation**
+```
+[Investigation] > What persistence was installed?
+
+Agent should:
+- Analyze registry for persistence (Run keys, services)
+- Check scheduled tasks
+- Review WMI event subscriptions
+- Identify persistence mechanisms
+```
+
+**Step 4: Secondary Payload Analysis**
+```
+[Investigation] > What secondary payloads were downloaded?
+
+Agent should:
+- Analyze Prefetch for download tools (curl, wget, certutil)
+- Check network connections in registry
+- Identify payload files
+- Scan with Yara for malware identification
+```
+
+**Step 5: Malware Identification**
+```
+[Investigation] > Scan these files with Yara to identify malware families
+
+Agent should:
+- Run Yara against suspicious files
+- Identify malware families
+- Assess threat severity
+- Recommend containment measures
+```
+
+**Step 6: Lateral Movement Evidence**
+```
+[Investigation] > Was this system used to attack other systems?
+
+Agent should:
+- Check for lateral movement tools (PsExec, WinRM)
+- Analyze outbound connections
+- Check for credential extraction
+- Identify compromised accounts
+```
+
+---
+
+## Scenario 4: Account Takeover and Credential Theft
+
+### Incident Summary
+A domain user account was compromised. Attacker accessed sensitive data and attempted lateral movement. Investigation needs to identify:
+- How account was compromised
+- What data was accessed
+- Lateral movement attempts
+- What persistence was established
+
+### Available Artifacts
+```
+/forensics/scenario4/
+├── Security.evtx (domain events)
+├── Multiple systems' event logs
+├── Registry hives from multiple machines
+├── Prefetch data
+└── Network traffic indicators
+```
+
+### Investigation Questions
+1. How was the account compromised (phishing, password spray)?
+2. When was the account first used by attacker?
+3. What systems were accessed from this account?
+4. What data/applications were accessed?
+5. Was persistence established on accessed systems?
+6. How many accounts were compromised?
+
+### Agent Instructions
+```
+[Investigation] > Domain account was compromised. Analyze:
+- Timeline of compromise
+- Logon events and source IPs
+- Systems accessed
+- Data exfiltration
+- Persistence mechanisms
+
+Artifacts from multiple systems available.
+```
+
+---
+
+## Scenario 5: CDSA Exam-Style Investigation
+
+### Incident Summary
+You have been given Windows forensic artifacts from a compromised system. Determine:
+1. What malware is present?
+2. How did it establish persistence?
+3. When did compromise occur?
+4. What data was accessed?
+5. What was the attacker's objective?
+6. What immediate actions should be taken?
+
+### Available Artifacts
+- Security.evtx
+- System.evtx
+- SYSTEM registry
+- SOFTWARE registry
+- NTUSER.DAT
+- Prefetch files
+- $MFT
+- Suspicious executable file
+
+### Investigation Flow
+
+```
+[Investigation] > I need to investigate a potentially compromised system.
+Please guide me through a complete forensic analysis.
+
+Here are the available artifacts:
+- /forensics/exam/Security.evtx
+- /forensics/exam/System.evtx
+- /forensics/exam/SYSTEM
+- /forensics/exam/SOFTWARE
+- /forensics/exam/NTUSER.DAT
+- /forensics/exam/Prefetch/
+- /forensics/exam/$MFT
+- /forensics/exam/suspect.exe
+
+What should be my investigation approach?
+```
+
+### Expected Analysis
+
+**1. Malware Identification**
+```
+Scan suspect.exe with Yara
+- Identify malware family
+- Assess threat level
+- Document indicators
+```
+
+**2. Initial Access**
+```
+Analyze event logs for initial compromise
+- Logon events
+- Process execution
+- Unusual activities
+```
+
+**3. Persistence Mechanisms**
+```
+Registry analysis
+- Run keys
+- Services
+- Startup folders
+- Scheduled tasks
+```
+
+**4. Lateral Movement**
+```
+Network and logon analysis
+- Remote logon events
+- Lateral movement tools
+- Compromised accounts
+```
+
+**5. Data Access**
+```
+File activity analysis
+- Jump Lists
+- ShellBags
+- $MFT timeline
+- Data staging indicators
+```
+
+**6. Timeline Reconstruction**
+```
+Correlate all artifacts
+- Establish chronological order
+- Identify key events
+- Document findings
+```
+
+**7. Recommendations**
+```
+Containment and response
+- Immediate actions
+- System isolation
+- Account reset
+- Monitoring strategy
+```
+
+---
+
+## How to Use These Scenarios
+
+### Option 1: Interactive Investigation
+```bash
+# Start agent
+python3 blue_team_agent.py
+
+# Paste scenario description:
+[Investigation] > I need help with Scenario 1: Ransomware Investigation.
+Here's the incident summary: [paste scenario summary]
+
+# Follow agent's guidance through investigation
+```
+
+### Option 2: Guided Learning
+1. Read scenario summary
+2. Ask agent specific questions
+3. Follow agent's recommendations
+4. Document findings
+5. Compare with solution
+
+### Option 3: Practice for CDSA Exam
+```bash
+# Use Scenario 5 for exam-style practice
+# Set time limit
+# Document all findings
+# Present findings to agent for feedback
+```
+
+## Creating Custom Scenarios
+
+To create your own scenarios:
+
+1. **Define the incident**: What happened?
+2. **List artifacts**: What forensic data is available?
+3. **Create questions**: What needs to be determined?
+4. **Prepare data**: Collect real or synthesized artifacts
+5. **Test investigation**: Work through scenario with agent
+6. **Document process**: Record methodology and findings
+
+## Tips for Using These Scenarios
+
+1. **Start with Scenario 1**: Basic ransomware is good introduction
+2. **Progress by complexity**: Move from Scenario 1 → 5
+3. **Take notes**: Document your investigation process
+4. **Ask clarifying questions**: The agent will help guide you
+5. **Practice timeline building**: This is a critical CDSA skill
+6. **Learn tool capabilities**: Understand what each tool reveals
+7. **Correlate findings**: Don't look at artifacts in isolation
+8. **Prepare reports**: Document findings professionally
+
+## Expected Learning Outcomes
+
+After working through these scenarios, you should understand:
+
+- ✓ Windows event log analysis and interpretation
+- ✓ Registry forensics and persistence mechanisms
+- ✓ Filesystem timeline reconstruction
+- ✓ Program execution analysis
+- ✓ User activity reconstruction
+- ✓ Malware identification and analysis
+- ✓ Timeline correlation and evidence synthesis
+- ✓ Incident response methodology
+- ✓ Forensic reporting and documentation
+- ✓ CDSA exam-style investigations
+
+## Resources for Additional Practice
+
+- https://cyberdefenders.org/ (Digital Forensics Challenges)
+- https://www.malware-traffic-analysis.net/ (Real network traffic)
+- https://github.com/sbousseaden/YARA-RULES (Community Yara rules)
+- SANS GCIH / GCFE course materials
+- NIST Cybersecurity Framework documentation
+
+Good luck with your CDSA preparation!

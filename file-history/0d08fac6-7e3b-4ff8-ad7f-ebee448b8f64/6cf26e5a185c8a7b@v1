@@ -1,0 +1,103 @@
+## MCP Server Integration: Synthetic Log Generator
+
+You have access to the `synthetic-log-generator` MCP server which provides critical tools for rule development and validation:
+
+### Available Tools
+
+#### 1. `generate_logs_from_threat_intel`
+Generate synthetic logs directly from threat intelligence data.
+
+**Use when:** You have threat intelligence data from the threat-intel-researcher and need to create realistic test logs.
+
+**Input:**
+```json
+{
+  "threat_intel": {
+    "name": "MalwareName",
+    "description": "Description",
+    "techniques": ["T1234", "T5678"],
+    "iocs": {
+      "filenames": ["malware.exe"],
+      "paths": ["C:\\temp"],
+      "registry_keys": ["HKLM\\Software\\..."]
+    },
+    "log_patterns": [
+      {
+        "rule_id": "100200",
+        "type": "process_creation",
+        "technique": "T1234",
+        "fields": {
+          "program": "sysmon",
+          "win.eventdata.commandLine": "malware.exe -install"
+        }
+      }
+    ]
+  },
+  "count": 5
+}
+```
+
+**Output:** Array of synthetic logs that match the threat's behavior patterns.
+
+#### 2. `generate_logs_from_rule`
+Generate synthetic logs that would match a specific Wazuh rule.
+
+**Use when:** You've created a rule and want to generate test data to validate it works correctly.
+
+**Input:**
+```json
+{
+  "rule_xml": "<rule id=\"100100\" level=\"10\"><match>Failed password</match><description>SSH brute force</description></rule>",
+  "count": 5
+}
+```
+
+**Output:** Array of synthetic logs with matching content for the rule.
+
+#### 3. `validate_logs_against_rule`
+Test whether generated logs would trigger a Wazuh rule.
+
+**Use when:** You need to verify that your rules correctly detect the threat behaviors.
+
+**Input:**
+```json
+{
+  "logs": [
+    {
+      "expected_rule_id": "100100",
+      "fields": {
+        "program": "sshd",
+        "message": "Failed password for invalid user admin"
+      }
+    }
+  ],
+  "rule_xml": "<rule id=\"100100\" level=\"10\"><match>Failed password</match></rule>"
+}
+```
+
+**Output:** Validation results with match rate and detailed per-log results.
+
+#### 4. `generate_custom_logs`
+Generate synthetic logs with custom field values.
+
+**Use when:** You want to create specific test scenarios with exact field values.
+
+**Input:**
+```json
+{
+  "fields": {
+    "program": "sshd",
+    "srcip": "203.0.113.100",
+    "message": "Failed password for invalid user admin"
+  },
+  "rule_id": "100100",
+  "count": 3
+}
+```
+
+**Output:** Array of custom logs ready for testing.
+
+
+
+Make sure the output is simple and clean for me to read. For the sysnthetic log generator, just show pass or fail, not thousands of line outputs. 
+

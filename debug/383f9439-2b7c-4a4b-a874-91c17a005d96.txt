@@ -1,0 +1,192 @@
+2025-11-27T04:18:10.697Z [DEBUG] Skipping SessionEnd:clear hook execution - workspace trust not accepted
+2025-11-27T04:18:10.697Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T04:18:10.697Z [DEBUG] Cleared all session hooks for session 06ee7cd9-d03f-49df-9d1b-b29791ba94d0
+2025-11-27T04:18:10.702Z [DEBUG] Skipping SessionStart:clear hook execution - workspace trust not accepted
+2025-11-27T04:18:10.706Z [DEBUG] FileHistory: Added snapshot for 4a638324-a97e-4f62-8439-6cda1777a95f, tracking 0 files
+2025-11-27T04:18:10.707Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-27T04:18:10.707Z [DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+2025-11-27T04:18:10.708Z [DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+2025-11-27T04:18:10.708Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-27T04:18:10.830Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T04:18:17.833Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:18:20.799Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T04:18:20.800Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T04:18:20.801Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T04:18:20.801Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T04:18:20.801Z [DEBUG] MCP server "todoist": Expires in: 315344454s
+2025-11-27T04:18:20.921Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T04:18:27.924Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:18:29.766Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T04:18:29.768Z [DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+2025-11-27T04:18:29.768Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-27T04:18:29.895Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T04:18:36.898Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (unknown)
+    at async vb (unknown)
+    at unknown
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:19:10.208Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T04:19:10.208Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T04:19:10.211Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T04:19:10.211Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T04:19:10.216Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T04:19:10.217Z [DEBUG] FileHistory: Making snapshot for message 7662eb9d-20b6-4536-a918-988cf6769522
+2025-11-27T04:19:10.217Z [DEBUG] FileHistory: Added snapshot for 7662eb9d-20b6-4536-a918-988cf6769522, tracking 0 files
+2025-11-27T04:19:10.731Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:11.764Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:13.700Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T04:19:25.956Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T04:19:25.956Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T04:19:25.959Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T04:19:25.959Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T04:19:25.964Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T04:19:25.965Z [DEBUG] FileHistory: Making snapshot for message 238b5e9d-4848-4a81-a584-e2666c396fe2
+2025-11-27T04:19:25.965Z [DEBUG] FileHistory: Added snapshot for 238b5e9d-4848-4a81-a584-e2666c396fe2, tracking 0 files
+2025-11-27T04:19:26.118Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:19:26.623Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:26.729Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:28.757Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-27T04:19:28.758Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:28.758Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-27T04:19:28.758Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:28.797Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:28.942Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:28.953Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T04:19:28.953Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T04:19:28.955Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T04:19:28.955Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T04:19:29.441Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:29.706Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:29.716Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:31.060Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-27T04:19:31.061Z [DEBUG] Skipping PreToolUse:Read hook execution - workspace trust not accepted
+2025-11-27T04:19:31.069Z [DEBUG] Skipping PostToolUse:Read hook execution - workspace trust not accepted
+2025-11-27T04:19:31.077Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-27T04:19:31.077Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:31.593Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:31.707Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:31.732Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:31.834Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "cat:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-27T04:19:31.843Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-27T04:19:31.843Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:37.842Z [DEBUG] Skipping Notification:permission_prompt hook execution - workspace trust not accepted
+2025-11-27T04:19:41.723Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:19:51.121Z [DEBUG] Persisting permission update: addRules to source 'localSettings'
+2025-11-27T04:19:51.121Z [DEBUG] Persisting 1 allow rule(s) to localSettings
+2025-11-27T04:19:51.122Z [DEBUG] Writing to temp file: /home/stanner/.claude/settings.local.json.tmp.2536961.1764217191122
+2025-11-27T04:19:51.122Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T04:19:51.125Z [DEBUG] Temp file written successfully, size: 371 bytes
+2025-11-27T04:19:51.125Z [DEBUG] Applied original permissions to temp file
+2025-11-27T04:19:51.125Z [DEBUG] Renaming /home/stanner/.claude/settings.local.json.tmp.2536961.1764217191122 to /home/stanner/.claude/settings.local.json
+2025-11-27T04:19:51.125Z [DEBUG] File /home/stanner/.claude/settings.local.json written atomically
+2025-11-27T04:19:51.130Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(cat:*)"]
+2025-11-27T04:19:51.133Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T04:19:51.146Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:51.161Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T04:19:51.161Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T04:19:51.164Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T04:19:51.164Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T04:19:51.269Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T04:19:52.187Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:52.921Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:53.226Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-27T04:19:53.226Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:53.226Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-27T04:19:53.226Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:53.262Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:53.393Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-27T04:19:53.403Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T04:19:53.403Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T04:19:53.405Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T04:19:53.405Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T04:19:53.883Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:53.897Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:54.456Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:55.028Z [DEBUG] executePreToolHooks called for tool: Read
+2025-11-27T04:19:55.028Z [DEBUG] Skipping PreToolUse:Read hook execution - workspace trust not accepted
+2025-11-27T04:19:55.035Z [DEBUG] Skipping PostToolUse:Read hook execution - workspace trust not accepted
+2025-11-27T04:19:55.043Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T04:19:55.043Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T04:19:55.046Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T04:19:55.046Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T04:19:56.163Z [DEBUG] Stream started - received first chunk
+2025-11-27T04:19:58.272Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:19:59.071Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-11-27T04:19:59.072Z [DEBUG] Skipping PreToolUse:Edit hook execution - workspace trust not accepted
+2025-11-27T04:19:59.076Z [DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2025-11-27T04:19:59.090Z [DEBUG] executePermissionRequestHooks called for tool: Edit
+2025-11-27T04:19:59.090Z [DEBUG] Skipping PermissionRequest:Edit hook execution - workspace trust not accepted
+2025-11-27T04:20:05.088Z [DEBUG] Skipping Notification:permission_prompt hook execution - workspace trust not accepted
+2025-11-27T04:20:05.514Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T04:20:05.663Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T04:20:06.262Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T04:20:06.668Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T04:20:06.801Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T04:20:08.698Z [DEBUG] Skipping SessionEnd:prompt_input_exit hook execution - workspace trust not accepted

@@ -1,0 +1,257 @@
+<!--
+  Wazuh Detection Rules for Mirai and Gafgyt Botnets
+
+  Threat Overview:
+  - IoT device compromise and DDoS botnet recruitment
+  - Telnet brute force attacks on ports 23, 2323, 7547
+  - Connection to known C2 infrastructure
+  - Malicious binary deployment on compromised devices
+  - Default credential exploitation
+
+  MITRE ATT&CK Mapping:
+  - T1110.001: Brute Force - Password Guessing
+  - T1071.001: Application Layer Protocol - Web Protocols
+  - T1573: Encrypted Channel
+  - T1498: Network Denial of Service
+  - T1499: Endpoint Denial of Service
+  - T1021.004: Remote Services - SSH
+  - T1021.006: Remote Services - Windows Remote Management
+
+  Required Telemetry:
+  - Network traffic logs (Telnet, SSH connections)
+  - Authentication logs
+  - Process execution logs
+  - File integrity monitoring
+  - Firewall/IDS logs
+-->
+
+<group name="mirai_gafgyt_botnet,iot_attack,ddos,telnet_brute_force,">
+
+  <!-- Rule: Mirai/Gafgyt - Known Malicious File Hash Detection -->
+  <rule id="100060" level="15">
+    <if_group>syscheck</if_group>
+    <field name="sha256">^(46797b147888fe2866543cf6c5dd55811d0968e5b6e461a8e4639ec33c9f2eab)$</field>
+    <description>Mirai/Gafgyt Botnet: Known malicious file hash detected on system</description>
+    <mitre>
+      <id>T1105</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,tsc_CC7.2,tsc_CC6.1,tsc_CC6.8,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Connection to Known C2 IP (209.141.44.28) -->
+  <rule id="100061" level="14">
+    <if_sid>87101</if_sid>
+    <field name="win.eventdata.destinationIp">^209\.141\.44\.28$</field>
+    <description>Mirai/Gafgyt Botnet: Connection to known C2 IP 209.141.44.28 detected</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,tsc_CC7.2,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Connection to Known C2 IP (51.38.137.114) -->
+  <rule id="100062" level="14">
+    <if_sid>87101</if_sid>
+    <field name="win.eventdata.destinationIp">^51\.38\.137\.114$</field>
+    <description>Mirai/Gafgyt Botnet: Connection to known C2 IP 51.38.137.114 detected</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,tsc_CC7.2,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Connection to Known C2 IP (176.65.144.253) -->
+  <rule id="100063" level="14">
+    <if_sid>87101</if_sid>
+    <field name="win.eventdata.destinationIp">^176\.65\.144\.253$</field>
+    <description>Mirai/Gafgyt Botnet: Connection to known C2 IP 176.65.144.253 detected</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,tsc_CC7.2,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Connection to Known C2 Domain (connect.antiwifi.dev) -->
+  <rule id="100064" level="14">
+    <if_sid>87101</if_sid>
+    <field name="win.eventdata.destinationHostname">^connect\.antiwifi\.dev$</field>
+    <description>Mirai/Gafgyt Botnet: Connection to known C2 domain connect.antiwifi.dev detected</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,tsc_CC7.2,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Telnet Brute Force Attempt (Base Rule) -->
+  <rule id="100065" level="6">
+    <if_sid>5503</if_sid>
+    <match>telnet</match>
+    <description>Mirai/Gafgyt Botnet: Telnet authentication failure (common for botnet recruitment)</description>
+    <mitre>
+      <id>T1110.001</id>
+      <id>T1021.006</id>
+    </mitre>
+    <group>authentication_failed,pci_dss_10.2.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Telnet Brute Force Attack (Frequency-Based) -->
+  <rule id="100066" level="12" frequency="10" timeframe="60">
+    <if_matched_sid>100065</if_matched_sid>
+    <same_source_ip/>
+    <description>Mirai/Gafgyt Botnet: Telnet brute force attack detected from $(srcip) (10+ failed attempts in 60 seconds)</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>authentication_failures,pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - SSH Brute Force Attempt (Base Rule) -->
+  <rule id="100067" level="6">
+    <if_sid>5710</if_sid>
+    <description>Mirai/Gafgyt Botnet: SSH authentication failure (potential botnet recruitment)</description>
+    <mitre>
+      <id>T1110.001</id>
+      <id>T1021.006</id>
+    </mitre>
+    <group>authentication_failed,pci_dss_10.2.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - SSH Brute Force Attack (Frequency-Based) -->
+  <rule id="100068" level="12" frequency="10" timeframe="60">
+    <if_matched_sid>100067</if_matched_sid>
+    <same_source_ip/>
+    <description>Mirai/Gafgyt Botnet: SSH brute force attack detected from $(srcip) (10+ failed attempts in 60 seconds)</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>authentication_failures,pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Connection to Known C2 Infrastructure -->
+  <rule id="100069" level="12">
+    <if_sid>87101</if_sid>
+    <field name="win.eventdata.destinationIp" type="pcre2">^(209\.141\.44\.28|51\.38\.137\.114|176\.65\.144\.253)$</field>
+    <description>Mirai/Gafgyt Botnet: Connection to known Mirai C2 infrastructure detected</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Default Credential Usage Pattern -->
+  <rule id="100070" level="10">
+    <if_sid>5503,5710</if_sid>
+    <field name="user" type="pcre2">^(admin|root|default|user|guest|support)$</field>
+    <description>Mirai/Gafgyt Botnet: Login attempt with common default username (potential botnet recruitment)</description>
+    <mitre>
+      <id>T1078</id>
+      <id>T1110.001</id>
+    </mitre>
+    <group>authentication_failed,pci_dss_10.2.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Malicious Binary Download Pattern -->
+  <rule id="100071" level="12">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)(wget|curl|tftp).*(/tmp/|/var/tmp/|/dev/shm/).*(\.sh|\.elf|\.arm|\.mips|\.x86)</field>
+    <description>Mirai/Gafgyt Botnet: Suspicious binary download to temporary directory detected</description>
+    <mitre>
+      <id>T1105</id>
+    </mitre>
+    <group>pci_dss_10.6.1,gdpr_IV_35.7.d,nist_800_53_AU.6,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - ELF Binary Execution from Temp Directory -->
+  <rule id="100072" level="13">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.image" type="pcre2">(?i)/(tmp|var/tmp|dev/shm)/.*\.(elf|arm|mips|x86)$</field>
+    <description>Mirai/Gafgyt Botnet: ELF binary execution from temporary directory (botnet payload)</description>
+    <mitre>
+      <id>T1204.002</id>
+    </mitre>
+    <group>pci_dss_10.6.1,gdpr_IV_35.7.d,nist_800_53_AU.6,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Process Modification for Persistence -->
+  <rule id="100073" level="12">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)(echo.*>.*rc\.local|crontab.*-e|systemctl.*enable)</field>
+    <description>Mirai/Gafgyt Botnet: System modification for persistence detected</description>
+    <mitre>
+      <id>T1053.003</id>
+      <id>T1547</id>
+    </mitre>
+    <group>pci_dss_10.6.1,gdpr_IV_35.7.d,nist_800_53_AU.6,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - DDoS Attack Process Execution -->
+  <rule id="100074" level="14">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)(udpflood|synflood|httpflood|tcpflood|slowloris)</field>
+    <description>Mirai/Gafgyt Botnet: DDoS attack process execution detected</description>
+    <mitre>
+      <id>T1498</id>
+      <id>T1499</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Scanner Process for Vulnerable Devices -->
+  <rule id="100075" level="11">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)(masscan|zmap|nmap).*(-p|--ports).*(23|2323|7547)</field>
+    <description>Mirai/Gafgyt Botnet: Network scanning for vulnerable IoT devices detected</description>
+    <mitre>
+      <id>T1046</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Successful Login After Brute Force -->
+  <rule id="100076" level="14">
+    <if_sid>100066,100068</if_sid>
+    <if_matched_sid>5501</if_matched_sid>
+    <same_source_ip/>
+    <description>Mirai/Gafgyt Botnet: Successful authentication after brute force attack (device compromised)</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>authentication_success,pci_dss_10.2.5,gdpr_IV_35.7.d,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - High-Confidence Infection (C2 Connection + Malicious Binary) -->
+  <rule id="100077" level="15">
+    <if_sid>100061,100062,100063,100064</if_sid>
+    <if_matched_sid>100071,100072</if_matched_sid>
+    <description>Mirai/Gafgyt Botnet: High-confidence infection - C2 connection combined with malicious binary execution</description>
+    <mitre>
+      <id>T1071.001</id>
+      <id>T1105</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Multiple Device Compromise Attempt (Scanning + Brute Force) -->
+  <rule id="100078" level="15">
+    <if_sid>100075</if_sid>
+    <if_matched_sid>100066,100068</if_matched_sid>
+    <description>Mirai/Gafgyt Botnet: Active botnet propagation - Network scanning followed by brute force attacks</description>
+    <mitre>
+      <id>T1046</id>
+      <id>T1110.001</id>
+    </mitre>
+    <group>pci_dss_11.4,gdpr_IV_35.7.d,nist_800_53_SI.4,</group>
+  </rule>
+
+  <!-- Rule: Mirai/Gafgyt - Watchdog Process Termination -->
+  <rule id="100079" level="11">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">(?i)kill.*watchdog|killall.*watchdog|pkill.*watchdog</field>
+    <description>Mirai/Gafgyt Botnet: Watchdog process termination detected (anti-recovery mechanism)</description>
+    <mitre>
+      <id>T1562.001</id>
+    </mitre>
+    <group>pci_dss_10.6.1,gdpr_IV_35.7.d,nist_800_53_AU.6,</group>
+  </rule>
+
+</group>

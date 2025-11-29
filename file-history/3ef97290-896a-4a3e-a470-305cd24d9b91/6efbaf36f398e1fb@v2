@@ -1,0 +1,680 @@
+#!/usr/bin/env python3
+"""
+ERIC Tools MCP Server
+Provides Model Context Protocol access to Eric Zimmerman's forensics tools
+for Windows incident response and digital forensics analysis.
+"""
+
+import json
+import subprocess
+import sys
+import os
+import csv
+import io
+from pathlib import Path
+from typing import Any
+import logging
+
+# MCP SDK imports
+from mcp.server import Server, stdio_server
+from mcp.types import (
+    Tool,
+    TextContent,
+    ToolResult,
+)
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Initialize MCP server
+server = Server("eric-tools-mcp")
+
+# Configuration - adjust paths to your ERIC tools installation
+ERIC_TOOLS_PATH = os.environ.get("ERIC_TOOLS_PATH", "/opt/ERIC")
+WORKING_DIR = os.environ.get("WORKING_DIR", "/tmp/eric_analysis")
+
+# Ensure working directory exists
+Path(WORKING_DIR).mkdir(parents=True, exist_ok=True)
+
+
+class ERICToolExecutor:
+    """Executes ERIC tools and parses output"""
+
+    def __init__(self, tools_path: str = ERIC_TOOLS_PATH):
+        self.tools_path = tools_path
+        self.working_dir = WORKING_DIR
+
+    def _run_command(self, command: list[str]) -> tuple[bool, str, str]:
+        """Run a command and return success, stdout, stderr"""
+        try:
+            result = subprocess.run(
+                command,
+                capture_output=True,
+                text=True,
+                timeout=300,
+                cwd=self.working_dir
+            )
+            return result.returncode == 0, result.stdout, result.stderr
+        except subprocess.TimeoutExpired:
+            return False, "", "Command timeout after 5 minutes"
+        except Exception as e:
+            return False, "", str(e)
+
+    def _parse_csv_output(self, csv_data: str) -> list[dict]:
+        """Parse CSV output from ERIC tools"""
+        if not csv_data.strip():
+            return []
+
+        try:
+            reader = csv.DictReader(io.StringIO(csv_data))
+            return list(reader)
+        except Exception as e:
+            logger.error(f"Failed to parse CSV: {e}")
+            return []
+
+    def _find_tool(self, tool_name: str) -> str:
+        """Find tool executable"""
+        tool_path = Path(self.tools_path) / f"{tool_name}.exe"
+        if not tool_path.exists():
+            # Try without .exe for Linux/.NET Core
+            tool_path = Path(self.tools_path) / tool_name
+            if not tool_path.exists():
+                raise FileNotFoundError(f"Tool not found: {tool_name} in {self.tools_path}")
+        return str(tool_path)
+
+    def run_evtxecmd(self, evtx_file: str, options: dict = None) -> dict[str, Any]:
+        """
+        Execute EvtxECmd (Windows Event Log parsing)
+
+        Args:
+            evtx_file: Path to .evtx file
+            options: Additional options (maps_dir, csv_output, json_output, etc.)
+        """
+        if not Path(evtx_file).exists():
+            return {"error": f"Event log file not found: {evtx_file}"}
+
+        try:
+            tool_path = self._find_tool("EvtxECmd")
+            cmd = [tool_path, "-f", evtx_file]
+
+            # Add options
+            if options:
+                if options.get("maps_dir"):
+                    cmd.extend(["-m", options["maps_dir"]])
+                if options.get("include_raw"):
+                    cmd.append("--includeRaw")
+                if options.get("include_gzip"):
+                    cmd.append("--includeGuid")
+
+            # Output to CSV by default
+            output_file = Path(self.working_dir) / "evtxecmd_output.csv"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"EvtxECmd failed: {stderr}"}
+
+            # Parse results
+            if output_file.exists():
+                with open(output_file, 'r', encoding='utf-8-sig') as f:
+                    csv_data = f.read()
+                events = self._parse_csv_output(csv_data)
+                return {
+                    "tool": "EvtxECmd",
+                    "file": evtx_file,
+                    "events_count": len(events),
+                    "events": events[:100],  # Return first 100 for brevity
+                    "total_events": len(events),
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_recmd(self, registry_file: str, options: dict = None) -> dict[str, Any]:
+        """
+        Execute RECmd (Windows Registry analysis)
+
+        Args:
+            registry_file: Path to registry hive (SYSTEM, SOFTWARE, NTUSER.DAT, etc.)
+            options: Additional options (hive_name, batch_mode, etc.)
+        """
+        if not Path(registry_file).exists():
+            return {"error": f"Registry file not found: {registry_file}"}
+
+        try:
+            tool_path = self._find_tool("RECmd")
+            cmd = [tool_path, "-r", registry_file]
+
+            # Add options
+            if options:
+                if options.get("hive_name"):
+                    cmd.extend(["--hiveName", options["hive_name"]])
+                if options.get("regex"):
+                    cmd.extend(["--regex", options["regex"]])
+
+            # Output to CSV
+            output_file = Path(self.working_dir) / "recmd_output.csv"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"RECmd failed: {stderr}"}
+
+            if output_file.exists():
+                with open(output_file, 'r', encoding='utf-8-sig') as f:
+                    csv_data = f.read()
+                entries = self._parse_csv_output(csv_data)
+                return {
+                    "tool": "RECmd",
+                    "file": registry_file,
+                    "entries_count": len(entries),
+                    "entries": entries[:50],
+                    "total_entries": len(entries),
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_mftecmd(self, mft_file: str, options: dict = None) -> dict[str, Any]:
+        """
+        Execute MFTECmd (NTFS Master File Table analysis)
+
+        Args:
+            mft_file: Path to $MFT file
+            options: Additional options (csv_output, etc.)
+        """
+        if not Path(mft_file).exists():
+            return {"error": f"MFT file not found: {mft_file}"}
+
+        try:
+            tool_path = self._find_tool("MFTECmd")
+            cmd = [tool_path, "-f", mft_file]
+
+            # Output to CSV
+            output_file = Path(self.working_dir) / "mftecmd_output.csv"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"MFTECmd failed: {stderr}"}
+
+            if output_file.exists():
+                with open(output_file, 'r', encoding='utf-8-sig') as f:
+                    csv_data = f.read()
+                entries = self._parse_csv_output(csv_data)
+                return {
+                    "tool": "MFTECmd",
+                    "file": mft_file,
+                    "entries_count": len(entries),
+                    "entries": entries[:50],
+                    "total_entries": len(entries),
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_pecmd(self, prefetch_file: str) -> dict[str, Any]:
+        """
+        Execute PECmd (Windows Prefetch analysis)
+
+        Args:
+            prefetch_file: Path to .pf file
+        """
+        if not Path(prefetch_file).exists():
+            return {"error": f"Prefetch file not found: {prefetch_file}"}
+
+        try:
+            tool_path = self._find_tool("PECmd")
+            cmd = [tool_path, "-f", prefetch_file]
+
+            # Output to JSON for detailed data
+            output_file = Path(self.working_dir) / "pecmd_output.json"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"PECmd failed: {stderr}"}
+
+            if output_file.exists():
+                with open(output_file, 'r') as f:
+                    data = json.load(f)
+                return {
+                    "tool": "PECmd",
+                    "file": prefetch_file,
+                    "prefetch_data": data,
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_jlecmd(self, jumplist_file: str) -> dict[str, Any]:
+        """
+        Execute JLECmd (Windows Jump List analysis)
+
+        Args:
+            jumplist_file: Path to AutomaticDestinations or CustomDestinations file
+        """
+        if not Path(jumplist_file).exists():
+            return {"error": f"Jump list file not found: {jumplist_file}"}
+
+        try:
+            tool_path = self._find_tool("JLECmd")
+            cmd = [tool_path, "-f", jumplist_file]
+
+            # Output to CSV
+            output_file = Path(self.working_dir) / "jlecmd_output.csv"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"JLECmd failed: {stderr}"}
+
+            if output_file.exists():
+                with open(output_file, 'r', encoding='utf-8-sig') as f:
+                    csv_data = f.read()
+                entries = self._parse_csv_output(csv_data)
+                return {
+                    "tool": "JLECmd",
+                    "file": jumplist_file,
+                    "entries_count": len(entries),
+                    "entries": entries,
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_lecmd(self, lnk_file: str) -> dict[str, Any]:
+        """
+        Execute LECmd (Windows LNK/Shortcut analysis)
+
+        Args:
+            lnk_file: Path to .lnk file
+        """
+        if not Path(lnk_file).exists():
+            return {"error": f"LNK file not found: {lnk_file}"}
+
+        try:
+            tool_path = self._find_tool("LECmd")
+            cmd = [tool_path, "-f", lnk_file]
+
+            # Output to JSON
+            output_file = Path(self.working_dir) / "lecmd_output.json"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"LECmd failed: {stderr}"}
+
+            if output_file.exists():
+                with open(output_file, 'r') as f:
+                    data = json.load(f)
+                return {
+                    "tool": "LECmd",
+                    "file": lnk_file,
+                    "lnk_data": data,
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_sbecmd(self, shellbags_file: str) -> dict[str, Any]:
+        """
+        Execute SBECmd (Windows ShellBags analysis)
+
+        Args:
+            shellbags_file: Path to registry hive containing ShellBags
+        """
+        if not Path(shellbags_file).exists():
+            return {"error": f"ShellBags file not found: {shellbags_file}"}
+
+        try:
+            tool_path = self._find_tool("SBECmd")
+            cmd = [tool_path, "-f", shellbags_file]
+
+            # Output to CSV
+            output_file = Path(self.working_dir) / "sbecmd_output.csv"
+            cmd.extend(["-o", str(output_file)])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            if not success:
+                return {"error": f"SBECmd failed: {stderr}"}
+
+            if output_file.exists():
+                with open(output_file, 'r', encoding='utf-8-sig') as f:
+                    csv_data = f.read()
+                entries = self._parse_csv_output(csv_data)
+                return {
+                    "tool": "SBECmd",
+                    "file": shellbags_file,
+                    "entries_count": len(entries),
+                    "entries": entries,
+                    "raw_output": stdout
+                }
+
+            return {"error": "No output generated"}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_yara(self, target_file: str, yara_rule: str) -> dict[str, Any]:
+        """
+        Execute Yara malware analysis
+
+        Args:
+            target_file: File to scan
+            yara_rule: Path to .yar rule file or rule name
+        """
+        if not Path(target_file).exists():
+            return {"error": f"Target file not found: {target_file}"}
+
+        try:
+            cmd = ["yara", "-r", yara_rule, target_file]
+            success, stdout, stderr = self._run_command(cmd)
+
+            return {
+                "tool": "Yara",
+                "target": target_file,
+                "rule": yara_rule,
+                "matches": stdout if stdout else "No matches",
+                "errors": stderr if stderr else None,
+                "success": success
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
+    def run_chainsaw(self, evtx_file: str, sigma_rules: str = None) -> dict[str, Any]:
+        """
+        Execute Chainsaw for Windows event log threat hunting
+
+        Args:
+            evtx_file: Path to .evtx file
+            sigma_rules: Path to Sigma rules directory
+        """
+        if not Path(evtx_file).exists():
+            return {"error": f"Event log file not found: {evtx_file}"}
+
+        try:
+            cmd = ["chainsaw", "hunt", evtx_file]
+
+            if sigma_rules:
+                cmd.extend(["-r", sigma_rules])
+
+            success, stdout, stderr = self._run_command(cmd)
+
+            return {
+                "tool": "Chainsaw",
+                "evtx_file": evtx_file,
+                "sigma_rules": sigma_rules,
+                "matches": stdout if stdout else "No detections",
+                "errors": stderr if stderr else None,
+                "success": success
+            }
+        except Exception as e:
+            return {"error": str(e)}
+
+
+# Initialize executor
+executor = ERICToolExecutor()
+
+
+# MCP Tool Definitions
+@server.list_tools()
+async def list_tools() -> list[Tool]:
+    """List available forensics tools"""
+    return [
+        Tool(
+            name="analyze_event_log",
+            description="Parse Windows event logs (.evtx) using EvtxECmd. Extracts and analyzes security events, system events, and application logs.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "evtx_file": {
+                        "type": "string",
+                        "description": "Path to the .evtx event log file to analyze"
+                    },
+                    "maps_dir": {
+                        "type": "string",
+                        "description": "Optional: Path to EvtxECmd maps directory for enhanced parsing"
+                    },
+                    "include_raw": {
+                        "type": "boolean",
+                        "description": "Include raw XML data in output"
+                    }
+                },
+                "required": ["evtx_file"]
+            }
+        ),
+        Tool(
+            name="analyze_registry",
+            description="Analyze Windows registry hives (SYSTEM, SOFTWARE, NTUSER.DAT, etc.) using RECmd. Extracts registry keys, values, and searches for indicators of compromise.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "registry_file": {
+                        "type": "string",
+                        "description": "Path to registry hive file"
+                    },
+                    "hive_name": {
+                        "type": "string",
+                        "description": "Optional: Hive name (SYSTEM, SOFTWARE, NTUSER.DAT, SAM, SECURITY)"
+                    },
+                    "regex": {
+                        "type": "string",
+                        "description": "Optional: Regex pattern to search registry entries"
+                    }
+                },
+                "required": ["registry_file"]
+            }
+        ),
+        Tool(
+            name="analyze_mft",
+            description="Analyze NTFS Master File Table ($MFT) using MFTECmd. Reconstructs file system timeline and identifies file access patterns.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "mft_file": {
+                        "type": "string",
+                        "description": "Path to $MFT file"
+                    }
+                },
+                "required": ["mft_file"]
+            }
+        ),
+        Tool(
+            name="analyze_prefetch",
+            description="Analyze Windows Prefetch files (.pf) using PECmd. Shows program execution history, timestamps, and accessed files.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "prefetch_file": {
+                        "type": "string",
+                        "description": "Path to .pf prefetch file"
+                    }
+                },
+                "required": ["prefetch_file"]
+            }
+        ),
+        Tool(
+            name="analyze_jump_lists",
+            description="Analyze Windows Jump Lists using JLECmd. Extracts user recently accessed files and programs.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "jumplist_file": {
+                        "type": "string",
+                        "description": "Path to AutomaticDestinations or CustomDestinations file"
+                    }
+                },
+                "required": ["jumplist_file"]
+            }
+        ),
+        Tool(
+            name="analyze_lnk",
+            description="Analyze Windows shortcut (.lnk) files using LECmd. Extracts target paths, arguments, and creation/access times.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "lnk_file": {
+                        "type": "string",
+                        "description": "Path to .lnk shortcut file"
+                    }
+                },
+                "required": ["lnk_file"]
+            }
+        ),
+        Tool(
+            name="analyze_shellbags",
+            description="Analyze Windows ShellBags using SBECmd. Shows folder access history and user navigation patterns.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "shellbags_file": {
+                        "type": "string",
+                        "description": "Path to NTUSER.DAT or USRCLASS.DAT containing ShellBags"
+                    }
+                },
+                "required": ["shellbags_file"]
+            }
+        ),
+        Tool(
+            name="scan_with_yara",
+            description="Scan files for malware using Yara rules. Matches file content against known malware signatures.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "target_file": {
+                        "type": "string",
+                        "description": "Path to file or directory to scan"
+                    },
+                    "yara_rule": {
+                        "type": "string",
+                        "description": "Path to .yar rule file or rule name"
+                    }
+                },
+                "required": ["target_file", "yara_rule"]
+            }
+        ),
+        Tool(
+            name="threat_hunt_events",
+            description="Hunt for threats in Windows event logs using Chainsaw and Sigma rules. Automatically detects suspicious patterns.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "evtx_file": {
+                        "type": "string",
+                        "description": "Path to .evtx event log file"
+                    },
+                    "sigma_rules": {
+                        "type": "string",
+                        "description": "Optional: Path to Sigma rules directory"
+                    }
+                },
+                "required": ["evtx_file"]
+            }
+        )
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict) -> ToolResult:
+    """Execute a forensics tool"""
+    try:
+        result = None
+
+        if name == "analyze_event_log":
+            result = executor.run_evtxecmd(
+                arguments["evtx_file"],
+                {
+                    "maps_dir": arguments.get("maps_dir"),
+                    "include_raw": arguments.get("include_raw", False)
+                }
+            )
+
+        elif name == "analyze_registry":
+            result = executor.run_recmd(
+                arguments["registry_file"],
+                {
+                    "hive_name": arguments.get("hive_name"),
+                    "regex": arguments.get("regex")
+                }
+            )
+
+        elif name == "analyze_mft":
+            result = executor.run_mftecmd(arguments["mft_file"])
+
+        elif name == "analyze_prefetch":
+            result = executor.run_pecmd(arguments["prefetch_file"])
+
+        elif name == "analyze_jump_lists":
+            result = executor.run_jlecmd(arguments["jumplist_file"])
+
+        elif name == "analyze_lnk":
+            result = executor.run_lecmd(arguments["lnk_file"])
+
+        elif name == "analyze_shellbags":
+            result = executor.run_sbecmd(arguments["shellbags_file"])
+
+        elif name == "scan_with_yara":
+            result = executor.run_yara(
+                arguments["target_file"],
+                arguments["yara_rule"]
+            )
+
+        elif name == "threat_hunt_events":
+            result = executor.run_chainsaw(
+                arguments["evtx_file"],
+                arguments.get("sigma_rules")
+            )
+
+        else:
+            return ToolResult(content=[
+                TextContent(
+                    type="text",
+                    text=f"Unknown tool: {name}"
+                )
+            ], isError=True)
+
+        return ToolResult(content=[
+            TextContent(
+                type="text",
+                text=json.dumps(result, indent=2, default=str)
+            )
+        ])
+
+    except Exception as e:
+        return ToolResult(content=[
+            TextContent(
+                type="text",
+                text=f"Error executing tool: {str(e)}"
+            )
+        ], isError=True)
+
+
+async def main():
+    """Run the MCP server"""
+    async with stdio_server(server) as (read_stream, write_stream):
+        await server.run(read_stream, write_stream, InitializationOptions())
+
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())

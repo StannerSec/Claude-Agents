@@ -1,0 +1,47 @@
+2025-11-28T17:28:26.383Z [DEBUG] Watching for changes in setting files /home/stanner/.claude/settings.json, /home/stanner/.claude/settings.json, /home/stanner/.claude/settings.local.json...
+2025-11-28T17:28:26.399Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-28T17:28:26.399Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-28T17:28:26.399Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-28T17:28:26.399Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-28T17:28:26.399Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-28T17:28:26.406Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-28T17:28:26.406Z [DEBUG] Total LSP servers loaded: 0
+2025-11-28T17:28:26.406Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-28T17:28:26.406Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-28T17:28:26.406Z [DEBUG] MCP server "todoist": Initializing HTTP transport to https://ai.todoist.net/mcp
+2025-11-28T17:28:26.407Z [DEBUG] MCP server "todoist": Node version: v24.3.0, Platform: linux
+2025-11-28T17:28:26.407Z [DEBUG] MCP server "todoist": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-11-28T17:28:26.407Z [DEBUG] LSP server manager initialized successfully
+2025-11-28T17:28:26.407Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-28T17:28:26.407Z [DEBUG] MCP server "todoist": Proxy options: default
+2025-11-28T17:28:26.407Z [DEBUG] MCP server "todoist": HTTP transport options: {"url":"https://ai.todoist.net/mcp","headers":{"User-Agent":"claude-code/2.0.55"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-11-28T17:28:26.407Z [DEBUG] MCP server "todoist": HTTP transport created successfully
+2025-11-28T17:28:26.409Z [DEBUG] MCP server "todoist": Client created, setting up request handler
+2025-11-28T17:28:26.409Z [DEBUG] MCP server "todoist": Starting connection with timeout of 30000ms
+2025-11-28T17:28:26.409Z [DEBUG] MCP server "todoist": Testing basic HTTP connectivity to https://ai.todoist.net/mcp
+2025-11-28T17:28:26.409Z [DEBUG] MCP server "todoist": Parsed URL: host=ai.todoist.net, port=default, protocol=https:
+2025-11-28T17:28:26.410Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-28T17:28:26.410Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-28T17:28:26.410Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-28T17:28:26.410Z [DEBUG] MCP server "todoist": Expires in: 315210648s
+2025-11-28T17:28:26.423Z [DEBUG] Git remote URL: null
+2025-11-28T17:28:26.423Z [DEBUG] No git remote URL found
+2025-11-28T17:28:26.423Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-11-28T17:28:26.706Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-28T17:28:26.706Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-28T17:28:26.706Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-28T17:28:26.706Z [DEBUG] MCP server "todoist": Expires in: 315210648s
+2025-11-28T17:28:26.758Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-28T17:28:26.758Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-28T17:28:26.758Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-28T17:28:26.758Z [DEBUG] MCP server "todoist": Expires in: 315210648s
+2025-11-28T17:28:26.759Z [DEBUG] MCP server "todoist": Successfully connected to http server in 353ms
+2025-11-28T17:28:26.759Z [DEBUG] MCP server "todoist": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"todoist-mcp-server","version":"0.1.0"}}
+2025-11-28T17:28:26.760Z [DEBUG] MCP server "proton-email": Starting connection with timeout of 30000ms
+2025-11-28T17:28:27.050Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-28 11:28:27,050 - proton-email-server - INFO - Starting Proton Bridge Email MCP server...
+2025-11-28T17:28:27.054Z [DEBUG] MCP server "proton-email": Successfully connected to stdio server in 295ms
+2025-11-28T17:28:27.054Z [DEBUG] MCP server "proton-email": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"proton-email","version":"1.22.0"}}
+2025-11-28T17:28:27.055Z [DEBUG] MCP server "obsidian": Starting connection with timeout of 30000ms
+2025-11-28T17:28:27.349Z [DEBUG] MCP server "obsidian": Successfully connected to stdio server in 295ms
+2025-11-28T17:28:27.349Z [DEBUG] MCP server "obsidian": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"mcp-obsidian","version":"1.22.0"}}
+2025-11-28T17:28:27.350Z [DEBUG] MCP server "synthetic-log-generator": Starting connection with timeout of 30000ms

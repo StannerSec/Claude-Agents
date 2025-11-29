@@ -1,0 +1,284 @@
+#!/usr/bin/env python3
+"""
+CDSA Blue Team Agent
+Autonomous agent for Windows incident response and digital forensics analysis.
+Supports incident investigation, threat hunting, and forensic analysis.
+"""
+
+import os
+import json
+import sys
+from pathlib import Path
+from typing import Optional
+
+from anthropic import Anthropic
+
+
+class CrimsaCDSABlueTeamAgent:
+    """Blue team agent for CDSA incident response and forensics"""
+
+    def __init__(self, api_key: Optional[str] = None):
+        self.client = Anthropic(api_key=api_key)
+        self.model = "claude-3-5-sonnet-20241022"
+        self.conversation_history = []
+        self.system_prompt = self._build_system_prompt()
+
+    def _build_system_prompt(self) -> str:
+        """Build comprehensive system prompt for blue team agent"""
+        return """You are an expert blue team agent specializing in Windows incident response and digital forensics.
+
+Your role is to:
+1. Guide incident investigations using forensic artifacts
+2. Analyze Windows event logs, registry hives, and filesystem timelines
+3. Detect indicators of compromise (IOCs) and malware execution
+4. Reconstruct attack timelines and user activity
+5. Recommend remediation and hardening measures
+6. Support CDSA exam preparation and knowledge
+
+Core Competencies:
+- Windows forensics and incident response
+- Event log analysis and correlation
+- Registry forensics and persistence mechanism detection
+- Filesystem timeline reconstruction (MFT analysis)
+- Program execution tracking (Prefetch, Jump Lists)
+- User activity analysis (ShellBags, LNK files)
+- Malware detection and analysis (Yara rules)
+- Threat hunting (Chainsaw with Sigma rules)
+
+Available Tools:
+- analyze_event_log: Parse Windows event logs using EvtxECmd
+- analyze_registry: Registry forensics with RECmd
+- analyze_mft: NTFS timeline analysis with MFTECmd
+- analyze_prefetch: Program execution analysis with PECmd
+- analyze_jump_lists: Recent activity with JLECmd
+- analyze_lnk: Shortcut analysis with LECmd
+- analyze_shellbags: Folder access history with SBECmd
+- scan_with_yara: Malware signature scanning
+- threat_hunt_events: Threat hunting with Chainsaw
+
+Investigation Framework:
+1. INITIAL TRIAGE: Determine scope, affected systems, and timeline
+2. ARTIFACT COLLECTION: Gather Windows forensic artifacts
+3. ANALYSIS: Execute forensic tools and correlate findings
+4. TIMELINE RECONSTRUCTION: Build comprehensive event timeline
+5. IOC IDENTIFICATION: Identify malware, lateral movement, exfiltration
+6. PERSISTENCE ANALYSIS: Detect persistence mechanisms
+7. REMEDIATION: Recommend containment and recovery steps
+
+For Each Artifact:
+- Explain what data it contains
+- Describe analysis approach
+- Interpret findings
+- Correlate with other artifacts
+- Identify suspicious patterns
+
+For CDSA Exam Support:
+- Explain forensic concepts and techniques
+- Discuss tool capabilities and limitations
+- Review real-world incident scenarios
+- Practice evidence analysis and reporting
+
+Important Guidelines:
+- Always request file paths before analysis
+- Explain findings in forensic context
+- Correlate multiple data sources for complete picture
+- Consider timeline, scope, and impact of findings
+- Recommend appropriate response actions
+- Maintain forensic integrity and chain of custody considerations
+- Use technical accuracy in all explanations
+
+When analyzing artifacts:
+1. Ask clarifying questions about the investigation context
+2. Request specific artifacts or directories to analyze
+3. Execute appropriate tools with the user's files
+4. Analyze results and identify suspicious activity
+5. Correlate findings across multiple artifacts
+6. Provide investigation recommendations
+
+Example Investigation Flow:
+User: "We found suspicious network activity on a Windows server"
+Agent:
+- Ask which server, when activity occurred, what type of activity
+- Request Security event log, system event log, network connections
+- Analyze event logs for relevant events
+- Check registry for persistence mechanisms
+- Review Prefetch for suspicious program execution
+- Correlate findings and recommend next steps
+
+You are methodical, thorough, and focused on evidence-based analysis."""
+
+    def chat(self, user_message: str) -> str:
+        """Send message and get response from agent"""
+        self.conversation_history.append({
+            "role": "user",
+            "content": user_message
+        })
+
+        response = self.client.messages.create(
+            model=self.model,
+            max_tokens=8096,
+            system=self.system_prompt,
+            messages=self.conversation_history
+        )
+
+        assistant_message = response.content[0].text
+        self.conversation_history.append({
+            "role": "assistant",
+            "content": assistant_message
+        })
+
+        return assistant_message
+
+    def start_investigation(self) -> None:
+        """Start interactive investigation session"""
+        print("\n" + "="*80)
+        print("CDSA BLUE TEAM INCIDENT RESPONSE AGENT")
+        print("="*80)
+        print("\nAvailable Commands:")
+        print("  'analyze'    - Start forensic artifact analysis")
+        print("  'hunt'       - Run threat hunting on event logs")
+        print("  'timeline'   - Reconstruct timeline from artifacts")
+        print("  'scan'       - Scan for malware with Yara")
+        print("  'help'       - Show available tools and techniques")
+        print("  'exit'       - Exit the agent")
+        print("\nOr just describe your incident and I'll help guide the investigation.\n")
+
+        while True:
+            try:
+                user_input = input("\n[Investigation] > ").strip()
+
+                if not user_input:
+                    continue
+
+                if user_input.lower() == "exit":
+                    print("\nExiting investigation session. Goodbye!")
+                    break
+
+                if user_input.lower() == "help":
+                    print(self._get_help_text())
+                    continue
+
+                print("\n[Agent Analyzing...]")
+                response = self.chat(user_input)
+                print(f"\n[Agent Response]\n{response}")
+
+            except KeyboardInterrupt:
+                print("\n\nInterrupted. Type 'exit' to quit.")
+            except Exception as e:
+                print(f"\nError: {e}")
+
+    def _get_help_text(self) -> str:
+        """Return help information"""
+        return """
+FORENSIC ANALYSIS TOOLS:
+
+1. EVENT LOG ANALYSIS (EvtxECmd)
+   - Analyze: /Windows/System32/winevt/Logs/Security.evtx
+   - Identifies: Authentication, privilege escalation, logon events
+   - Use case: Lateral movement, persistence, initial access
+
+2. REGISTRY FORENSICS (RECmd)
+   - Analyze: SYSTEM, SOFTWARE, NTUSER.DAT, SAM, SECURITY hives
+   - Identifies: Installed software, persistence, network connections
+   - Use case: Malware persistence, user activity, system configuration
+
+3. NTFS TIMELINE ($MFT Analysis with MFTECmd)
+   - Analyze: $MFT file from NTFS volume
+   - Identifies: File access patterns, deletion, creation
+   - Use case: File activity timeline, data exfiltration
+
+4. PROGRAM EXECUTION (Prefetch Analysis with PECmd)
+   - Analyze: C:\\Windows\\Prefetch\\*.pf files
+   - Identifies: When programs ran, how often, file access
+   - Use case: Malware execution, lateral movement tools
+
+5. USER ACTIVITY (Jump Lists with JLECmd)
+   - Analyze: AppData\\Roaming\\Microsoft\\Windows\\Recent
+   - Identifies: Recently opened files and programs
+   - Use case: User behavior, data access patterns
+
+6. SHORTCUT ANALYSIS (LECmd)
+   - Analyze: Recent, Desktop, Documents shortcuts
+   - Identifies: Target paths, access times, arguments
+   - Use case: User activity, suspicious file access
+
+7. FOLDER NAVIGATION (ShellBags with SBECmd)
+   - Analyze: Registry ShellBags data
+   - Identifies: Folders accessed and their timestamps
+   - Use case: User directory access patterns
+
+8. MALWARE SCANNING (Yara)
+   - Scan: Files and directories for malware signatures
+   - Identifies: Known malware, suspicious code patterns
+   - Use case: Malware detection and identification
+
+9. THREAT HUNTING (Chainsaw)
+   - Hunt: Event logs with Sigma rules
+   - Identifies: Suspicious patterns and known attacks
+   - Use case: Detection engineering, threat hunting
+
+COMMON INVESTIGATION SCENARIOS:
+
+SCENARIO: Suspicious Process Execution
+1. Check Prefetch for unexpected program execution
+2. Review Security event log for process creation
+3. Check registry for persistence mechanisms
+4. Analyze MFT for file modification patterns
+
+SCENARIO: User Data Exfiltration
+1. Check Jump Lists for accessed files
+2. Review ShellBags for folder navigation
+3. Analyze network connections in registry
+4. Check event logs for logon/logoff patterns
+
+SCENARIO: Malware Infection
+1. Scan with Yara for known malware
+2. Check registry for persistence
+3. Review event logs for suspicious processes
+4. Analyze Prefetch for execution timeline
+
+SCENARIO: Lateral Movement
+1. Check event logs for logon events (4624, 4625)
+2. Review registry for RDP/WinRM configuration
+3. Analyze Prefetch for lateral movement tools
+4. Check network activity indicators
+
+Example Commands:
+- "Analyze this event log for suspicious authentication attempts"
+- "I found malware on a system, help me investigate"
+- "Show me what programs executed in the last 7 days"
+- "Did anyone access the finance folder recently?"
+- "What persistence mechanisms are on this system?"
+        """
+
+    def save_conversation(self, filename: str = "investigation_log.md") -> None:
+        """Save conversation history to file"""
+        with open(filename, 'w') as f:
+            f.write("# CDSA Investigation Log\n\n")
+            for msg in self.conversation_history:
+                role = "**Investigator**" if msg["role"] == "user" else "**Agent**"
+                f.write(f"{role}\n\n{msg['content']}\n\n---\n\n")
+        print(f"\nConversation saved to {filename}")
+
+
+def main():
+    """Main entry point"""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("Error: ANTHROPIC_API_KEY environment variable not set")
+        sys.exit(1)
+
+    agent = CrimsaCDSABlueTeamAgent(api_key)
+
+    if len(sys.argv) > 1:
+        # Handle command-line arguments for non-interactive mode
+        user_message = " ".join(sys.argv[1:])
+        response = agent.chat(user_message)
+        print(response)
+    else:
+        # Start interactive session
+        agent.start_investigation()
+
+
+if __name__ == "__main__":
+    main()

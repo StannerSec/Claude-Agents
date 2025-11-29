@@ -1,0 +1,423 @@
+2025-11-27T16:53:46.601Z [DEBUG] Watching for changes in setting files /home/stanner/.claude/settings.json, /home/stanner/.claude/settings.json, /home/stanner/.claude/settings.local.json...
+2025-11-27T16:53:46.616Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-27T16:53:46.616Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-27T16:53:46.616Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-27T16:53:46.616Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-27T16:53:46.616Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-27T16:53:46.621Z [DEBUG] Applying permission update: Adding 32 allow rule(s) to destination 'localSettings': ["Bash(VBoxManage showvminfo:*)","Bash(VBoxManage:*)","Bash(wget:*)","Bash(lsmod:*)","mcp__todoist__find-tasks","Bash(claude mcp add:*)","Bash(~/Documents/Code/mcp_servers_custom/alienvault-mcp-server/alienvault_server.py)","Bash(cat:*)","mcp__obsidian__obsidian_simple_search","mcp__todoist__find-tasks-by-date","mcp__todoist__get-overview","mcp__obsidian__obsidian_get_periodic_note","mcp__proton-email__read_recent_emails","mcp__todoist__user-info","mcp__todoist__find-activity","mcp__obsidian__obsidian_list_files_in_vault","WebSearch","mcp__obsidian__obsidian_get_recent_periodic_notes","mcp__obsidian__obsidian_get_file_contents","WebFetch(domain:github.com)","Bash(python3:*)","mcp__malwarebazaar__get_recent","mcp__malwarebazaar__get_info","mcp__alienvault__get_recent_pulses","mcp__alienvault__get_subscribed_pulses","mcp__alienvault__get_indicator_details","mcp__alienvault__search_pulses","Bash(ALIENVAULT_API_KEY=1a15a0c0d41a5d4fb32d68590592e575cd77ca3bedd84921457172eca5248616 python3:*)","mcp__alienvault__get_pulse_details","mcp__malwarebazaar__get_taginfo","Bash(mcp__malwarebazaar__get_recent)","WebFetch(domain:attack.mitre.org)"]
+2025-11-27T16:53:46.622Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-27T16:53:46.622Z [DEBUG] Total LSP servers loaded: 0
+2025-11-27T16:53:46.623Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-27T16:53:46.623Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-27T16:53:46.624Z [DEBUG] LSP server manager initialized successfully
+2025-11-27T16:53:46.624Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-27T16:53:46.631Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/stanner/.claude/skills, project=/home/stanner/.claude/skills
+2025-11-27T16:53:46.631Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-27T16:53:46.633Z [DEBUG] installed_plugins.json doesn't exist yet at /home/stanner/.claude/plugins/installed_plugins.json, returning empty object
+2025-11-27T16:53:46.638Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-11-27T16:53:46.638Z [DEBUG] Looking for shell config file: /home/stanner/.bashrc
+2025-11-27T16:53:46.638Z [DEBUG] Snapshots directory: /home/stanner/.claude/shell-snapshots
+2025-11-27T16:53:46.638Z [DEBUG] Creating snapshot at: /home/stanner/.claude/shell-snapshots/snapshot-bash-1764262426638-mb6m6a.sh
+2025-11-27T16:53:46.638Z [DEBUG] Shell binary exists: true
+2025-11-27T16:53:46.638Z [DEBUG] Execution timeout: 10000ms
+2025-11-27T16:53:46.639Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/be40bdd6-fc18-419e-abf4-018c9fbf540e-agent-be40bdd6-fc18-419e-abf4-018c9fbf540e.json.tmp.3070938.1764262426639
+2025-11-27T16:53:46.640Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-27T16:53:46.640Z [DEBUG] Renaming /home/stanner/.claude/todos/be40bdd6-fc18-419e-abf4-018c9fbf540e-agent-be40bdd6-fc18-419e-abf4-018c9fbf540e.json.tmp.3070938.1764262426639 to /home/stanner/.claude/todos/be40bdd6-fc18-419e-abf4-018c9fbf540e-agent-be40bdd6-fc18-419e-abf4-018c9fbf540e.json
+2025-11-27T16:53:46.640Z [DEBUG] File /home/stanner/.claude/todos/be40bdd6-fc18-419e-abf4-018c9fbf540e-agent-be40bdd6-fc18-419e-abf4-018c9fbf540e.json written atomically
+2025-11-27T16:53:46.641Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-27T16:53:46.641Z [DEBUG] Total plugin skills loaded: 0
+2025-11-27T16:53:46.641Z [DEBUG] Total plugin commands loaded: 0
+2025-11-27T16:53:46.641Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-27T16:53:46.642Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-27T16:53:46.642Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-11-27T16:53:46.655Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at o4A (/$bunfs/root/claude:2664:1300)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:53:46.656Z [DEBUG] Total plugin agents loaded: 0
+2025-11-27T16:53:46.662Z [DEBUG] Git remote URL: null
+2025-11-27T16:53:46.662Z [DEBUG] No git remote URL found
+2025-11-27T16:53:46.662Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-11-27T16:53:46.663Z [DEBUG] Shell snapshot created successfully (1771 bytes)
+2025-11-27T16:53:46.992Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-11-27T16:53:47.662Z [DEBUG] MCP server "todoist": Initializing HTTP transport to https://ai.todoist.net/mcp
+2025-11-27T16:53:47.662Z [DEBUG] MCP server "todoist": Node version: v24.3.0, Platform: linux
+2025-11-27T16:53:47.662Z [DEBUG] MCP server "todoist": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2025-11-27T16:53:47.664Z [DEBUG] MCP server "proton-email": Starting connection with timeout of 30000ms
+2025-11-27T16:53:47.666Z [DEBUG] MCP server "obsidian": Starting connection with timeout of 30000ms
+2025-11-27T16:53:47.668Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262427668
+2025-11-27T16:53:47.668Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:47.671Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T16:53:47.671Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:47.671Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262427668 to /home/stanner/.claude.json
+2025-11-27T16:53:47.671Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:47.674Z [DEBUG] Skipping SessionStart:startup hook execution - workspace trust not accepted
+2025-11-27T16:53:47.674Z [DEBUG] MCP server "todoist": Proxy options: default
+2025-11-27T16:53:47.674Z [DEBUG] MCP server "todoist": HTTP transport options: {"url":"https://ai.todoist.net/mcp","headers":{"User-Agent":"claude-code/2.0.55"},"hasAuthProvider":true,"timeoutMs":60000}
+2025-11-27T16:53:47.674Z [DEBUG] MCP server "todoist": HTTP transport created successfully
+2025-11-27T16:53:47.674Z [DEBUG] MCP server "todoist": Client created, setting up request handler
+2025-11-27T16:53:47.674Z [DEBUG] MCP server "todoist": Starting connection with timeout of 30000ms
+2025-11-27T16:53:47.674Z [DEBUG] MCP server "todoist": Testing basic HTTP connectivity to https://ai.todoist.net/mcp
+2025-11-27T16:53:47.675Z [DEBUG] MCP server "todoist": Parsed URL: host=ai.todoist.net, port=default, protocol=https:
+2025-11-27T16:53:47.675Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T16:53:47.675Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T16:53:47.675Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T16:53:47.675Z [DEBUG] MCP server "todoist": Expires in: 315299127s
+2025-11-27T16:53:47.688Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262427688
+2025-11-27T16:53:47.688Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:47.690Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T16:53:47.690Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:47.690Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262427688 to /home/stanner/.claude.json
+2025-11-27T16:53:47.690Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:47.693Z [DEBUG] performStartupChecks called
+2025-11-27T16:53:47.693Z [DEBUG] Trust not accepted for current directory - skipping plugin installations
+2025-11-27T16:53:47.697Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T16:53:47.703Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-11-27T16:53:47.704Z [DEBUG] Summarizing all 29 messages (~8858 tokens)
+2025-11-27T16:53:47.710Z [DEBUG] Skipping SubagentStart:Explore hook execution - workspace trust not accepted
+2025-11-27T16:53:47.711Z [DEBUG] Skipping SubagentStart:Plan hook execution - workspace trust not accepted
+2025-11-27T16:53:47.766Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262427766
+2025-11-27T16:53:47.766Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:47.768Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T16:53:47.768Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:47.768Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262427766 to /home/stanner/.claude.json
+2025-11-27T16:53:47.768Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:47.947Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T16:53:47.948Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-27 10:53:47,948 - proton-email-server - INFO - Starting Proton Bridge Email MCP server...
+2025-11-27T16:53:47.952Z [DEBUG] MCP server "proton-email": Successfully connected to stdio server in 290ms
+2025-11-27T16:53:47.953Z [DEBUG] MCP server "proton-email": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"proton-email","version":"1.22.0"}}
+2025-11-27T16:53:47.954Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-27 10:53:47,954 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-27T16:53:47.954Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-27 10:53:47,954 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-11-27T16:53:47.958Z [ERROR] MCP server "proton-email" Server stderr: 2025-11-27 10:53:47,954 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-27T16:53:47.991Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T16:53:47.991Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T16:53:47.991Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T16:53:47.991Z [DEBUG] MCP server "todoist": Expires in: 315299127s
+2025-11-27T16:53:48.043Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T16:53:48.043Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T16:53:48.043Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T16:53:48.043Z [DEBUG] MCP server "todoist": Expires in: 315299127s
+2025-11-27T16:53:48.044Z [DEBUG] MCP server "todoist": Successfully connected to http server in 382ms
+2025-11-27T16:53:48.044Z [DEBUG] MCP server "todoist": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"todoist-mcp-server","version":"0.1.0"}}
+2025-11-27T16:53:48.044Z [DEBUG] MCP server "todoist": Returning tokens
+2025-11-27T16:53:48.044Z [DEBUG] MCP server "todoist": Token length: 40
+2025-11-27T16:53:48.044Z [DEBUG] MCP server "todoist": Has refresh token: false
+2025-11-27T16:53:48.044Z [DEBUG] MCP server "todoist": Expires in: 315299127s
+2025-11-27T16:53:48.419Z [DEBUG] MCP server "obsidian": Successfully connected to stdio server in 754ms
+2025-11-27T16:53:48.419Z [DEBUG] MCP server "obsidian": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"mcp-obsidian","version":"1.22.0"}}
+2025-11-27T16:53:48.420Z [ERROR] MCP server "obsidian" Server stderr: INFO:mcp.server.lowlevel.server:Processing request of type ListToolsRequest
+2025-11-27T16:53:48.423Z [DEBUG] MCP server "malwarebazaar": Starting connection with timeout of 30000ms
+2025-11-27T16:53:48.424Z [DEBUG] MCP server "alienvault": Starting connection with timeout of 30000ms
+2025-11-27T16:53:48.620Z [DEBUG] MCP server "malwarebazaar": Successfully connected to stdio server in 198ms
+2025-11-27T16:53:48.620Z [DEBUG] MCP server "malwarebazaar": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"MalwareBazaar MCP","version":"1.6.0"}}
+2025-11-27T16:53:48.622Z [ERROR] MCP server "malwarebazaar" Server stderr: [11/27/25 10:53:48] INFO     Processing request of type            server.py:534
+                             ListToolsRequest
+2025-11-27T16:53:48.623Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             ListPromptsRequest
+2025-11-27T16:53:48.624Z [ERROR] MCP server "malwarebazaar" Server stderr: INFO     Processing request of type            server.py:534
+                             ListResourcesRequest
+2025-11-27T16:53:48.667Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-27 10:53:48,666 - alienvault-server - INFO - Starting AlienVault OTX MCP server...
+2025-11-27 10:53:48,666 - alienvault-server - INFO - API key configured - ready to fetch threat intelligence
+2025-11-27T16:53:48.670Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:53:48.671Z [DEBUG] MCP server "alienvault": Successfully connected to stdio server in 247ms
+2025-11-27T16:53:48.671Z [DEBUG] MCP server "alienvault": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"alienvault","version":"1.22.0"}}
+2025-11-27T16:53:48.671Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-27 10:53:48,671 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-11-27T16:53:48.672Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-27 10:53:48,672 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2025-11-27T16:53:48.672Z [ERROR] MCP server "alienvault" Server stderr: 2025-11-27 10:53:48,672 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-11-27T16:53:49.475Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262429475
+2025-11-27T16:53:49.475Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:49.476Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T16:53:49.476Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:49.476Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262429475 to /home/stanner/.claude.json
+2025-11-27T16:53:49.476Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:49.477Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262429477
+2025-11-27T16:53:49.477Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:49.478Z [DEBUG] Temp file written successfully, size: 49479 bytes
+2025-11-27T16:53:49.478Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:49.478Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262429477 to /home/stanner/.claude.json
+2025-11-27T16:53:49.478Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:49.479Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262429479
+2025-11-27T16:53:49.479Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:49.481Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T16:53:49.481Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:49.481Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262429479 to /home/stanner/.claude.json
+2025-11-27T16:53:49.481Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:49.485Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.3070938.1764262429485
+2025-11-27T16:53:49.485Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:53:49.487Z [DEBUG] Temp file written successfully, size: 49584 bytes
+2025-11-27T16:53:49.487Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:53:49.487Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.3070938.1764262429485 to /home/stanner/.claude.json
+2025-11-27T16:53:49.487Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-27T16:53:50.089Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:53:50.136Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:53:51.785Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-27T16:53:52.534Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-27T16:53:54.949Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:54:01.105Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T16:54:01.105Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T16:54:01.109Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T16:54:01.109Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T16:54:01.120Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T16:54:01.121Z [DEBUG] FileHistory: Added snapshot for 4ba6d4f7-e7ab-45c7-816d-e153aa4793c6, tracking 0 files
+2025-11-27T16:54:01.131Z [DEBUG] Total plugin output styles loaded: 0
+2025-11-27T16:54:01.138Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-27T16:54:01.138Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-27T16:54:02.554Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:54:02.747Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:54:03.816Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T16:54:03.816Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T16:54:03.816Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T16:54:03.817Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T16:54:05.123Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:54:05.275Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:54:06.900Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:54:11.140Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T16:54:12.299Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T16:54:12.310Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T16:54:12.310Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T16:54:12.313Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T16:54:12.313Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T16:54:13.939Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:54:14.846Z [DEBUG] executePreToolHooks called for tool: WebFetch
+2025-11-27T16:54:14.846Z [DEBUG] Skipping PreToolUse:WebFetch hook execution - workspace trust not accepted
+2025-11-27T16:54:14.861Z [DEBUG] executePermissionRequestHooks called for tool: WebFetch
+2025-11-27T16:54:14.861Z [DEBUG] Skipping PermissionRequest:WebFetch hook execution - workspace trust not accepted
+2025-11-27T16:54:18.042Z [DEBUG] Persisting permission update: addRules to source 'localSettings'
+2025-11-27T16:54:18.042Z [DEBUG] Persisting 1 allow rule(s) to localSettings
+2025-11-27T16:54:18.043Z [DEBUG] Writing to temp file: /home/stanner/.claude/settings.local.json.tmp.3070938.1764262458043
+2025-11-27T16:54:18.043Z [DEBUG] Preserving file permissions: 100600
+2025-11-27T16:54:18.060Z [DEBUG] Temp file written successfully, size: 1487 bytes
+2025-11-27T16:54:18.060Z [DEBUG] Applied original permissions to temp file
+2025-11-27T16:54:18.060Z [DEBUG] Renaming /home/stanner/.claude/settings.local.json.tmp.3070938.1764262458043 to /home/stanner/.claude/settings.local.json
+2025-11-27T16:54:18.060Z [DEBUG] File /home/stanner/.claude/settings.local.json written atomically
+2025-11-27T16:54:18.066Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:help.ui.com)"]
+2025-11-27T16:54:18.069Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T16:54:18.221Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T16:54:18.510Z [ERROR] AxiosError: Error
+    at mO (/$bunfs/root/claude:27:1143)
+    at <anonymous> (/$bunfs/root/claude:32:10086)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:862:50)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:54:18.520Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T16:54:18.520Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T16:54:18.524Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T16:54:18.524Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T16:54:20.351Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:54:25.224Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:54:26.139Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:54:27.142Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T16:54:42.255Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:56:53.197Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T16:56:53.197Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T16:56:53.206Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T16:56:53.206Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T16:56:53.219Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T16:56:53.219Z [DEBUG] FileHistory: Making snapshot for message 586b3085-89d2-4400-9ec5-fbd1b9361253
+2025-11-27T16:56:53.219Z [DEBUG] FileHistory: Added snapshot for 586b3085-89d2-4400-9ec5-fbd1b9361253, tracking 0 files
+2025-11-27T16:56:54.040Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:56:54.553Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:56:58.439Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T16:57:09.319Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:57:24.360Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T16:57:24.360Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T16:57:24.364Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T16:57:24.364Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T16:57:24.372Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T16:57:24.372Z [DEBUG] FileHistory: Making snapshot for message dd50a94d-0c33-4a94-883c-1f6517ed30ca
+2025-11-27T16:57:24.372Z [DEBUG] FileHistory: Added snapshot for dd50a94d-0c33-4a94-883c-1f6517ed30ca, tracking 0 files
+2025-11-27T16:57:24.823Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:57:25.655Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:57:28.166Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T16:57:40.074Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T16:58:08.403Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T16:58:08.403Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T16:58:08.413Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T16:58:08.413Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T16:58:08.427Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T16:58:08.428Z [DEBUG] FileHistory: Making snapshot for message e2e55d33-3d79-48eb-8ca9-9ed38dfdf6f1
+2025-11-27T16:58:08.428Z [DEBUG] FileHistory: Added snapshot for e2e55d33-3d79-48eb-8ca9-9ed38dfdf6f1, tracking 0 files
+2025-11-27T16:58:09.242Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:58:09.667Z [DEBUG] Stream started - received first chunk
+2025-11-27T16:58:13.500Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T16:58:24.502Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T17:17:54.609Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T17:17:54.848Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T17:18:01.850Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T17:18:06.753Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:18:30.949Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T17:18:50.181Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-27T17:18:50.182Z [DEBUG] FileHistory: Making snapshot for message ed66f51a-0206-4d5d-8275-ee853e37e6bb
+2025-11-27T17:18:50.182Z [DEBUG] FileHistory: Added snapshot for ed66f51a-0206-4d5d-8275-ee853e37e6bb, tracking 0 files
+2025-11-27T17:18:50.185Z [DEBUG] Rendering user message with 1 content blocks
+2025-11-27T17:18:50.185Z [DEBUG] Block 0: <command-name>/agents</command-name>
+            <command-message>agents</command-message>
+         ...
+2025-11-27T17:18:50.185Z [DEBUG] UserCommandMessage rendering: "agents" (args: "none")
+2025-11-27T17:18:50.185Z [DEBUG] isSkillFormat: false, prefix: "/"
+2025-11-27T17:18:50.330Z [DEBUG] Checking for native installer update to version 2.0.55
+2025-11-27T17:18:57.334Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.55 (expected in multi-process scenarios)
+    at tPD (/$bunfs/root/claude:2664:1622)
+    at n4A (/$bunfs/root/claude:2662:34066)
+    at async kB9 (/$bunfs/root/claude:2662:35268)
+    at async vb (/$bunfs/root/claude:2664:236)
+    at async <anonymous> (/$bunfs/root/claude:2664:12465)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T17:19:01.083Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T17:19:01.083Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T17:19:01.087Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T17:19:01.087Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T17:19:01.095Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T17:19:01.095Z [DEBUG] FileHistory: Making snapshot for message f3f52555-48cd-4db5-b210-bd49c4c5dc0e
+2025-11-27T17:19:01.096Z [DEBUG] FileHistory: Added snapshot for f3f52555-48cd-4db5-b210-bd49c4c5dc0e, tracking 0 files
+2025-11-27T17:19:01.620Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:19:02.771Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:19:03.651Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T17:19:03.651Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T17:19:03.651Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2025-11-27T17:19:03.651Z [DEBUG] Skipping PreToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T17:19:04.724Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:19:04.738Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:19:07.634Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T17:19:09.280Z [DEBUG] Skipping PostToolUse:WebSearch hook execution - workspace trust not accepted
+2025-11-27T17:19:09.292Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T17:19:09.292Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T17:19:09.295Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T17:19:09.295Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T17:19:10.624Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:19:14.352Z [DEBUG] Language not supported while highlighting code, falling back to markdown:
+2025-11-27T17:19:14.353Z [DEBUG] Language not supported while highlighting code, falling back to markdown:
+2025-11-27T17:19:14.381Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T17:19:16.891Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T17:21:34.397Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T17:21:34.397Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T17:21:34.421Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T17:21:34.421Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T17:21:34.449Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T17:21:34.449Z [DEBUG] FileHistory: Making snapshot for message eb3b1017-b5c7-4ad6-b860-d921b9d1689f
+2025-11-27T17:21:34.449Z [DEBUG] FileHistory: Added snapshot for eb3b1017-b5c7-4ad6-b860-d921b9d1689f, tracking 0 files
+2025-11-27T17:21:35.100Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:21:35.694Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:21:39.206Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T17:21:50.339Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-27T17:22:07.473Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-27T17:22:07.473Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-27T17:22:07.481Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-27T17:22:07.481Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-27T17:22:07.490Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-27T17:22:07.491Z [DEBUG] FileHistory: Making snapshot for message 633f004c-2105-43e2-817e-c211c9a2e5a5
+2025-11-27T17:22:07.491Z [DEBUG] FileHistory: Added snapshot for 633f004c-2105-43e2-817e-c211c9a2e5a5, tracking 0 files
+2025-11-27T17:22:08.221Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:22:08.592Z [DEBUG] Stream started - received first chunk
+2025-11-27T17:22:14.447Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-27T17:22:23.462Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10252)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)

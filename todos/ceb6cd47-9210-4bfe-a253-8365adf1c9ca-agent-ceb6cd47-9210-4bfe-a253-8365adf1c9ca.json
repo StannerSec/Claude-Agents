@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Check REMnux VM network configuration",
+    "status": "in_progress",
+    "activeForm": "Checking REMnux VM network configuration"
+  },
+  {
+    "content": "Fix network adapter settings if needed",
+    "status": "pending",
+    "activeForm": "Fixing network adapter settings"
+  },
+  {
+    "content": "Configure networking inside REMnux VM",
+    "status": "pending",
+    "activeForm": "Configuring networking inside REMnux VM"
+  },
+  {
+    "content": "Verify IP assignment and connectivity",
+    "status": "pending",
+    "activeForm": "Verifying IP assignment and connectivity"
+  }
+]
