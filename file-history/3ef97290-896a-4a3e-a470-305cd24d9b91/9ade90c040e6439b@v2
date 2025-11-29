@@ -1,0 +1,255 @@
+# Using the Blue Team Agent with Claude Code
+
+This guide shows you how to use the blue team agent directly within Claude Code.
+
+## Quick Start (2 minutes)
+
+1. **Open the agent in Claude Code**:
+   - Open: `/home/stanner/blue_team_agent.py`
+   - Or open any forensic artifact file
+
+2. **Start asking questions**:
+   ```
+   "Analyze this Windows event log for suspicious activity"
+   "Help me investigate a potential ransomware attack"
+   "What programs executed on this system?"
+   "Is there evidence of lateral movement?"
+   ```
+
+3. **Access forensic tools automatically**:
+   - Claude Code provides MCP access to all tools
+   - No setup needed
+   - No API keys needed
+
+## Available Tools
+
+When working in Claude Code, I have access to these forensic tools:
+
+### Windows Forensics (ERIC Tools)
+- **analyze_event_log**: Parse Windows event logs (.evtx)
+- **analyze_registry**: Analyze Windows registry hives
+- **analyze_mft**: Reconstruct NTFS filesystem timeline
+- **analyze_prefetch**: Analyze program execution records
+- **analyze_jump_lists**: Extract recently accessed files
+- **analyze_lnk**: Analyze Windows shortcut files
+- **analyze_shellbags**: Analyze folder navigation history
+
+### Threat Analysis
+- **scan_with_yara**: Scan files for malware signatures
+- **threat_hunt_events**: Hunt for threats in event logs
+
+## Common Workflows
+
+### Investigate an Incident
+
+```
+You: "We detected suspicious activity on a Windows server.
+      Here's the Security.evtx file. What happened?"
+
+Me: I'll analyze the event log for:
+    - Unusual logon events
+    - Privilege escalation attempts
+    - Process execution anomalies
+    - Network connections
+
+    Based on the events, I'll build a timeline of what happened.
+```
+
+### Analyze Malware
+
+```
+You: "Scan this file for malware: /path/to/suspicious.exe"
+
+Me: I'll:
+    1. Scan with Yara for known malware signatures
+    2. Check for suspicious behaviors
+    3. Identify malware family if detected
+    4. Recommend next steps
+```
+
+### Reconstruct User Activity
+
+```
+You: "Show me what this user did on their computer:
+      Jump Lists, ShellBags, Prefetch files are here..."
+
+Me: I'll analyze:
+    - Recently accessed files (Jump Lists)
+    - Folder navigation patterns (ShellBags)
+    - Program execution timeline (Prefetch)
+    - Build comprehensive activity timeline
+```
+
+### Timeline Investigation
+
+```
+You: "Help me build a complete timeline of this incident"
+
+Me: I'll:
+    1. Analyze event logs for key events
+    2. Check registry for persistence
+    3. Review filesystem timeline
+    4. Correlate findings chronologically
+    5. Present comprehensive timeline
+```
+
+## Example Session
+
+```
+You: Open /path/to/Security.evtx
+
+You: "What's in this event log? Any red flags?"
+
+Me: I'll analyze and report:
+    - Total events and time range
+    - Unusual logon patterns
+    - Privilege escalation attempts
+    - Failed authentication spikes
+    - Suspicious process execution
+
+You: "Show me more details on the failed logons"
+
+Me: I'll provide:
+    - Timeline of failed logons
+    - Source IPs involved
+    - Affected user accounts
+    - Pattern analysis
+
+You: "Check the registry for persistence mechanisms"
+
+Me: I'll analyze registry for:
+    - Run key persistence
+    - Service modifications
+    - Startup folder entries
+    - WMI subscriptions
+    - Scheduled task anomalies
+
+You: "Build me a complete timeline"
+
+Me: I'll synthesize all findings into:
+    - Chronological event timeline
+    - Attack progression
+    - IOCs identified
+    - Recommendations
+```
+
+## Tips for Best Results
+
+1. **Provide full artifact paths**: Use absolute paths to files
+   - Good: `/path/to/Security.evtx`
+   - Bad: `Security.evtx`
+
+2. **Give context**: Explain what you're investigating
+   - "We detected ransomware on this server"
+   - "Suspected insider threat"
+   - "Investigating breach"
+
+3. **Ask specific questions**:
+   - ✓ "Show me logon events from unusual times"
+   - ✓ "What persistence mechanisms are installed?"
+   - ✗ "Analyze this" (too vague)
+
+4. **Follow my guidance**: I'll ask clarifying questions
+   - What time range to focus on?
+   - Which artifacts are available?
+   - What's the incident scope?
+
+5. **Provide artifacts systematically**:
+   - Start with event logs
+   - Then registry
+   - Then filesystem
+   - Then user activity
+
+## What I Can Help With
+
+✅ **Incident Response**
+- Ransomware investigations
+- Lateral movement detection
+- Data exfiltration tracking
+- Malware analysis
+- Account compromise investigation
+
+✅ **Forensic Analysis**
+- Timeline reconstruction
+- Event log analysis
+- Registry forensics
+- Filesystem analysis
+- User activity tracking
+
+✅ **Threat Hunting**
+- Malware scanning
+- Behavioral detection
+- IOC identification
+- Pattern recognition
+
+✅ **CDSA Exam Prep**
+- Forensic concepts explanation
+- Investigation methodology
+- Tool usage guidance
+- Practice scenarios
+
+## Limitations
+
+- ❌ Cannot modify original artifacts (read-only)
+- ❌ Cannot perform real-time network monitoring
+- ❌ Cannot access live system directly (need artifacts)
+- ❌ Cannot execute arbitrary code (only forensic tools)
+
+## Data Privacy
+
+- All analysis happens locally
+- No artifacts sent to external services
+- Your data remains on your machine
+- Chain of custody preserved
+
+## Getting More Help
+
+1. **Within Claude Code**: Ask me anything about forensics
+2. **Documentation**: See `/home/stanner/INDEX.md`
+3. **Quick reference**: See `/home/stanner/QUICK_REFERENCE.md`
+4. **Practice**: See `/home/stanner/CDSA_TEST_SCENARIOS.md`
+5. **Learn more**: See `/home/stanner/README.md`
+
+## Key Forensic Concepts
+
+### Important Event IDs
+- **4624**: Successful logon
+- **4625**: Failed logon
+- **4672**: Special privileges assigned
+- **4688**: Process created
+- **4689**: Process terminated
+
+### Registry Hives
+- **SYSTEM**: Hardware, services, networking
+- **SOFTWARE**: Installed applications
+- **NTUSER.DAT**: User-specific settings
+- **SAM**: User accounts
+- **SECURITY**: Audit policy
+
+### Artifacts to Analyze
+- **Security.evtx**: Authentication and security events
+- **System.evtx**: System and driver events
+- **Prefetch files**: Program execution history
+- **$MFT**: File system timeline
+- **Registry hives**: System and user configuration
+
+## Ready to Start?
+
+1. Open `/home/stanner/blue_team_agent.py` in Claude Code
+2. Ask your first question about Windows forensics
+3. Follow my guidance
+4. I'll handle the technical analysis
+
+Example first questions:
+- "Analyze this event log for a ransomware attack"
+- "Help me investigate lateral movement"
+- "Show me what programs executed"
+- "Build a timeline of user activity"
+
+No setup needed. No API keys. Just ask!
+
+---
+
+**Happy investigating!** 🔍
+
+For detailed documentation, see `INDEX.md` and `README.md` in `/home/stanner/`

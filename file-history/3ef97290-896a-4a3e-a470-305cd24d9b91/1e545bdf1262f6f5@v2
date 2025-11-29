@@ -1,0 +1,253 @@
+================================================================================
+                  CDSA BLUE TEAM AGENT - START HERE
+================================================================================
+
+Welcome! You now have a complete blue team incident response system with
+AI-powered forensic analysis. Here's how to get started:
+
+================================================================================
+                            QUICK START (5 MINUTES)
+================================================================================
+
+1. READ THIS FIRST:
+   - Open: INDEX.md (navigation guide)
+   - OR: README.md (complete overview)
+
+2. INSTALL:
+   bash quick_start.sh
+
+   This will:
+   - Check Python and dependencies
+   - Verify ERIC tools installation
+   - Install Python packages
+   - Make scripts executable
+
+3. RUN THE AGENT:
+   python3 blue_team_agent.py
+
+   Then type:
+   - "help" for tool documentation
+   - "analyze" to start forensic analysis
+   - "hunt" to run threat hunting
+   - "exit" to quit
+
+4. TRY A SCENARIO:
+   Open: CDSA_TEST_SCENARIOS.md
+   Follow one of the 5 realistic investigation scenarios
+
+================================================================================
+                              FILES YOU HAVE
+================================================================================
+
+CORE APPLICATION:
+  ✓ blue_team_agent.py           - Main interactive agent
+  ✓ eric_tools_mcp_server.py     - Forensic tool bridge (MCP)
+  ✓ claude_code_mcp_config.json  - MCP configuration
+
+DOCUMENTATION (READ IN ORDER):
+  1. INDEX.md                     - Navigation guide (START HERE)
+  2. README.md                    - Complete system documentation
+  3. SETUP_GUIDE.md              - Detailed installation & configuration
+  4. QUICK_REFERENCE.md          - Cheat sheet (keep handy!)
+  5. CDSA_TEST_SCENARIOS.md      - 5 realistic practice scenarios
+  6. BUILD_SUMMARY.md            - Architecture & design
+
+SETUP & SUPPORT:
+  ✓ requirements.txt             - Python dependencies
+  ✓ quick_start.sh              - Automated setup script
+  ✓ START_HERE.txt              - This file
+
+================================================================================
+                        WHAT THIS SYSTEM DOES
+================================================================================
+
+✅ Analyze Windows Forensic Artifacts
+   - Event logs (EvtxECmd)
+   - Registry hives (RECmd)
+   - NTFS filesystems (MFTECmd)
+   - Program execution (PECmd)
+   - User activity (Jump Lists, Shortcuts, ShellBags)
+
+✅ Detect Malware & Threats
+   - Scan with Yara signatures
+   - Hunt with Chainsaw + Sigma rules
+   - Identify malware families
+
+✅ Guide Investigations
+   - AI-powered analysis and recommendations
+   - Help reconstruct timelines
+   - Correlate findings across artifacts
+   - Document evidence professionally
+
+✅ Support CDSA Exam Preparation
+   - Learn forensic concepts
+   - Practice with realistic scenarios
+   - Get feedback on analysis
+   - Build investigation skills
+
+================================================================================
+                      REQUIRED CONFIGURATION
+================================================================================
+
+1. SET YOUR API KEY:
+   export ANTHROPIC_API_KEY="your-api-key-here"
+
+   Get your API key from: https://console.anthropic.com
+
+2. (OPTIONAL) SET ERIC TOOLS PATH:
+   export ERIC_TOOLS_PATH="/path/to/ERIC"
+
+   Default: /opt/ERIC
+
+That's it! The system is configured.
+
+================================================================================
+                         AVAILABLE TOOLS
+================================================================================
+
+FORENSIC TOOLS:                  THREAT TOOLS:
+✓ EvtxECmd   - Event logs       ✓ Yara       - Malware scanning
+✓ RECmd      - Registry         ✓ Chainsaw   - Threat hunting
+✓ MFTECmd    - NTFS timeline
+✓ PECmd      - Program execution
+✓ JLECmd     - Recent files
+✓ LECmd      - Shortcuts
+✓ SBECmd     - Folder access
+
+================================================================================
+                        COMMON SCENARIOS
+================================================================================
+
+RANSOMWARE ATTACK?
+→ Type: "Help me investigate a ransomware attack"
+→ Analyze: Event logs, Prefetch, MFT
+→ Find: When it started, what encrypted files
+
+LATERAL MOVEMENT?
+→ Type: "Check for lateral movement on this system"
+→ Analyze: Event logs (4624, 4625), Registry, Prefetch
+→ Find: Remote logons, credential use, pivot points
+
+DATA EXFILTRATION?
+→ Type: "Investigate potential data exfiltration"
+→ Analyze: Jump Lists, ShellBags, MFT
+→ Find: What files accessed, when, by whom
+
+MALWARE INFECTION?
+→ Type: "Scan for malware and persistence"
+→ Analyze: Yara scan, Registry, Prefetch
+→ Find: Malware family, persistence mechanisms
+
+INSIDER THREAT?
+→ Type: "Analyze user activity for suspicious access"
+→ Analyze: Jump Lists, ShellBags, Event logs
+→ Find: What accessed, timeline, intent
+
+================================================================================
+                       NEXT STEPS
+================================================================================
+
+STEP 1: Read
+   Open: INDEX.md (2-minute read to understand structure)
+   Then: README.md (15-minute overview)
+
+STEP 2: Setup
+   Run: bash quick_start.sh
+
+STEP 3: Learn
+   Run: python3 blue_team_agent.py
+   Type: help
+
+STEP 4: Practice
+   Open: CDSA_TEST_SCENARIOS.md
+   Follow: Scenario 1 (Ransomware)
+
+STEP 5: Investigate
+   Get your own Windows forensic artifacts
+   Use the agent to analyze them
+
+================================================================================
+                         NEED HELP?
+================================================================================
+
+If you get stuck, check these:
+
+INSTALLATION ISSUES?
+  → SETUP_GUIDE.md → Troubleshooting section
+
+HOW TO USE A TOOL?
+  → README.md → Available Tools section
+
+QUICK REFERENCE?
+  → QUICK_REFERENCE.md (keep this handy!)
+
+INVESTIGATION GUIDANCE?
+  → Type "help" while running the agent
+
+LEARN FORENSICS?
+  → CDSA_TEST_SCENARIOS.md (5 realistic scenarios)
+
+UNDERSTAND ARCHITECTURE?
+  → BUILD_SUMMARY.md
+
+NEED NAVIGATION?
+  → INDEX.md (complete file guide)
+
+================================================================================
+                       SUPPORT RESOURCES
+================================================================================
+
+ERIC Tools Documentation:
+  https://ericzimmerman.github.io/
+
+Chainsaw (Threat Hunting):
+  https://github.com/WithSecureLabs/chainsaw
+
+Yara (Malware Rules):
+  https://virustotal.github.io/yara/
+
+MCP Protocol:
+  https://modelcontextprotocol.io/
+
+Windows Forensics Training:
+  https://dfir.training/
+
+CDSA Exam:
+  https://www.certification.comptia.org/
+
+================================================================================
+                         SUCCESS CRITERIA
+================================================================================
+
+After setup, you should be able to:
+
+✅ Start the agent: python3 blue_team_agent.py
+✅ Type "help" and see tool documentation
+✅ Ask questions about Windows forensics
+✅ Analyze real forensic artifacts
+✅ Get AI-powered investigation guidance
+✅ Practice CDSA exam scenarios
+✅ Understand incident response methodology
+✅ Build investigation timelines
+✅ Identify malware and persistence
+✅ Correlate evidence across sources
+✅ Document professional findings
+✅ Pass your CDSA exam
+
+================================================================================
+                        YOU'RE READY!
+================================================================================
+
+Everything is set up and ready to go.
+
+Next: Open INDEX.md and start reading!
+
+Then: Run: python3 blue_team_agent.py
+
+Good luck with your CDSA preparation and investigations! 🔍
+
+================================================================================
+Version: 1.0
+Status: Complete and Ready
+Updated: 2024
+================================================================================

@@ -1,0 +1,544 @@
+2025-11-25T22:10:25.585Z [DEBUG] Watching for changes in setting files /home/stanner/.claude/settings.local.json...
+2025-11-25T22:10:25.594Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-11-25T22:10:25.594Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-11-25T22:10:25.594Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-11-25T22:10:25.594Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2025-11-25T22:10:25.594Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2025-11-25T22:10:25.604Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-11-25T22:10:25.605Z [DEBUG] Applying permission update: Adding 3 allow rule(s) to destination 'localSettings': ["Bash(VBoxManage showvminfo:*)","Bash(VBoxManage:*)","Bash(wget:*)"]
+2025-11-25T22:10:25.605Z [DEBUG] Total LSP servers loaded: 0
+2025-11-25T22:10:25.607Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2025-11-25T22:10:25.607Z [DEBUG] LSP manager initialized with 0 servers
+2025-11-25T22:10:25.607Z [DEBUG] LSP server manager initialized successfully
+2025-11-25T22:10:25.607Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-11-25T22:10:25.614Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/stanner/.claude/skills, project=/home/stanner/.claude/skills
+2025-11-25T22:10:25.615Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2025-11-25T22:10:25.642Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-11-25T22:10:25.642Z [DEBUG] Looking for shell config file: /home/stanner/.bashrc
+2025-11-25T22:10:25.642Z [DEBUG] Snapshots directory: /home/stanner/.claude/shell-snapshots
+2025-11-25T22:10:25.642Z [DEBUG] Creating snapshot at: /home/stanner/.claude/shell-snapshots/snapshot-bash-1764108625642-qpvbed.sh
+2025-11-25T22:10:25.642Z [DEBUG] Shell binary exists: true
+2025-11-25T22:10:25.642Z [DEBUG] Execution timeout: 10000ms
+2025-11-25T22:10:25.643Z [DEBUG] Writing to temp file: /home/stanner/.claude/todos/8c9f6606-eb38-421d-97fa-b699fdcb0d27-agent-8c9f6606-eb38-421d-97fa-b699fdcb0d27.json.tmp.1322414.1764108625643
+2025-11-25T22:10:25.644Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-11-25T22:10:25.645Z [DEBUG] Renaming /home/stanner/.claude/todos/8c9f6606-eb38-421d-97fa-b699fdcb0d27-agent-8c9f6606-eb38-421d-97fa-b699fdcb0d27.json.tmp.1322414.1764108625643 to /home/stanner/.claude/todos/8c9f6606-eb38-421d-97fa-b699fdcb0d27-agent-8c9f6606-eb38-421d-97fa-b699fdcb0d27.json
+2025-11-25T22:10:25.645Z [DEBUG] File /home/stanner/.claude/todos/8c9f6606-eb38-421d-97fa-b699fdcb0d27-agent-8c9f6606-eb38-421d-97fa-b699fdcb0d27.json written atomically
+2025-11-25T22:10:25.646Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108625646
+2025-11-25T22:10:25.646Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:25.648Z [DEBUG] Temp file written successfully, size: 44042 bytes
+2025-11-25T22:10:25.648Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:25.648Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108625646 to /home/stanner/.claude.json
+2025-11-25T22:10:25.648Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:25.648Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-11-25T22:10:25.648Z [DEBUG] Total plugin skills loaded: 0
+2025-11-25T22:10:25.648Z [DEBUG] Total plugin commands loaded: 0
+2025-11-25T22:10:25.648Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-11-25T22:10:25.649Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+2025-11-25T22:10:25.649Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills
+2025-11-25T22:10:25.649Z [DEBUG] Total plugin agents loaded: 0
+2025-11-25T22:10:25.672Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.53 (expected in multi-process scenarios)
+    at mCD (/$bunfs/root/claude:2653:1622)
+    at UWA (/$bunfs/root/claude:2653:1300)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:10:25.688Z [DEBUG] Git remote URL: null
+2025-11-25T22:10:25.688Z [DEBUG] No git remote URL found
+2025-11-25T22:10:25.688Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2025-11-25T22:10:25.689Z [DEBUG] Shell snapshot created successfully (1771 bytes)
+2025-11-25T22:10:27.580Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2025-11-25T22:10:28.176Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108628176
+2025-11-25T22:10:28.176Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:28.178Z [DEBUG] Temp file written successfully, size: 44042 bytes
+2025-11-25T22:10:28.178Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:28.178Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108628176 to /home/stanner/.claude.json
+2025-11-25T22:10:28.179Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:28.179Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108628179
+2025-11-25T22:10:28.179Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:28.181Z [DEBUG] Temp file written successfully, size: 44042 bytes
+2025-11-25T22:10:28.181Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:28.181Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108628179 to /home/stanner/.claude.json
+2025-11-25T22:10:28.181Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:28.689Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108628689
+2025-11-25T22:10:28.689Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:28.691Z [DEBUG] Temp file written successfully, size: 44042 bytes
+2025-11-25T22:10:28.691Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:28.691Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108628689 to /home/stanner/.claude.json
+2025-11-25T22:10:28.691Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:28.695Z [DEBUG] Skipping SessionStart:startup hook execution - workspace trust not accepted
+2025-11-25T22:10:28.714Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108628714
+2025-11-25T22:10:28.714Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:28.715Z [DEBUG] Temp file written successfully, size: 43937 bytes
+2025-11-25T22:10:28.715Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:28.716Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108628714 to /home/stanner/.claude.json
+2025-11-25T22:10:28.716Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:28.718Z [DEBUG] performStartupChecks called
+2025-11-25T22:10:28.718Z [DEBUG] Trust not accepted for current directory - skipping plugin installations
+2025-11-25T22:10:28.724Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T22:10:28.726Z [DEBUG] Skills and commands included in Skill tool:
+2025-11-25T22:10:28.726Z [DEBUG] Slash commands included in SlashCommand tool:
+2025-11-25T22:10:28.727Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108628727
+2025-11-25T22:10:28.727Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:28.728Z [DEBUG] Temp file written successfully, size: 44042 bytes
+2025-11-25T22:10:28.728Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:28.728Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108628727 to /home/stanner/.claude.json
+2025-11-25T22:10:28.728Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:28.732Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2025-11-25T22:10:28.738Z [DEBUG] Skipping SubagentStart:Explore hook execution - workspace trust not accepted
+2025-11-25T22:10:28.741Z [DEBUG] Skipping SubagentStart:Plan hook execution - workspace trust not accepted
+2025-11-25T22:10:29.541Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108629541
+2025-11-25T22:10:29.541Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:10:29.543Z [DEBUG] Temp file written successfully, size: 44042 bytes
+2025-11-25T22:10:29.543Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:10:29.543Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108629541 to /home/stanner/.claude.json
+2025-11-25T22:10:29.543Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:10:30.305Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T22:10:30.485Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:10:31.447Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:10:32.460Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-25T22:10:34.968Z [DEBUG] Skipping SubagentStop hook execution - workspace trust not accepted
+2025-11-25T22:10:37.306Z [ERROR] Error: Error: NON-FATAL: Lock acquisition failed for /home/stanner/.local/share/claude/versions/2.0.53 (expected in multi-process scenarios)
+    at mCD (/$bunfs/root/claude:2653:1622)
+    at FWA (/$bunfs/root/claude:2651:12703)
+    at async uL8 (/$bunfs/root/claude:2651:13905)
+    at async Zb (/$bunfs/root/claude:2653:236)
+    at async <anonymous> (/$bunfs/root/claude:2653:12469)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:10:47.465Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:10:48.820Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:10:48.820Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:10:48.825Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:10:48.825Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:10:48.838Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-25T22:10:48.839Z [DEBUG] FileHistory: Added snapshot for b33421fa-8a5d-4eb2-9c1e-71c7cb0d30aa, tracking 0 files
+2025-11-25T22:10:48.850Z [DEBUG] Total plugin output styles loaded: 0
+2025-11-25T22:10:50.542Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:10:51.898Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:10:58.007Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:10:58.008Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:10:58.027Z [DEBUG] No session environment scripts found
+2025-11-25T22:10:58.083Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:10:58.098Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:10:58.098Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:10:58.173Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:10:58.190Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:10:58.190Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:10:58.193Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:10:58.193Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:10:59.422Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:10:59.602Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:11:00.479Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:11:03.159Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:11:03.159Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:11:03.256Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:11:03.272Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:11:03.272Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:11:03.276Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:11:03.276Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:11:04.449Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:11:05.649Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:11:06.739Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:11:16.526Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:11:16.526Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:11:16.597Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:11:16.610Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:11:16.610Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:11:16.614Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:11:16.614Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:11:17.736Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:11:19.689Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:11:24.843Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-25T22:11:24.848Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108684848
+2025-11-25T22:11:24.848Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:11:24.849Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:11:24.849Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:11:24.849Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108684848 to /home/stanner/.claude.json
+2025-11-25T22:11:24.849Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:11:24.850Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108684850
+2025-11-25T22:11:24.850Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:11:24.852Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:11:24.852Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:11:24.852Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108684850 to /home/stanner/.claude.json
+2025-11-25T22:11:24.852Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:11:31.521Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:12:01.173Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:12:01.173Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:12:01.179Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:12:01.179Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:12:01.187Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-25T22:12:01.188Z [DEBUG] FileHistory: Making snapshot for message c4a09db4-a64e-4d36-8923-ad441b6919ae
+2025-11-25T22:12:01.188Z [DEBUG] FileHistory: Added snapshot for c4a09db4-a64e-4d36-8923-ad441b6919ae, tracking 0 files
+2025-11-25T22:12:02.070Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:04.445Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:10.367Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:12:10.367Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:11.270Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:11.481Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:13.307Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:13.603Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "wmctrl:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-25T22:12:13.620Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-25T22:12:13.620Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:17.268Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:12:18.632Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T22:12:18.650Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:18.669Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:12:18.669Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:18.746Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:18.763Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:12:18.763Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:12:18.767Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:12:18.767Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:12:19.546Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T22:12:19.546Z [DEBUG] Version 2.0.53 already installed, updating symlink
+2025-11-25T22:12:19.547Z [DEBUG] Successfully updated to version 2.0.53
+2025-11-25T22:12:19.619Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:19.666Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:21.433Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:26.983Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:12:26.984Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:27.991Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:28.340Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:29.081Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:29.090Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "xdotool search:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-25T22:12:29.107Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-25T22:12:29.107Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:33.652Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:12:34.890Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T22:12:34.909Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:34.931Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:12:34.931Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:12:34.937Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:12:34.937Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:12:35.556Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T22:12:35.557Z [DEBUG] Version 2.0.53 already installed, updating symlink
+2025-11-25T22:12:35.557Z [DEBUG] Successfully updated to version 2.0.53
+2025-11-25T22:12:36.730Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:37.871Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:40.548Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:12:40.548Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:48.419Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:48.437Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:12:48.437Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:12:48.442Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:12:48.442Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:12:49.231Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:49.913Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:12:51.209Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:12:54.830Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:12:54.831Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:54.966Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:12:54.966Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:59.314Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:12:59.338Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:12:59.338Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:12:59.343Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:12:59.343Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:13:00.536Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:13:02.463Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:13:04.939Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:13:07.247Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:13:07.247Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:13:12.326Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:13:12.351Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:13:12.351Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:13:12.358Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:13:12.358Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:13:13.992Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:13:16.525Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:13:21.441Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-25T22:13:21.445Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108801445
+2025-11-25T22:13:21.445Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:13:21.447Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:13:21.447Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:13:21.447Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108801445 to /home/stanner/.claude.json
+2025-11-25T22:13:21.447Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:13:21.448Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764108801448
+2025-11-25T22:13:21.448Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:13:21.450Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:13:21.450Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:13:21.450Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764108801448 to /home/stanner/.claude.json
+2025-11-25T22:13:21.450Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:13:22.242Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:18:54.715Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:18:54.715Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:18:54.720Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:18:54.720Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:18:54.730Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-25T22:18:54.731Z [DEBUG] FileHistory: Making snapshot for message dc3eb6ac-32f0-441c-8116-35d19b5021d0
+2025-11-25T22:18:54.731Z [DEBUG] FileHistory: Added snapshot for dc3eb6ac-32f0-441c-8116-35d19b5021d0, tracking 0 files
+2025-11-25T22:18:56.819Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:18:58.263Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:03.181Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:19:03.181Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:03.310Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:03.328Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:19:03.328Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:03.447Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:03.466Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:19:03.466Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:03.539Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:03.559Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:19:03.559Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:19:03.564Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:19:03.564Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:19:04.215Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:04.354Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:04.764Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:07.026Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:11.976Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:19:16.342Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-25T22:19:16.345Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764109156345
+2025-11-25T22:19:16.345Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:19:16.383Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:19:16.383Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:19:16.383Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764109156345 to /home/stanner/.claude.json
+2025-11-25T22:19:16.383Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:19:16.386Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764109156386
+2025-11-25T22:19:16.386Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:19:16.387Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:19:16.387Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:19:16.387Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764109156386 to /home/stanner/.claude.json
+2025-11-25T22:19:16.387Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:19:31.339Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:19:39.754Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:19:39.754Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:19:39.759Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:19:39.759Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:19:39.767Z [DEBUG] Skipping UserPromptSubmit hook execution - workspace trust not accepted
+2025-11-25T22:19:39.767Z [DEBUG] FileHistory: Making snapshot for message a796bb2a-000b-40c7-ad2e-22bbab78c2d2
+2025-11-25T22:19:39.767Z [DEBUG] FileHistory: Added snapshot for a796bb2a-000b-40c7-ad2e-22bbab78c2d2, tracking 0 files
+2025-11-25T22:19:40.643Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:43.543Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:52.344Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:19:52.344Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:52.478Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:19:52.478Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:19:52.484Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:19:52.484Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:19:55.933Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:19:56.194Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:19:59.741Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:19:59.741Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:19:59.762Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//usr/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2025-11-25T22:19:59.785Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-25T22:19:59.786Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-25T22:20:02.464Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'session': ["Read(//usr/**)"]
+2025-11-25T22:20:02.470Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T22:20:04.356Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T22:20:04.357Z [DEBUG] Version 2.0.53 already installed, updating symlink
+2025-11-25T22:20:04.357Z [DEBUG] Successfully updated to version 2.0.53
+2025-11-25T22:20:06.020Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:20:06.041Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-11-25T22:20:06.041Z [DEBUG] Skipping PreToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:20:06.995Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:07.172Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:07.524Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:08.162Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:08.237Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:08.275Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:08.349Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:08.942Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "dpkg:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  },
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "locate:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2025-11-25T22:20:08.962Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2025-11-25T22:20:08.962Z [DEBUG] Skipping PermissionRequest:Bash hook execution - workspace trust not accepted
+2025-11-25T22:20:14.732Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:20:14.957Z [DEBUG] Skipping Notification:permission_prompt hook execution - workspace trust not accepted
+2025-11-25T22:20:19.899Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2025-11-25T22:20:19.931Z [DEBUG] Skipping PostToolUse:Bash hook execution - workspace trust not accepted
+2025-11-25T22:20:19.958Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-11-25T22:20:19.958Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-11-25T22:20:19.964Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-11-25T22:20:19.964Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-11-25T22:20:20.564Z [DEBUG] Checking for native installer update to version 2.0.53
+2025-11-25T22:20:20.564Z [DEBUG] Version 2.0.53 already installed, updating symlink
+2025-11-25T22:20:20.564Z [DEBUG] Successfully updated to version 2.0.53
+2025-11-25T22:20:21.194Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:25.412Z [DEBUG] Stream started - received first chunk
+2025-11-25T22:20:32.672Z [DEBUG] Skipping Stop hook execution - workspace trust not accepted
+2025-11-25T22:20:32.676Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764109232676
+2025-11-25T22:20:32.676Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:20:32.679Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:20:32.679Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:20:32.679Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764109232676 to /home/stanner/.claude.json
+2025-11-25T22:20:32.679Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:20:32.680Z [DEBUG] Writing to temp file: /home/stanner/.claude.json.tmp.1322414.1764109232680
+2025-11-25T22:20:32.680Z [DEBUG] Preserving file permissions: 100600
+2025-11-25T22:20:32.682Z [DEBUG] Temp file written successfully, size: 44043 bytes
+2025-11-25T22:20:32.682Z [DEBUG] Applied original permissions to temp file
+2025-11-25T22:20:32.682Z [DEBUG] Renaming /home/stanner/.claude.json.tmp.1322414.1764109232680 to /home/stanner/.claude.json
+2025-11-25T22:20:32.682Z [DEBUG] File /home/stanner/.claude.json written atomically
+2025-11-25T22:20:34.934Z [ERROR] Error: Error
+    at <anonymous> (/$bunfs/root/claude:14:14648)
+    at <anonymous> (/$bunfs/root/claude:32:10217)
+    at emitError (node:events:43:23)
+    at <anonymous> (/$bunfs/root/claude:31:1146)
+    at emitError (node:events:43:23)
+    at <anonymous> (node:_http_client:250:22)
+    at processTicksAndRejections (native:7:39)
+    at request (/$bunfs/root/claude:34:2147)
+    at processTicksAndRejections (native:7:39)
+2025-11-25T22:20:42.749Z [DEBUG] Skipping SessionEnd:prompt_input_exit hook execution - workspace trust not accepted

@@ -1,0 +1,9 @@
+  # Ignore everything
+  *
+
+  # But include these folders
+  !agents/
+  !agents/**
+  !skills/
+  !skills/**
+  !.gitignore

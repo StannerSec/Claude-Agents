@@ -1,0 +1,11 @@
+Please build rules using the pyramid of pain approach, there is nothing wrong with building IOC based rules, but we want to also create rules that are at the top of the pyramid of pain and are harder for attackers to evade without completely changing a technique. 
+
+We want a good mix of both for detection strategy. 
+
+Review: https://attack.mitre.org/detectionstrategies/ for an idea of detection analytic and attack chaining ideas to understand and build off of, but also to understand the log sources necessary to accomplish the detection goals. 
+
+Review https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html for understanding of the pyramid of pain.
+
+Review https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/ for a full overview and in depth understanding of how to build great detection rules. 
+
+Please after building the detections, write out the needed log sources and ensure it is the wazuh format so the user can easily add it if necessary. 
