@@ -1,3 +1,6 @@
+""Delete these skills"
+
+
 # Create Synthetic Logs Skill
 
 This skill generates and validates synthetic logs to test Wazuh detection rules before deployment.
